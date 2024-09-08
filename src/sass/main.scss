@@ -1,1 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat';
+    margin: 0;
+  }
+  
+  .container {
+    width: 1224px;
+    margin: 0px auto;
+  }
+//UNTILLS
+@import "./untills/color-styles";
+@import "./untills/text-styles";
+
+//LANDING
+//landing page
 @import "./sections/header";
+@import "./sections/hero.scss";
+@import "./sections/best-sellers.scss";
+@import "./sections/collection.scss";
+@import "./sections/modiweek.scss";
+@import "./sections/cotton.scss";
+@import "./sections/follow-us.scss";
+@import "./sections/footer.scss";
+//landing modal windows
+@import "./modal-windows/collection-menu";
+@import "./modal-windows/plus-size";
+@import "./modal-windows/sustanability";
+@import "./modal-windows/new-in-menu";

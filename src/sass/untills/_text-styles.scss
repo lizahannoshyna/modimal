@@ -1,0 +1,149 @@
+// text-styles
+@mixin display1 {
+    font-family: "Montserrat";
+    font-size: 64px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+@mixin display2 {
+    font-family: 'Montserrat';
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+@mixin H1 {
+    font-family: 'Montserrat';
+    font-size: 44px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+@mixin H2 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+@mixin H3 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+@mixin H4 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+@mixin H5 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+@mixin H6 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+@mixin bodyXL {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin bodyLG {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin bodyMD {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin bodySM {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin bodyXS {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin budyXs-with-underline {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 180%;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+@mixin captionLG {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 180%;
+    font-weight: 600;
+}
+
+@mixin captionMD {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin captionSM {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 180%;
+    font-weight: 600;
+}
+
+@mixin buttonLG {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin buttonSM {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin overlineLG {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+@mixin overlineSM {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 121%;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
