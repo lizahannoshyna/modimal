@@ -1,3 +1,6 @@
-h1{
-    color: red;
+.header {
+    background-color: $light;
+}
+.header__list {
+    display: flex;
 }
