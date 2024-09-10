@@ -1,0 +1,26 @@
+.cotton {
+    height: 526px;
+    width: 100%;
+    background: url("../../../img/Cotton/Sustainability.jpg");
+    background-size: cover;
+
+
+    &_text {
+        @include bodyXL;
+        color: #272F25;
+    
+        width: 495px;
+        margin-left: 729px;
+    }
+
+    &_btn {
+        @include buttonSM;
+        text-align: center;
+        background-color: #FFFFFF;
+        border: none;
+
+        margin-left: 1041px;
+        width: 183px;
+        height: 40px;
+    }
+}
