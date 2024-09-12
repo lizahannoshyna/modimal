@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers.js","sources":["../src/index.js"],"sourcesContent":["document.querySelectorAll('.heart').forEach(function(heart) {\n    heart.addEventListener('click', function() {\n        heart.classList.toggle('filled'); // Добавляем или убираем класс 'filled' при клике\n    });\n});\n"],"names":["heart"],"mappings":"ssBAAA,SAAS,iBAAiB,QAAQ,EAAE,QAAQ,SAASA,EAAO,CACxDA,EAAM,iBAAiB,QAAS,UAAW,CACvCA,EAAM,UAAU,OAAO,QAAQ,CACvC,CAAK,CACL,CAAC"}
