@@ -4,6 +4,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .hero__title {
     width: 315px;
     font-family: Gill Sans MT;
@@ -12,12 +13,21 @@
     font-weight: 400;
     line-height: 61.2px;
     text-align: left;
-   padding-top: 300px;
+    padding-top: 300px;
 }
+
 .hero__button {
     margin-top: 27px;
     width: 184px;
     height: 40px;
     border: 0;
     background-color: $light;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+    transform: scale(1);
+
+    &:hover {
+        transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
