@@ -1,0 +1,51 @@
+.collection-gallery-wrap {
+    margin-top: 71px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    height: 1400px;
+}
+
+.collection-gallery-item {
+    position: relative; 
+}
+
+.collection-galley_img {
+    display: block; 
+    width: 100%;
+    height: auto;
+}
+
+.collection-btn{
+    padding: 8px 65px;
+    background-color:$light;
+    color: $dark;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.collection-btn:not(:nth-child(3)) {
+    position: absolute;
+    bottom: 16px; 
+    right: 16px;
+}
+
+.collection-btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Збільшення кнопки на 5% */
+
+}
+
+#btn-pants{
+    position: absolute;
+    bottom: 16px; 
+    left: 16px;
+    right: 399px;
+}
+
+
+

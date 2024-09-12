@@ -1,0 +1,28 @@
+.best-sellers_header{
+    @include H3;
+    padding-bottom: 24px;
+}
+.catalog-list{
+    gap: 24px;
+}
+.catalog__caption {
+    padding: 5px 8px;
+}
+.catalog__title {
+    @include H6;
+}
+.catalog-desc {
+    @include bodyMD;
+    padding-top: 8px;
+    justify-content: space-between;
+}
+.catalog-desc__price {
+    @include H6;
+    padding-right: 8px;
+}
+.choose-colour {
+    padding-top: 8px;
+}
+.catalog__img {
+    padding-right: 8px;
+}
