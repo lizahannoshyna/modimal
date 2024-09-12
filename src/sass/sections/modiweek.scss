@@ -1,34 +1,55 @@
 .modiweek {
-    margin-bottom: 88px;
+  margin-bottom: 88px;
 }
 
 .modiweek_title {
-    @include H3;
-    color: #0C0C0C;
+  @include H3;
+  color: #0C0C0C;
 }
 
 .modiweek_outfit-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    width: 1528px;
-  }
-  
-  figure {
-    text-align: center;
-    margin-top: 24px;
-  }
-  
-  .gallery_img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .gallery_day {
-    @include H6;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 1528px;
+  overflow: visible;
+  position: relative;
+}
 
-    text-align: left;
-    margin-top: 38px;
-    margin-left: 8px;
-  }
+figure {
+  position: relative;
+  text-align: center;
+  margin-top: 24px;
+}
+
+figure:last-child {
+  position: relative;
+  z-index: 1;
+}
+
+.gallery_img {
+  max-width: 100%;
+}
+
+.gallery_day {
+  @include H6;
+  text-align: left;
+  margin-top: 38px;
+  margin-left: 8px;
+}
+
+.heart {
+  position: absolute;
+  margin-top: 26px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/modiweek/heart-outline.svg");
+  background-size: cover;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
   
+    &.filled {
+        background-image: url("../../img/modiweek/heart-filled.svg");
+    }
+}
