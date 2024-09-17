@@ -1,0 +1,93 @@
+// LETTER
+
+.contact-us__title {
+    @include H3;
+    text-transform: capitalize;
+
+    padding-bottom: 24px;
+}
+
+.contact-us__letter {
+    background-color: #F0F2EF;
+}
+
+.contact-letter__text {
+    @include bodyMD;
+    text-transform: capitalize;
+
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+// WRITE US
+
+.write-us__container {
+    width: 1016px;
+}
+
+.write-us__title-wrapper {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 32px;
+}
+
+.write-us__title-img {
+    width: 24px;
+    height: 24px;
+    padding-top: 5px;
+}
+
+// CARDS
+
+.contacts__cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+}
+
+.card__chat-us {
+    width: 392px;
+    height: 176px;
+    background-color: #F0F2EF;
+    text-align: center;
+}
+
+.card__call-us {
+    width: 392px;
+    height: 176px;
+    background-color: #F0F2EF;
+    text-align: center;
+}
+
+.card__email-us {
+    width: 392px;
+    height: 176px;
+    background-color: #F0F2EF;
+    text-align: center;
+}
+
+.card__svg {
+    margin-top: 18px;
+    width: 24px;
+    height: 24px;
+}
+
+.card__title {
+    @include H6;
+    margin-top: 12px;
+
+    text-transform: capitalize;
+}
+
+.card__text {
+    @include bodyXS;
+
+    text-transform: capitalize;
+}
+
+.card__btn {
+    width: 365px;
+    height: 40px;
+    border: #5A6D57 1px solid;
+}
