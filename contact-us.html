@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  
+  <title>Modimal</title>
+  <script type="module" crossorigin src="./assets/vendor-c4916ffe.js"></script>
+  <script type="module" crossorigin src="./assets/index-cc0296c2.js"></script>
+  <link rel="stylesheet" href="./assets/index-cd2a3b6f.css">
+</head>
+
+<body>
+  
+    <header class="header">
+        <div class="container">
+       
+                <img src="data:image/png;base64,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" alt="">
+                <div class="header__wrapp"></div>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="">Collection</a></li>
+                    <li class="header__item"><a class="header__link" href="">New In</a></li>
+                    <li class="header__item"><a class="header__link" href="">Modiweek</a></li>
+                    <li class="header__item"><a class="header__link" href="">Plus Size</a></li>
+                    <li class="header__item"><a class="header__link" href="">Sustainability</a></li>
+                </ul>
+                <div class="icon__wrap">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGOSURBVHgB7VVNToNAFH5AmzYBIkt3cgRuYLpzV7aubE+gR9AT2Bu07tw1Ll3pDaonAE9QDJAQwo/fa4akqQUGa3f9ksl7zLz3vnnzTadEJ7RAaVo0TdMtimKsKIotpt6zLHtKksSnQwh0XXdUVV2WZWnX5D1EUXRPfyGwLMvGLlfsgsCHnaGDDwwLvou5CcfBLuI4nlJX4Fg8wzBK2Pm+de4O62uOgX9DXYCiE5HoycRhrKgF6s73pbCzpqQwDBcwAYYzHA4vpAkqUfnMqR2bmF6vZ0sTiF2RELQNMjG/CDa7wt13m5L4psE47KODT5IFJwrxWGinLg7rSxEzp65A4qMgWe9eQ2zA2iruQWC7rZ5SRwJzJz5ZFz46PvOqqwAXIoBWPn6U06anQ9s3mabp62Aw+EIBLniOYQvLhZ/zPL/WNI3XrhDjwn8BUUCyHWyDtUCRMxT+7vf7fgDwPOsFoje+2vykwB91eQSlwCTV0yKryb+TqHQgcGI+NBix4Py/AX9MxwB3gg5u6YSu+AFjXpvqemeT3wAAAABJRU5ErkJggg==" alt="" class="header__icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEeSURBVHgB7VRREcIwDA0cAuaA4QAJQwE4AAeAAnAAKIApAAeAA1DAHDAH4+Wa3m091uYY3PGxd/doSZu8pU1D1CKATmhDDGCYgimYgAV4tbYMaCrw4AHMwUjMds7xBz7/LoURyxiVbJGzVoseKYEvrWSLzAqNnyaDRvgLgYx/cCSJNWA+Ka/5oLmDHbgBjwh8IlNBM1nbhpyDZcpAYBZYOOYtLn4Z8lUJiMgQw5hMBjcEv2r8NA+Na56Dx2BfzCxyF6H8IwG5yDmZ9uDDBTxAKFUJSO85U/WVXshUTCb/bVZJaQ+vjdze9K6K9hKcN3KVpHXHIMfHma7Eh31HFMjAtoBBqFM6Qk+euy3F9w6m5rSawSewpi+g96vALdR4AT1cT7Y93LgWAAAAAElFTkSuQmCC" alt="" class="header__icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG6SURBVHgB7VWxbsIwEHXaHWVB6sAQfgDxAQx0YWBiQ4z9gk7Mbb8g2ToB6sSEaEemwsTKAmsiwVAJJAJTmdx7qY1McIibTpX6pMuZu/N7ts8WjP11WEkJx3FscrAwCIIwa42lmVQl90BWVcIzMo9IXkRNg9z9pRqJ6xj5I7kehrlcjuXz+Sh+OBxuyDVs27bIQPp8qSYMwzHTrLxMxmHdbpfvdjsu0el0eKlU4jKPMWpUuK57zItTOBMYIul5HtdhOp0eCUajkbZGEXnXCWyRXC6XPAnYSdICAOxaCGwlr6UIcHjf99lvUCwWI0/NjrivlFyAz2q1YlmxWCxOuOICr/gMBgOWFdR4ORyfJdF52cT5fM5/CvROuUWOdgUUd1FQqVROrmkaUIs5gtxVOa9iGk9kAfrQarXYfr9nJkCt6F0gOI44ecn0Aj/pJb7RsLFer+3NZsNqtdpF8na7zSaTiSS/pdvzwdLgfMPHluv1uva4EGs2m/JY/MRzNxVRHyDIETMht9JEyOHZO4VCgfX7/SgeO3McS5BJQCcCmJIbCSgiQ7KyCM0EeZg210hAiOCfqyd+3pmQ/8MIX3DF1WBdCx1GAAAAAElFTkSuQmCC" alt="" class="header__icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADOSURBVHgB7VXBDcIwDDSoA7QbkA1gI1boBHQD2KB0AzZhhWxAN4BL5aAoBNkG8SjqSac2J8dnu2pCNHesNEEbAI8e3II1eAFbD0h7RQNOfuXEKUZwJ5msScaRk5/BBnTgwFovbdZ0cOdXF6uFFpLfwBFSYzLA5n1StQUe7GA4pGJpRIcPkk+1gadcrN4EEiqZuosjiutnUKbz+qUwzUf+CpUixht1mwFG4Cx6jp+PaDFYDGZgUPrRwkVSJ8e0BT4XSh20pDwGMoTCOvo7PADrrDmfZXCi+AAAAABJRU5ErkJggg==" alt="" class="header__icon">
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+
+    </div>
+</div>
+
+<section class="contact-us">
+    <div class="container">
+        <h3 class="contact-us__title">Contact Us</h3>
+        <div class="contact-us__letter">
+            <p class="contact-letter__rules contact-letter__text">We always love hearing from our customers! Please do
+                not hesitate to contact us should you have any questions regarding our products and sizing
+                recommendations or inquiries about your current order.</p>
+            <p class="contact-letter__where contact-letter__text">Contact our Customer Care team through the contact
+                form below, email us at hello@modimal.com or live chat with us via our chat widget on the bottom right
+                hand corner of this page.</p>
+            <p class="contact-letter__when contact-letter__text">We will aim to respond to you within 1-2 business days.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="write-us">
+    <div class="container write-us__container">
+        <div class="write-us__title-wrapper">
+            <img src="../../img/contact-us/email.svg" alt="" class="write-us__title-img">
+            <h4 class="write-us__title">Write Us</h4>
+        </div>
+
+        <div class="write-us__information">
+            <h3 class="information__title">Your Information</h3>
+
+            <form class="information__form">
+                <div class="form__group">
+                    <label class="form__label" for="full-name">Full Name</label>
+                    <input class="form__input" type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="subject">Subject</label>
+                    <input class="form__input" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="order-number">Order Number</label>
+                    <input class="form__input" type="text" id="order-number" name="order-number">
+                </div>
+
+                <div class="form__group">
+                    <textarea id="message" class="form__input" placeholder=" " required></textarea>
+                    <label for="message" class="form__label">Message</label>
+                </div>                
+
+                <div class="form__group form-checkbox__group">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required class="checkbox">
+                    <label for="privacy-policy" class="checkbox__privacy">
+                        I Have Read And Understood The Contact Us Privacy And Policy.
+                    </label>
+                </div>
+
+                <div class="form__group">
+                    <button type="submit" class="submit-btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="contacts__cards">
+    <div class="container contacts__cards-container">
+        <div class="card__chat-us">
+            <img src="../../img/contact-us/chat.svg" alt="" class="card__svg">
+            <h3 class="card__title">Chat with us</h3>
+            <p class="card__text">We are here and ready to chat</p>
+            <button class="card__btn">Start chat</button>
+        </div>
+        <div class="card__call-us">
+            <img src="../../img/contact-us/call.svg" alt="" class="card__svg">
+            <h3 class="card__title">Call us</h3>
+            <p class="card__text">We're here to Talk to You</p>
+            <button class="card__btn">+1(929)460-3208</button>
+        </div>
+        <div class="card__email-us">
+            <img src="../../img/contact-us/email.svg" alt="" class="card__svg">
+            <h3 class="card__title">Email Us</h3>
+            <p class="card__text">You are welcome to send us an email</p>
+            <button class="card__btn">Send Email</button>
+        </div>
+    </div>
+</section>
+  <footer class="footer"></footer>
+    <h4 class="footer_title">
+        Join our club, get 15% off for your Birthday
+    </h4>
+    <article class="footer_right"> 
+        <div class="footer_about_modimal">
+            <h5 class="footer_about_title">
+                About Modimal
+            </h5>
+            <p class="footer_about_desc">Collection</p>
+            <p class="footer_about_desc">Sustainability</p>
+            <p class="footer_about_desc">Privacy Policy</p>
+            <p class="footer_about_desc">Support System</p>
+            <p class="footer_about_desc">Terms & Condition</p>
+            <p class="footer_about_desc">Copyright Notice</p>
+        </div>
+    
+        <div class="footer_help">
+            <h5 class="footer_help_title">
+                Help & Support
+            </h5>
+            <p class="footer_help_desc">Orders & Shipping</p>
+            <p class="footer_help_desc">Returns & Refunds</p>
+            <p class="footer_help_desc">FAQs</p>
+            <a class="footer_help_desc" href="../contact-us.html">Contact Us</a>
+        </div>
+
+        <div class="footer_join">
+            <h5 class="footer_join_title">
+                Join Up
+            </h5>
+            <p class="footer_join_desc">Modimal Club</p>
+            <p class="footer_join_desc">Careers</p>
+            <p class="footer_join_desc">Visit Us</p>
+        </div>
+        
+</article>
+     
+    <div class="footer_form">
+            <form action="/subscribe" method="POST">
+                <div class="form-group">
+                    <label for="email"> </label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required >
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="subscribe" required> By Submittng your email, you agree to receive advertising emails <br> from Modimal.
+                    </label>
+                </div>
+                <div class="form-group">
+              
+    </div>
+   
+</footer>
+
+  <section class="collection-menu">
+    <div class="container">
+        
+        <div class="collection-menu_wrap">
+            <div class="category animate__animated animate__fadeIn">
+                <p class="collection-header category-header">Category</p>
+                <ul class="category-list">
+                    <li class="category-item"><a href="#" class="collection-link category-link">Shop All</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Blouses & Tops</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Pants</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Dresses & Jumpsuits</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Outwear & Jackets </a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Pullovers</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Tees</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Shorts & Skirts</a></li>
+                </ul>
+            </div>
+    
+            <div class="featured animate__animated animate__fadeIn">
+                <p class="collection-header featured-header">Featured </p>
+                    <ul class="featured-list">
+                        <li class="featured-item"><a href="#" class="collection-link featured-link">New in</a></li>
+                        <li class="featured-item"><a href="#" class="collection-link featured-link">Modiweek</a></li>
+                        <li class="featured-item"><a href="#" class="collection-link featured-link">Plus Size</a></li>
+                        <li class="featured-item"><a href="#" class="collection-link featured-link">Best Seller</a></li>
+                    </ul>
+            </div>
+    
+            <div class="more animate__animated animate__fadeIn">
+                <p class="collection-header more-header">More</p>
+                    <ul class="more-list">
+                        <li class="more-item"><a href="#" class="collection-link more-link">Bundles</a></li>
+                        <li class="more-item"><a href="#" class="collection-link more-link">Occasion Wear</a></li>
+                        <li class="more-item"><a href="#" class="collection-link more-link">Matching Set</a></li>
+                        <li class="more-item"><a href="#" class="collection-link more-link">Suiting</a></li>
+                    </ul>
+            </div>
+            <div class="collection-menu_wrap-img">
+                <figure class="figure">
+                    <img class="collection-menu-img collection-menu-img_blouses" src="./assets/collection-menu-blouses-b59f0a9a.png" alt="photo">
+                    <figcaption>
+                        <p class="figcaption-text">Blouses</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                <img class="collection-menu-img collection-menu-img_plus-size" src="./assets/collection-menu-plus-size-274fc30c.png" alt="photo">
+                    <figcaption>
+                        <p class="figcaption-text">Plus Size</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+       
+    </div>
+</section>
+  <section class="plus-size-menu">
+    <div class="container plus-size-menu__container">
+
+        <div class="plus-size-menu__category-list">
+            <p class="category-list__header">Category</p>
+            <ul class="category-list__items">
+                <li class="category-list__item"><a href="#" class="category-list__link">Shop All</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Tops & Blouses</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Tees</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Pants</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Jackets & Outerwear</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Pullovers</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Dresses & Jumpsuits</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Shorts & Skirts</a></li>
+            </ul>
+        </div>
+
+        <div class="plus-size-menu__featured-items">
+            <figure class="featured-items__item">
+                <img class="featured-items__img" src="./assets/Pants-90c86066.png" alt="Pants">
+                <figcaption>
+                    <p class="featured-items__text">Pants</p>
+                </figcaption>
+            </figure>
+            <figure class="featured-items__item">
+                <img class="featured-items__img" src="./assets/Dresses-41ee1ec6.png" alt="Dresses">
+                <figcaption>
+                    <p class="featured-items__text">Dresses</p>
+                </figcaption>
+            </figure>
+            <figure class="featured-items__item">
+                <img class="featured-items__img" src="./assets/Blouses-4f602a62.png" alt="Blouses">
+                <figcaption>
+                    <p class="featured-items__text">Blouses</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+  
+</body>
+
+</html>
