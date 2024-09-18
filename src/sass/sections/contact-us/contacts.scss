@@ -1,0 +1,188 @@
+// LETTER
+
+.contact-us__title {
+    @include H3;
+    text-transform: capitalize;
+
+
+    padding-bottom: 24px;
+}
+
+.contact-us__letter {
+    background-color: #F0F2EF;
+    margin-bottom: 32px;
+}
+
+.contact-letter__text {
+    @include bodyMD;
+    text-transform: capitalize;
+
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+// WRITE US
+
+.write-us {
+    margin-bottom: 88px;
+}
+
+.write-us__container {
+    width: 1016px;
+}
+
+.write-us__title-wrapper {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 32px;
+}
+
+.write-us__title-img {
+    width: 24px;
+    height: 24px;
+    padding-top: 5px;
+}
+
+.write-us__title {
+    @include H4;
+    color: #0C0C0C;
+}
+
+.information__title {
+    @include H5;
+    color: #0C0C0C;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.75rem 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    background: none;
+    outline: none;
+    resize: none;
+}
+
+.form__input:focus {
+    border-bottom: 2px solid #007BFF;
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    top: -1rem;
+    left: 0;
+    font-size: 0.8rem;
+    color: #007BFF;
+}
+
+.form__label {
+    position: absolute;
+    top: 0.75rem;
+    left: 0;
+    color: #777;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.submit-btn {
+    width: 288px;
+    height: 40px;
+    background-color: #5A6D57;
+    border: none;
+    margin-left: 728px;
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        /* Збільшення кнопки на 5% */
+    }
+}
+
+.checkbox {
+    border: 1px #A2B39F solid;
+
+}
+
+.checkbox__privacy {
+    @include bodySM;
+}
+
+
+// CARDS
+
+.contacts__cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+}
+
+.card__chat-us {
+    width: 392px;
+    height: 176px;
+    background-color: #F0F2EF;
+    text-align: center;
+}
+
+.card__call-us {
+    width: 392px;
+    height: 176px;
+    background-color: #F0F2EF;
+    text-align: center;
+}
+
+.card__email-us {
+    width: 392px;
+    height: 176px;
+    background-color: #F0F2EF;
+    text-align: center;
+}
+
+.card__svg {
+    margin-top: 18px;
+    width: 24px;
+    height: 24px;
+}
+
+.card__title {
+    @include H6;
+    margin-top: 12px;
+
+    text-transform: capitalize;
+}
+
+.card__text {
+    @include bodyXS;
+
+    text-transform: capitalize;
+}
+
+.card__btn {
+    width: 365px;
+    height: 40px;
+    border: #5A6D57 1px solid;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        /* Збільшення кнопки на 5% */
+    }
+}
