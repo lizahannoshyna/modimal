@@ -1,0 +1,24 @@
+.footer {
+    background-color: #404040;
+
+    .container {
+        display: flex;
+    }
+}
+
+.footer__column-one {
+    margin-top: 48px;
+    width: 496px;
+}
+
+.footer_title {
+    @include H5;
+    color: white;
+}
+
+.footer_right {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    width: 623px;
+}
