@@ -20,6 +20,9 @@
 }
 
 .input-group {
+    margin-top: 8px;
+}
+.input-group {
     position: relative;
 
     .login-input {
@@ -28,7 +31,6 @@
 
         width: 100%;
         padding: 12px;
-        margin-bottom: 8px;
         border: 1px solid #606060;
         transition: border 0.3s ease;
 
@@ -43,7 +45,7 @@
         position: absolute;
         right: 16px;
         top: 50%;
-        transform: translateY(-80%);
+        transform: translateY(-50%);
         cursor: pointer;
     }
 }
