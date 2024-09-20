@@ -57,6 +57,22 @@
     }
 }
 
+.footer__checkbox {
+    display: flex;
+    margin-top: 16px;
+}
+
+.footer-checkbox__box {
+    border: 1px solid #F0F2EF;
+    background-color: white;
+}
+
+.footer__checbox-text {
+    @include overlineSM;
+    color: white;
+    text-align: left;
+}
+
 .footer__socials {
     display: flex;
     width: 144px;
@@ -112,4 +128,13 @@
         max-width: fit-content;
         cursor: pointer;
     }
+}
+
+.footer-chat__btn {
+    margin-left: 100%;
+    margin-top: 101px;
+    background-color: #5A6D57;
+    border: 1px solid #FFFFFF;
+    width: 56px;
+    height: 48px;
 }
