@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+    padding: 14px;
 }
 
 .category-list__items {
@@ -37,4 +38,23 @@
 
 .featured-items__item {
     margin-top: 0;
+}
+
+
+.plus-size-menu {
+    display: none;
+    position: fixed;  /* Фіксована позиція для модального вікна */
+    top: 90px;           /* Початок від верхнього краю */
+    left: 350px;          /* Початок від лівого краю */
+    width: 1224px;     /* Покриття всієї ширини екрану */
+    height: 550px;    /* Покриття всієї висоти екрану */
+    background-color: white; /* Задній фон для модального вікна */
+    z-index: 999;     /* Щоб вікно було поверх інших елементів */
+    padding: 20px;    /* Внутрішній відступ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
+    overflow: auto;   /* Прокрутка для довгого контенту */
+}
+
+.header__item:hover .plus-size-menu {
+    display: block;
 }
