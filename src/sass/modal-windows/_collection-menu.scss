@@ -71,17 +71,6 @@
     position: relative;
 }
 
-.collection-menu {
-    display: none; /* Спочатку приховане */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 999;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 14px;
-}
 
 .collection-menu {
     display: none;
@@ -95,6 +84,7 @@
     padding: 20px;    /* Внутрішній відступ */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
     overflow: auto;   /* Прокрутка для довгого контенту */
+    padding: 14px;
 }
 
 .header__item:hover .collection-menu {
@@ -118,7 +108,7 @@
 }
 
 .collection-link:hover {
-    color: dodgerblue;
+    color: $primary;
 }
 
 .collection-menu_wrap-img {

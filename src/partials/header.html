@@ -12,131 +12,24 @@
                 
                 <li class="header__item">
                     <a class="header__link" href="">Collection</a>
-                           <!-- Вбудовуємо колекцію прямо сюди -->
-                    <section class="collection-menu">
-                        <div class="container">
-                            <div class="collection-menu_wrap">
-                                <section class="collection-menu">
-                                        <div class="collection-menu_wrap">
-                                            <div class="category animate__animated animate__fadeIn">
-                                                <p class="collection-header category-header">Category</p>
-                                                <ul class="category-list">
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Shop All</a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Blouses & Tops</a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Pants</a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Dresses & Jumpsuits</a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Outwear & Jackets </a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Pullovers</a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Tees</a></li>
-                                                    <li class="category-item"><a href="#" class="collection-link category-link">Shorts & Skirts</a></li>
-                                                </ul>
-                                            </div>
-                                    
-                                            <div class="featured animate__animated animate__fadeIn">
-                                                <p class="collection-header featured-header">Featured </p>
-                                                    <ul class="featured-list">
-                                                        <li class="featured-item"><a href="#" class="collection-link featured-link">New in</a></li>
-                                                        <li class="featured-item"><a href="#" class="collection-link featured-link">Modiweek</a></li>
-                                                        <li class="featured-item"><a href="#" class="collection-link featured-link">Plus Size</a></li>
-                                                        <li class="featured-item"><a href="#" class="collection-link featured-link">Best Seller</a></li>
-                                                    </ul>
-                                            </div>
-                                    
-                                            <div class="more animate__animated animate__fadeIn">
-                                                <p class="collection-header more-header">More</p>
-                                                    <ul class="more-list">
-                                                        <li class="more-item"><a href="#" class="collection-link more-link">Bundles</a></li>
-                                                        <li class="more-item"><a href="#" class="collection-link more-link">Occasion Wear</a></li>
-                                                        <li class="more-item"><a href="#" class="collection-link more-link">Matching Set</a></li>
-                                                        <li class="more-item"><a href="#" class="collection-link more-link">Suiting</a></li>
-                                                    </ul>
-                                            </div>
-                                            <div class="collection-menu_wrap-img">
-                                                <figure class="figure">
-                                                    <img class="collection-menu-img collection-menu-img_blouses" src="img/collection-menu-img/collection-menu-blouses.png" alt="photo">
-                                                    <figcaption>
-                                                        <p class="figcaption-text">Blouses</p>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure class="figure">
-                                                <img class="collection-menu-img collection-menu-img_plus-size" src="img/collection-menu-img/collection-menu-plus-size.png" alt="photo">
-                                                    <figcaption>
-                                                        <p class="figcaption-text">Plus Size</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </section>
+                    <load ="partials/collection-menu.html" />
                 </li>
                 <li class="header__item"><a class="header__link" href="">New In</a>
-                    
+                    <load ="partials/new-in-menu.html" />
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Plus Size</a>
+                    <load ="partials/plus-size-menu.html" />
                 </li>
                 <li class="header__item"><a class="header__link" href="./product-modiweek.html">Modiweek</a></li>
-                <li class="header__item"><a class="header__link" href="">Plus Size</a>
-                <!-- Вбудовуємо тут Plus Size меню -->
-                <section class="plus-size-menu">
-                    <div class=" plus-size-menu__container">
-                        <div class="plus-size-menu__category-list">
-                            <p class="category-list__header">Category</p>
-                            <ul class="category-list__items">
-                                <li class="category-list__item"><a href="#" class="category-list__link">Shop All</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Tops & Blouses</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Tees</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Pants</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Jackets & Outerwear</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Pullovers</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Dresses & Jumpsuits</a></li>
-                                <li class="category-list__item"><a href="#" class="category-list__link">Shorts & Skirts</a></li>
-                            </ul>
-                        </div>
-                        <div class="plus-size-menu__featured-items">
-                            <figure class="featured-items__item">
-                                <img class="featured-items__img" src="img/plus-size/Pants.png" alt="Pants">
-                                <figcaption><p class="featured-items__text">Pants</p></figcaption>
-                            </figure>
-                            <figure class="featured-items__item">
-                                <img class="featured-items__img" src="img/plus-size/Dresses.png" alt="Dresses">
-                                <figcaption><p class="featured-items__text">Dresses</p></figcaption>
-                            </figure>
-                            <figure class="featured-items__item">
-                                <img class="featured-items__img" src="img/plus-size/Blouses.png" alt="Blouses">
-                                <figcaption><p class="featured-items__text">Blouses</p></figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-                </li>
                 <li class="header__item"><a class="header__link" href="">Sustainability</a></li>
             </ul>
             <div class="icon__wrap">
                 <img src="img/header-img/Header search icon.png" alt="" class="header__icon">
-                <img src="img/header-img/Header profile icon.png" alt="" class="header__icon">
+                <a href="../register.html" class="icon-link"><img src="img/header-img/Header profile icon.png" alt="" class="header__icon"></a>
                 <img src="img/header-img/Header favorite icon.png" alt="" class="header__icon">
                 <img src="img/header-img/Header bag icon.png" alt="" class="header__icon">
             </div>
-
-
-
-
-        </div>
-    </div>
-    </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
     </div>
