@@ -1,0 +1,34 @@
+.header__item:hover .sustainability__menu {
+     display: block;
+}
+.sustainability__menu {
+    .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    }
+}
+.sustainability__title {
+    padding-top: 24px;
+}
+.sustainability__img {
+    margin-top: 32px;
+   margin-left: 24px;
+}
+.sustainability__list--link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #0C0C0C;
+    padding-bottom: 8px;
+    line-height: 300%;
+}
+.sustainability__menu {
+    background-color: #FFFFFF;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 113px;           /* Початок від верхнього краю */
+    left: 120px;          /* Початок від лівого краю */
+    width: 1212px;     /* Покриття всієї ширини екрану */
+    height: 550px;
+}
