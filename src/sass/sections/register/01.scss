@@ -1,3 +1,17 @@
+.register-01_wrap{
+    display: flex;
+    align-items: center;
+    padding: 32px 0 48px 0;
+}
+
+.register-01_img{
+    margin-right: 128px;
+}
+.register-01-header{
+    @include H3;
+    text-align: center;
+}
+
 .register-01-form-wrap{
     display: flex;
     flex-direction: column;
@@ -8,5 +22,69 @@
     padding: 9px 16px;
 }
 .register-01-btn{
-    
+    padding: 8px 148px;
+    margin-top: 16px;
+    @include buttonSM;
+    color: $light;
+    background-color: $primary;
+    border: none;
+    transition: transform 0.3s ease;
 }
+
+.register-01-btn:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Збільшення кнопки на 5% */
+}
+
+.register-01_log-in{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 54px 0 54px;
+}
+.register-question{
+    @include bodySM;
+}
+.register-01-log-in_link{
+    @include buttonSM;
+    text-decoration: none;
+    color: $primary;
+}
+
+.or{
+    @include buttonSM;
+    padding: 16px 0 24px 0;
+    text-align: center;
+}
+
+.regiter-01-icon-wrap {
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    gap: 10px; /* Відступи між іконками */
+}
+
+.register-01-icon-link img {
+    width: 40px; /* Задай необхідний розмір для іконок */
+    height: auto;
+}
+
+.register-01-icon-link:not(:last-child){
+    margin-right: 17px;
+}
+.register-01-privacy{
+    @include bodyXS;
+    padding-top: 24px;
+}
+
+.register-01-terms{
+color: $primary;
+text-align: center;
+}
+.register-01-privacy {
+    text-align: center; /* Вирівнює весь текст по центру */
+}
+
+.privacy-policy {
+    display: block; /* Переносимо на новий рядок */
+    margin-top: 10px; /* Додаємо відступ зверху, якщо потрібно */
+}
+
