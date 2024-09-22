@@ -1,41 +1,39 @@
 .header__item:hover .sustainability__menu {
-     display: block;
+    display: block;
 }
 .sustainability__menu {
-    .container {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    }
+   .container {
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+   }
 }
 .sustainability__title {
-    padding-top: 24px;
+   padding-top: 24px;
 }
 .sustainability__img {
-    margin-top: 32px;
-   margin-left: 24px;
+   margin-top: 32px;
+  margin-left: 24px;
 }
 .sustainability__list--link {
-    font-size: 18px;
-    text-decoration: none;
-    color: #0C0C0C;
-    padding-bottom: 9px;
-    line-height: 300%;
+   font-size: 18px;
+   text-decoration: none;
+   color: #0C0C0C;
+   padding-bottom: 9px;
+   line-height: 300%;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover {
+       color: $primary;
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 }
 .sustainability__menu {
-    display: none;
-    position: fixed;  /* Фіксована позиція для модального вікна */
-    top: 90px;           /* Початок від верхнього краю */
-    left: 0px;          /* Початок від лівого краю */
-    width: 100vw;     /* Покриття всієї ширини екрану */
-    height: 550px;    /* Покриття всієї висоти екрану */
-    background-color: white; /* Задній фон для модального вікна */
-    z-index: 999;     /* Щоб вікно було поверх інших елементів */
-    padding: 20px;    /* Внутрішній відступ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
-    overflow: auto;   /* Прокрутка для довгого контенту */
-    padding: 14px;
-}
-.header__item:hover .collection-menu {
-    display: block;   /* Показати модальне вікно при наведенні */
+   background-color: #FFFFFF;
+   z-index: 2;
+   display: none;
+   position: fixed;
+   top: 90px;           /* Початок від верхнього краю */
+   left: 120px;          /* Початок від лівого краю */
+   width: 1212px;     /* Покриття всієї ширини екрану */
+   height: 550px;
 }
