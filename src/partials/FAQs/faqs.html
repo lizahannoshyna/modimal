@@ -1,0 +1,137 @@
+<section class="faqs">
+    <div class="container faqs-container">
+        <h3 class="faqs-title">FAQs</h3>
+
+        <ul class="faq-list">
+
+            <li class="faq-item">
+                <div class="faq-item__header" id="changeColor">
+                    <h5 class="faq-item__title" id="active_green">How Do I Contact Your Customer Service?</h5>
+                    <button class="faq-item__toggle faq-item__toggle--open" id="toggleButton">+</button>
+                </div>
+                <div class="faq-item__content">
+                    <p>Our modimal Customer Service Team is available Monday through Friday, 9 am - 5 pm ET, excluding
+                        holidays. You can reach us via email at hello@modimal.com (preferred and our fastest response),
+                        via chat using the icon in the right bottom cornern of our website, or via voicemail at +1(929)
+                        460-3208. We will make sure to get back to you within 24 business hours.</p>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">When Will My Order Ship?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">Can I Cancel Or Modify My Order?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">What are my shipping options?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">What type of payment methods do you offer?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header" id="changeColor2">
+                    <h5 class="faq-item__title" id="active_green2">Which size will fit me best?</h5>
+                    <button class="faq-item__toggle faq-item__toggle--open" id="toggleButton2">+</button>
+                </div>
+                <div class="faq-item__content">
+                    <p>We offer product and body measurements on each of our products pages, just click on “Size Guide”
+                        to find your best fit. Measuring guides are included.</p>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">How do I take care of my modimal pieces?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">Where and how do you manufacture your products?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">How do you find and evaluate your suppliers?</h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-item__header">
+                    <h5 class="faq-item__title">How do your suppliers support their workers? </h5>
+                    <button class="faq-item__toggle">+</button>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.faq-item__header').forEach(header => {
+        header.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-item__toggle');
+
+            // Используем класс для анимации
+            content.classList.toggle('faq-item__content--open');
+
+            // Переключаем знак с анимацией вращения
+            if (toggle.textContent === '+') {
+                toggle.textContent = '−';
+            } else {
+                toggle.textContent = '+';
+            }
+
+            toggle.classList.toggle('rotate'); // добавляем класс для вращения
+        });
+    });
+
+    let isGreen = false; // Переменная для отслеживания состояния цвета
+
+    document.getElementById('changeColor').addEventListener('click', function () {
+        const textElement = document.getElementById('active_green');
+        if (isGreen) {
+            textElement.style.color = ''; // Возвращаем исходный цвет
+        } else {
+            textElement.style.color = '#748C70'; // Меняем цвет на зеленый
+            textElement.style.transition = 'color 0.2s ease';
+        }
+        isGreen = !isGreen; // Переключаем состояние
+    });
+
+    let isGreen2 = false; // Переменная для отслеживания состояния цвета
+
+    document.getElementById('changeColor2').addEventListener('click', function () {
+        const textElement = document.getElementById('active_green2');
+        if (isGreen2) {
+            textElement.style.color = ''; // Возвращаем исходный цвет
+        } else {
+            textElement.style.color = '#748C70'; // Меняем цвет на зеленый
+            textElement.style.transition = 'color 0.2s ease';
+        }
+        isGreen2 = !isGreen2; // Переключаем состояние
+    });
+</script>
