@@ -3,7 +3,7 @@
 }
 
 .new_menu {
-    z-index: 999  !important;
+  z-index: 999 !important;
   position: relative;
   display: none;
   position: fixed; /* Фіксована позиція для модального вікна */
@@ -24,10 +24,7 @@
   display: flex;
   gap: 24px;
   padding-left: 108px;
-  
-
 }
-
 
 .new_menu_wrap_title {
   font-size: 18px;
@@ -44,46 +41,45 @@
   flex-shrink: 0;
   position: relative;
 }
- .new_menu_figures figcaption {
-    position: absolute;
-    bottom: -25px;
-    left: 65px;
+.new_menu_figures figcaption {
+  position: absolute;
+  bottom: -25px;
+  left: 65px;
 }
 
 .new_menu_wrap_left_item:not(:last-child) {
-    padding-bottom: 24px;
+  padding-bottom: 24px;
 }
 .new_menu_wrap_title:hover:after {
-    content: "";
-position: absolute;
-width: 70%;
-height: 4px;
-border: none;
-border-radius: 2px;
-background-color: $primary;
-bottom: 7px;
-left: -10px;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: $primary;
+  bottom: 7px;
+  left: -10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .new_menu_wrap_title_two:hover:after {
-    content: "";
-    position: absolute;
-    width: 90%;
-    height: 4px;
-    border: none;
-    border-radius: 2px;
-    background-color: $primary;
-    bottom: 7px;
-    left: -10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: $primary;
+  bottom: 7px;
+  left: -10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .new_menu_wrap_left_item + .new_menu_wrap_right_item {
-    font-size: 16px;
+  font-size: 16px;
 }
 .new_menu_wrap_left_item:hover {
-    color: $primary;
+  color: $primary;
 }
 .new_menu_wrap_right_item:hover {
-    color: $primary;
+  color: $primary;
 }
