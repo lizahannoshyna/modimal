@@ -1,10 +1,23 @@
 .header__item {
   position: relative;
 }
-
-.new_menu {
+.new_menu  {
+display: none;
+position: fixed;  /* Фіксована позиція для модального вікна */
+top: 90px;           /* Початок від верхнього краю */
+left: 50px;          /* Початок від лівого краю */
+width: 1440px;     /* Покриття всієї ширини екрану */
+height: 650px;    /* Покриття всієї висоти екрану */
+background-color: white; /* Задній фон для модального вікна */
+z-index: 999;     /* Щоб вікно було поверх інших елементів */
+padding: 20px;    /* Внутрішній відступ */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
+overflow: auto;   /* Прокрутка для довгого контенту */
+padding: 14px;
 
 }
+
+
 /* Показуємо меню при наведенні */
 .header__item:hover .new_menu {
   display: block;
@@ -21,6 +34,7 @@
   padding-bottom: 24px;
   position: relative;
 }
+
 .new_menu_figures {
   display: flex;
   justify-content: flex-end;
