@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  
+  <title>Modimal</title>
+  <script type="module" crossorigin src="./assets/vendor-c4916ffe.js"></script>
+  <script type="module" crossorigin src="./assets/index-92334187.js"></script>
+  <link rel="stylesheet" href="./assets/index-e6e7e49b.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="enjoy">
+        <div class="enjoy-text">Enjoy Free Shopping On All Orders</div>
+    </div>
+    <div class="container">
+        
+        <div class="header-wrap">
+            
+        <a href="./index.html"><img src="data:image/png;base64,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" alt=""></a>
+        <div class="header__wrapp">
+            <ul class="header__list">
+                
+                <li class="header__item">
+                    <a class="header__link" href="">Collection</a>
+                        <section class="collection-menu">
+    <div class="container">
+        <div class="collection-menu_wrap">
+            <div class="category animate__animated animate__fadeIn">
+                <p class="collection-header category-header">Category</p>
+                <ul class="category-list">
+                    <li class="category-item"><a href="#" class="collection-link category-link">Shop All</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Blouses & Tops</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Pants</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Dresses & Jumpsuits</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Outwear & Jackets </a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Pullovers</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Tees</a></li>
+                    <li class="category-item"><a href="#" class="collection-link category-link">Shorts & Skirts</a></li>
+                </ul>
+            </div>
+
+            <div class="featured animate__animated animate__fadeIn">
+                <p class="collection-header featured-header">Featured </p>
+                <ul class="featured-list">
+                    <li class="featured-item"><a href="#" class="collection-link featured-link">New in</a></li>
+                    <li class="featured-item"><a href="#" class="collection-link featured-link">Modiweek</a></li>
+                    <li class="featured-item"><a href="#" class="collection-link featured-link">Plus Size</a></li>
+                    <li class="featured-item"><a href="#" class="collection-link featured-link">Best Seller</a></li>
+                </ul>
+            </div>
+
+            <div class="more animate__animated animate__fadeIn">
+                <p class="collection-header more-header">More</p>
+                <ul class="more-list">
+                    <li class="more-item"><a href="#" class="collection-link more-link">Bundles</a></li>
+                    <li class="more-item"><a href="#" class="collection-link more-link">Occasion Wear</a></li>
+                    <li class="more-item"><a href="#" class="collection-link more-link">Matching Set</a></li>
+                    <li class="more-item"><a href="#" class="collection-link more-link">Suiting</a></li>
+                </ul>
+            </div>
+
+            <div class="collection-menu_wrap-img">
+                <figure class="figure">
+                    <img class="collection-menu-img collection-menu-img_blouses" src="./assets/collection-menu-blouses-b59f0a9a.png" alt="photo">
+                    <figcaption>
+                        <p class="figcaption-text">Blouses</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure">
+                    <img class="collection-menu-img collection-menu-img_plus-size" src="./assets/collection-menu-plus-size-274fc30c.png" alt="photo">
+                    <figcaption>
+                        <p class="figcaption-text">Plus Size</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+                </li>
+                <li class="header__item"><a class="header__link" href="">New In</a>
+                    <section class="new_menu" id="new_menu">
+    <div class="container">
+    <div class="new_menu_wrap">
+        <div class="new_menu_wrap_right">
+            <p class="new_menu_wrap_right_item new_menu_wrap_right_item_title new_menu_wrap_title">Category</p>
+            <p class="new_menu_wrap_right_item">Shop All</p>
+            <p class="new_menu_wrap_right_item">Tops & Boluses</p>
+            <p class="new_menu_wrap_right_item">Tees</p>
+            <p class="new_menu_wrap_right_item">Pants</p>
+            <p class="new_menu_wrap_right_item">Jackets & Outwears</p>
+            <p class="new_menu_wrap_right_item">Pullovers</p>
+            <p class="new_menu_wrap_right_item">Dresses & Jumpsuits</p>
+            <p class="new_menu_wrap_right_item">Shorts & Skirts</p>
+        </div>
+        <div class="new_menu_wrap_left">
+            <div class="new_menu_wrap_left_item new_menu_wrap_left_item_title new_menu_wrap_title new_menu_wrap_title_two">Trending</div>
+            <div class="new_menu_wrap_left_item">Plus Size</div>
+            <div class="new_menu_wrap_left_item">Fall Collection</div>
+            <div class="new_menu_wrap_left_item">Modiweek</div>
+        </div>
+        <div class="new_menu_figures"></div>
+
+        <figure class="new_menu_figures">
+            <img src="./assets/left_newinmenu-8caeb503.png" alt="#">
+            <figcaption>
+                Fall Collection
+            </figcaption>
+        </figure>
+
+        <figure class="new_menu_figures">
+            <img src="./assets/center_newinmenu-4c04a0fa.png" alt="#">
+            <figcaption>
+                Boluses
+            </figcaption>
+        </figure>
+        <figure class="new_menu_figures">
+            <img src="./assets/right_newinmenu-98387733.png" alt="#">
+            <figcaption>
+                Dresses
+            </figcaption>
+        </figure>
+    </div>
+
+</section>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Plus Size</a>
+                    <section class="plus-size-menu">
+    <div class="container plus-size-menu__container">
+
+        <div class="plus-size-menu__category-list">
+            <p class="category-list__header">Category</p>
+            <ul class="category-list__items">
+                <li class="category-list__item"><a href="#" class="category-list__link">Shop All</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Tops & Blouses</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Tees</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Pants</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Jackets & Outerwear</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Pullovers</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Dresses & Jumpsuits</a></li>
+                <li class="category-list__item"><a href="#" class="category-list__link">Shorts & Skirts</a></li>
+            </ul>
+        </div>
+
+        <div class="plus-size-menu__featured-items">
+            <figure class="featured-items__item">
+                <img class="featured-items__img" src="./assets/Pants-90c86066.png" alt="Pants">
+                <figcaption>
+                    <p class="featured-items__text">Pants</p>
+                </figcaption>
+            </figure>
+            <figure class="featured-items__item">
+                <img class="featured-items__img" src="./assets/Dresses-41ee1ec6.png" alt="Dresses">
+                <figcaption>
+                    <p class="featured-items__text">Dresses</p>
+                </figcaption>
+            </figure>
+            <figure class="featured-items__item">
+                <img class="featured-items__img" src="./assets/Blouses-4f602a62.png" alt="Blouses">
+                <figcaption>
+                    <p class="featured-items__text">Blouses</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+                </li>
+                <li class="header__item"><a class="header__link" href="./product-modiweek.html">Modiweek</a></li>
+                <li class="header__item"><a class="header__link" href="">Sustainability</a>
+                    <section class="sustainability__menu">
+<div class="container">
+<div class="sustainability__menu__list--wrap">
+  
+    <ul class="sustainability__list">
+        <h5 class="sustainability__title">Sustainability</h5>
+     <li class="sustainability__list--item"><a href="" class="sustainability__list--link">Mission</a>
+     <li class="sustainability__list--item"><a href="" class="sustainability__list--link">Processing</a>
+     <li class="sustainability__list--item"><a href="" class="sustainability__list--link">Materials</a>
+     <li class="sustainability__list--item"><a href="" class="sustainability__list--link">Packaging</a>
+     <li class="sustainability__list--item"><a href="" class="sustainability__list--link">Product Care</a>
+     <li class="sustainability__list--item"><a href="" class="sustainability__list--link">Our Suppliers</a>
+
+    </ul>
+</div>
+<div class="sustainability__menu--img">
+   <img src="./assets/Frame 26086903-73247726.png" alt="" class="sustainability__img">
+   <img src="./assets/Frame 26086904-03fb840d.png" alt="" class="sustainability__img">
+</div>
+
+</div>
+</section>
+                </li>
+            </ul>
+            <div class="icon__wrap">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGOSURBVHgB7VVNToNAFH5AmzYBIkt3cgRuYLpzV7aubE+gR9AT2Bu07tw1Ll3pDaonAE9QDJAQwo/fa4akqQUGa3f9ksl7zLz3vnnzTadEJ7RAaVo0TdMtimKsKIotpt6zLHtKksSnQwh0XXdUVV2WZWnX5D1EUXRPfyGwLMvGLlfsgsCHnaGDDwwLvou5CcfBLuI4nlJX4Fg8wzBK2Pm+de4O62uOgX9DXYCiE5HoycRhrKgF6s73pbCzpqQwDBcwAYYzHA4vpAkqUfnMqR2bmF6vZ0sTiF2RELQNMjG/CDa7wt13m5L4psE47KODT5IFJwrxWGinLg7rSxEzp65A4qMgWe9eQ2zA2iruQWC7rZ5SRwJzJz5ZFz46PvOqqwAXIoBWPn6U06anQ9s3mabp62Aw+EIBLniOYQvLhZ/zPL/WNI3XrhDjwn8BUUCyHWyDtUCRMxT+7vf7fgDwPOsFoje+2vykwB91eQSlwCTV0yKryb+TqHQgcGI+NBix4Py/AX9MxwB3gg5u6YSu+AFjXpvqemeT3wAAAABJRU5ErkJggg==" alt="" class="header__icon">
+                <a href="../register.html" class="icon-link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEeSURBVHgB7VRREcIwDA0cAuaA4QAJQwE4AAeAAnAAKIApAAeAA1DAHDAH4+Wa3m091uYY3PGxd/doSZu8pU1D1CKATmhDDGCYgimYgAV4tbYMaCrw4AHMwUjMds7xBz7/LoURyxiVbJGzVoseKYEvrWSLzAqNnyaDRvgLgYx/cCSJNWA+Ka/5oLmDHbgBjwh8IlNBM1nbhpyDZcpAYBZYOOYtLn4Z8lUJiMgQw5hMBjcEv2r8NA+Na56Dx2BfzCxyF6H8IwG5yDmZ9uDDBTxAKFUJSO85U/WVXshUTCb/bVZJaQ+vjdze9K6K9hKcN3KVpHXHIMfHma7Eh31HFMjAtoBBqFM6Qk+euy3F9w6m5rSawSewpi+g96vALdR4AT1cT7Y93LgWAAAAAElFTkSuQmCC" alt="" class="header__icon"></a>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG6SURBVHgB7VWxbsIwEHXaHWVB6sAQfgDxAQx0YWBiQ4z9gk7Mbb8g2ToB6sSEaEemwsTKAmsiwVAJJAJTmdx7qY1McIibTpX6pMuZu/N7ts8WjP11WEkJx3FscrAwCIIwa42lmVQl90BWVcIzMo9IXkRNg9z9pRqJ6xj5I7kehrlcjuXz+Sh+OBxuyDVs27bIQPp8qSYMwzHTrLxMxmHdbpfvdjsu0el0eKlU4jKPMWpUuK57zItTOBMYIul5HtdhOp0eCUajkbZGEXnXCWyRXC6XPAnYSdICAOxaCGwlr6UIcHjf99lvUCwWI0/NjrivlFyAz2q1YlmxWCxOuOICr/gMBgOWFdR4ORyfJdF52cT5fM5/CvROuUWOdgUUd1FQqVROrmkaUIs5gtxVOa9iGk9kAfrQarXYfr9nJkCt6F0gOI44ecn0Aj/pJb7RsLFer+3NZsNqtdpF8na7zSaTiSS/pdvzwdLgfMPHluv1uva4EGs2m/JY/MRzNxVRHyDIETMht9JEyOHZO4VCgfX7/SgeO3McS5BJQCcCmJIbCSgiQ7KyCM0EeZg210hAiOCfqyd+3pmQ/8MIX3DF1WBdCx1GAAAAAElFTkSuQmCC" alt="" class="header__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADOSURBVHgB7VXBDcIwDDSoA7QbkA1gI1boBHQD2KB0AzZhhWxAN4BL5aAoBNkG8SjqSac2J8dnu2pCNHesNEEbAI8e3II1eAFbD0h7RQNOfuXEKUZwJ5msScaRk5/BBnTgwFovbdZ0cOdXF6uFFpLfwBFSYzLA5n1StQUe7GA4pGJpRIcPkk+1gadcrN4EEiqZuosjiutnUKbz+qUwzUf+CpUixht1mwFG4Cx6jp+PaDFYDGZgUPrRwkVSJ8e0BT4XSh20pDwGMoTCOvo7PADrrDmfZXCi+AAAAABJRU5ErkJggg==" alt="" class="header__icon">
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+  
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__column-one">
+            <h5 class="footer_title">
+                Join our club, get 15% off for your Birthday
+            </h5>
+
+            <form class="footer__form"></form>
+            <div class="input-group">
+                <input type="email" placeholder="Enter Your Email Address" class="footer__input" required>
+                <img class="footer__form-send" src="./assets/arrow-7ffb754f.svg">
+            </div>
+
+            <div class="footer__checkbox">
+                <input type="checkbox" id="myCheckbox" class="footer-checkbox__box">
+                <p class="footer__checbox-text">By Submittng your email, you agree to receive advertising emails from Modimal.</p> 
+            </div>
+              
+            </form>
+
+            <div class="footer__socials">
+                <a href="footer__socials-link"><img src="./assets/instagram-b3bb9f8c.svg" alt="" class="footer__socials-img"></a>
+                <a href="footer__socials-link"><img src="./assets/facebook-44d5e65a.svg" alt="" class="footer__socials-img"></a>
+                <a href="footer__socials-link"><img src="./assets/pinterest-53ec1e35.svg" alt="" class="footer__socials-img"></a>
+                <a href="footer__socials-link"><img src="./assets/tiktok-8825922e.svg" alt="" class="footer__socials-img"></a>
+            </div>
+
+            <div class="footer__rights">
+                <img class="footer__rights-img" src="./assets/copyright-8a7bcd51.svg">
+                <p class="footer__rights-text">2023 modimal. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <div class="footer_right">
+            <div class="footer__about">
+                <h5 class="footer_about_title footer_title">
+                    About Modimal
+                </h5>
+
+                <ul class="footer__list">
+                    <li class="footer_about_desc footer_desc">Collection</li>
+                    <li class="footer_about_desc footer_desc">Sustainability</li>
+                    <li class="footer_about_desc footer_desc">Privacy Policy</li>
+                    <li class="footer_about_desc footer_desc">Support System</li>
+                    <li class="footer_about_desc footer_desc">Terms & Condition</li>
+                    <li class="footer_about_desc footer_desc">Copyright Notice</li>
+                </ul>
+
+            </div>
+
+            <div class="footer__help">
+                <h5 class="footer_help_title footer_title">
+                    Help & Support
+                </h5>
+
+                <ul class="footer__list">
+                    <li class="footer_help_desc footer_desc">Orders & Shipping</li>
+                    <li class="footer_help_desc footer_desc">Returns & Refunds</li>
+                    <li class="footer_help_desc footer_desc">FAQs</li>
+                    <li class="footer_help_desc footer_desc"><a href="./contact-us.html" class="footer_desc">Contact Us</a></li>
+                    <li class="footer_help_desc footer_desc"><a href="./register.html" class="footer_desc">REGISTER_TEMP</a></li>
+                    <li class="footer_help_desc footer_desc"><a href="./login.html" class="footer_desc">LOGIN_TEMP</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer__join">
+                <h5 class="footer_join_title footer_title">
+                    Join Up
+                </h5>
+
+                <ul class="footer__list">
+                    <li class="footer_join_desc footer_desc">Modimal Club</li>
+                    <li class="footer_join_desc footer_desc">Careers</li>
+                    <li class="footer_join_desc footer_desc">Visit Us</li>
+                </ul>
+
+                    <button class="footer-chat__btn">
+                        <img src="./assets/chatbox-65564ac4.svg" class="footer__chat-img">
+                    </button>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+  
+</body>
+
+</html>
