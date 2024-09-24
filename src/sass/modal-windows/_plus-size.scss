@@ -59,3 +59,24 @@
 .header__item:hover .plus-size-menu {
     display: block;
 }
+
+.category-list__header:hover{
+    color: $primary;
+ }
+ 
+ .category-list__header:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: $primary;
+    bottom: 0;
+    left: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .category-list__link:hover{
+    color: $primary;
+  }

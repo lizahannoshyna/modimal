@@ -1,29 +1,26 @@
 .header__item {
   position: relative;
 }
-.new_menu  {
-display: none;
-position: fixed;  /* Фіксована позиція для модального вікна */
-top: 90px;           /* Початок від верхнього краю */
-left: 50px;          /* Початок від лівого краю */
-width: 1440px;     /* Покриття всієї ширини екрану */
-height: 650px;    /* Покриття всієї висоти екрану */
-background-color: white; /* Задній фон для модального вікна */
-z-index: 999;     /* Щоб вікно було поверх інших елементів */
-padding: 20px;    /* Внутрішній відступ */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
-overflow: auto;   /* Прокрутка для довгого контенту */
-padding: 14px;
-
+/* Стилі для new_menu */
+.new_menu {
+  display: none;
+  position: fixed;  /* Фіксована позиція для модального вікна */
+  top: 90px;        /* Відступ від верхнього краю */
+  left: 0px;        /* Початок від лівого краю */
+  width: 100vw;     /* Покриття всієї ширини екрану */
+  height: 550px;    /* Висота вікна */
+  background-color: white; /* Задній фон для модального вікна */
+  z-index: 999;     /* Щоб вікно було поверх інших елементів */
+  padding: 20px;    /* Внутрішній відступ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
+  overflow: auto;   /* Прокрутка для довгого контенту */
 }
 
-
-/* Показуємо меню при наведенні */
+/* Показуємо меню при наведенні на header__item */
 .header__item:hover .new_menu {
   display: block;
 }
 .new_menu_wrap {
-  padding-top: 82px;
   display: flex;
   gap: 24px;
   padding-left: 108px;
@@ -88,3 +85,7 @@ padding: 14px;
   color: $primary;
 }
 
+.new_menu_wrap{
+  padding: 0;
+  margin: 0;
+}
