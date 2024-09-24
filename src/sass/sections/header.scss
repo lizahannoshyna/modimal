@@ -2,6 +2,7 @@
     padding: 0;
 }
 .header-wrap{
+    justify-content: space-between;
     display: flex;
     padding: 18px 0;
     align-items: center;
@@ -9,6 +10,8 @@
 }
 
 .header__list{
+    justify-content: space-between;
+    width: 648px;
     display: flex;
     margin: 0;
 }
@@ -21,7 +24,8 @@
 }
 
 .icon__wrap{
-    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .icon-container {
