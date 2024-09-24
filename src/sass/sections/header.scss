@@ -1,10 +1,12 @@
-
-
+.container_header{
+    padding: 0;
+}
 .header-wrap{
     justify-content: space-between;
     display: flex;
-    padding: 18px;
+    padding: 18px 0;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__list{
@@ -26,19 +28,29 @@
     justify-content: space-between;
 }
 
-.header__icon {
-    margin-left: 24px;
-    border-radius: 50%;
-    padding: 5px;
-    transition: background-color 250ms ease;
-    &:hover {
-        cursor: pointer;
-        transition: background-color 250ms ease;
-        background-color: #2196F3;
-    }
+.icon-container {
+    display: inline-block;
+    padding: 10px; /* Додає трохи відступу навколо іконки */
+    border-radius: 50%; /* Округлі краї фону */
+    transition: background-color 0.3s ease; /* Плавна анімація зміни фону */
 }
+
+.icon-container:hover {
+    background-color: green; /* Зміна фону на зелений при ховері */
+}
+
+/* Додатково можна додати стиль для іконок, щоб вони відповідали дизайну */
+.header__icon {
+    width: 24px;
+    height: 24px;
+}
+
 .header__wrapp {
     display: flex;
+}
+
+.header__link:hover{
+color: $primary;
 }
 
 .enjoy{
@@ -51,6 +63,32 @@
     text-align: center;
     color: $light;
 }
+
+.icon__wrap{
+    justify-content: flex-end;
+}
+.header__icon:not(:last-child){
+    margin-right: 24px;
+}
+.header__icon{
+    cursor: pointer;
+}
+
+.icon-path {
+    transition: fill 250ms ease; /* Додаємо плавний перехід для зміни кольору */
+}
+
+
+
+.header__icon:hover:not(:nth-child(3)) path {
+    fill: $primary; /* Змінюємо колір контурів на зелений для іконок з контурами */
+}
+
+.heart-icon-svg:hover path {
+    stroke: $primary; /* Змінюємо колір контурів на зелений для іконок з контурами */
+}
+
+
 
 
 
