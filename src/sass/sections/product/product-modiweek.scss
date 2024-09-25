@@ -52,6 +52,29 @@
     margin-left: 6px;
 }
 
+.saturday-list__item {
+    position: relative;
+}
+
+.saturday-item__new {
+    position: absolute;
+    margin: 23.4px 0 0 23.4px;
+    padding-bottom: 0;
+    background-color: white;
+    border: none;
+    width: 83.88px; 
+    height: 31.21px; 
+}
+
+.saturday-new__text {
+    @include bodySM;
+    
+    margin: 2.7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .saturday-item__figcaption {
     display: flex;
     justify-content: space-between

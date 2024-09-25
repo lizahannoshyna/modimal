@@ -1,0 +1,77 @@
+.mission-title {
+    @include H3;
+    margin-top: 32px;
+}
+
+.mission-text__block {
+    margin-top: 32px;
+
+    p {
+        @include bodyXL;
+        text-align: left;
+        margin: 0;
+
+    }
+}
+
+.mission__product--text__block {
+
+    p {
+        margin: 0;
+    }
+}
+
+.mission--product {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+
+    &_first {
+        margin-top: 48px;
+    }
+}
+
+
+
+.product__right {
+    margin-left: 24px;
+}
+
+.mission__product--left {
+    margin-right: 24px;
+}
+
+.mission__product--title {
+    @include H4;
+}
+
+.mission__product--description {
+    @include bodyLG;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.mission__product--image__cotton {
+    width: 392px;
+    height: 359px;
+}
+
+.mission__product--image__wool {
+    width: 496px;
+    height: 330px;
+}
+
+.mission__product--image__linen {
+    width: 496px;
+    height: 408px;
+}
+
+.mission__product--image__silk {
+    width: 496px;
+    height: 408px;
+}
+
+.mission__product--image__cashmere {
+    width: 392px;
+    height: 434px;
+}
