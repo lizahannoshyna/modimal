@@ -1,77 +1,74 @@
-.mission-title {
+.mission__elegance {
+    height: 600px;
+    width: 100%;
+    background: url("../img/sustainability/elegance.png");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .mission__elegance--text {
+        @include H2;
+        text-align: center;
+        color: white;
+        padding-top: 478px;
+    }
+}
+
+//
+
+.mission__sustainability--title {
     @include H3;
+    text-align: left;
+    color: #0C0C0C;
+
     margin-top: 32px;
 }
 
-.mission-text__block {
+.mission__sustainability--text {
+    @include bodyXL;
+    text-align: left;
+    color: #0C0C0C;
+
     margin-top: 32px;
-
-    p {
-        @include bodyXL;
-        text-align: left;
-        margin: 0;
-
-    }
 }
 
-.mission__product--text__block {
+//
 
-    p {
-        margin: 0;
-    }
+.mission__six {
+    margin-top: 48px;
 }
 
-.mission--product {
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-
-    &_first {
-        margin-top: 48px;
-    }
-}
-
-
-
-.product__right {
-    margin-left: 24px;
-}
-
-.mission__product--left {
-    margin-right: 24px;
-}
-
-.mission__product--title {
+.mission__six--title {
     @include H4;
+    text-align: left;
+    color: #0C0C0C;
 }
 
-.mission__product--description {
+.mission__six--list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
+
+    gap: 48px;
+}
+
+.six__list--item {
+    width: 496px;
+}
+
+.six__item--title {
+    @include H5;
+    text-align: left;
+    color: #0C0C0C;
+}
+
+.six__item--desc {
     @include bodyLG;
     text-align: left;
+    color: #0C0C0C;
+
     margin-top: 16px;
-}
-
-.mission__product--image__cotton {
-    width: 392px;
-    height: 359px;
-}
-
-.mission__product--image__wool {
-    width: 496px;
-    height: 330px;
-}
-
-.mission__product--image__linen {
-    width: 496px;
-    height: 408px;
-}
-
-.mission__product--image__silk {
-    width: 496px;
-    height: 408px;
-}
-
-.mission__product--image__cashmere {
-    width: 392px;
-    height: 434px;
 }
