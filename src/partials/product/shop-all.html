@@ -1,214 +1,368 @@
 <section class="product-shop-all">
   <div class="container">
-      <div class="braed-crumps">
-      </div>
-      <div class="product-shop-all_photo-section">
-      </div>
-      <div class="shop-all_main">
-        <div class="row">
-          <div class="col-4">
-            <div class="shop-all_filters">
-              <h3 class="filters-header">Filters</h3>
-              <div class="shop-all-filters-wrap">
-                <!-- Фільтр Sort By -->
-                <div class="filter-item ">
-                  <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#filterSortBy" aria-expanded="false" aria-controls="filterSortBy">
-                    Sort By
-                  </button>
-                  <div class="collapse" id="filterSortBy">
-                    <div class="card card-body">
-                      Sort options (Price, Popularity, etc.)
-                    </div>
+    <div class="braed-crumps">
+    </div>
+    <div class="product-shop-all_photo-section">
+    </div>
+    <div class="shop-all_main">
+      <div class="row">
+        <div class="col-4">
+          <div class="shop-all_filters">
+            <h3 class="filters-header">Filters</h3>
+
+            <!-- Фільтр Sort By -->
+            <div class="filter-item">
+              <button class="btn btn-primary w-100 toggle-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterSortBy" aria-expanded="false" aria-controls="filterSortBy">
+                Sort By
+              </button>
+              <div class="collapse" id="filterSortBy">
+                <div class="card card-body">
+                  <p class="sort-by-header shop-all-filter-header">Sort By</p>
+                  <!-- Кастомізовані чекбокси -->
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">Featured</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="flexCheckDefault2" checked>
+                    <label class="form-check-label" for="flexCheckDefault2">Best Seller</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="flexCheckDefault3">
+                    <label class="form-check-label" for="flexCheckDefault3">Price: Low To High</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="flexCheckDefault4" checked>
+                    <label class="form-check-label" for="flexCheckDefault4">Price: High To Low</label>
                   </div>
                 </div>
-
-                <!-- Фільтр Size -->
-                <div class="filter-item">
-                  <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#filterSize" aria-expanded="false" aria-controls="filterSize">
-                    Size
-                  </button>
-                  <div class="collapse" id="filterSize">
-                    <div class="card card-body">
-                      Size options (S, M, L, etc.)
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Фільтр Color -->
-                <div class="filter-item">
-                  <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#filterColor" aria-expanded="false" aria-controls="filterColor">
-                    Color
-                  </button>
-                  <div class="collapse" id="filterColor">
-                    <div class="card card-body">
-                      Color options (Red, Green, Blue, etc.)
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Фільтр Collection -->
-                <div class="filter-item">
-                  <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollection" aria-expanded="false" aria-controls="filterCollection">
-                    Collection
-                  </button>
-                  <div class="collapse" id="filterCollection">
-                    <div class="card card-body">
-                      Collection options (Summer, Winter, etc.)
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Фільтр Fabric -->
-                <div class="filter-item">
-                  <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#filterFabric" aria-expanded="false" aria-controls="filterFabric">
-                    Fabric
-                  </button>
-                  <div class="collapse" id="filterFabric">
-                    <div class="card card-body">
-                      Fabric options (Cotton, Linen, etc.)
-                    </div>
-                  </div>
-                </div>
-
               </div>
-          </div>
-          </div>
-          <div class="col-8">
-            <div class="shop-all_catalog-wrap">
-              <ul class="shop-all_catalog p-0 d-flex ">
-                 
-                  <li class="shop-all_catalog-item">
-                    <a href="../../product-order.html" class="shop-all-article-link">
-                      <article class="shop-all_catalog__card">
-                        <div class="shop-all_catalog__thumb">
-                          <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item1.png" alt="photo" />
-                        </div>
-                        <figcaption class="catalog__caption">
-                          <h6 class="shop-all_catalog__title">Chill Wrap Top</h6>
-                          <div class="shop-all_catalog-desc d-flex">
-                            <p class="shop-all_catalog-desc__subtitle">Turn It Up Top</p>
-                            <p class="shop-all_catalog-desc__price">$160</p>
-                          </div>
-                          <div class="choose-colour">
-                            <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
-                          </div>
-                        </figcaption>
-                      </article>
-                    </a>
-                     
-                  </li>
-  
-                  <li class="shop-all_catalog-item">
-                      <article class="shop-all_catalog__card">
-                          <div class="shop-all_catalog__thumb">
-                            <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item2.png" alt="photo" />
-                          </div>
-                          <figcaption class="catalog__caption">
-                            <h6 class="shop-all_catalog__title">Essential T-Shirt</h6>
-                            <div class="shop-all_catalog-desc d-flex">
-                              <p class="shop-all_catalog-desc__subtitle">Turn It Up T-Shirt</p>
-                              <p class="shop-all_catalog-desc__price">$95</p>
-                            </div>
-                            <div class="choose-colour">
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/Color.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
-                            </div>
-                          </figcaption>
-                        </article>
-                  </li>
-  
-                  <li class="shop-all_catalog-item">
-                      <article class="shop-all_catalog__card">
-                          <div class="shop-all_catalog__thumb">
-                            <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item3.png" alt="photo" />
-                          </div>
-                          <figcaption class="catalog__caption">
-                            <h6 class="shop-all_catalog__title">Shirt Dress</h6>
-                            <div class="shop-all_catalog-desc d-flex">
-                              <p class="shop-all_catalog-desc__subtitle">Turn It Up Dress</p>
-                              <p class="shop-all_catalog-desc__price">$245</p>
-                            </div>
-                            <div class="choose-colour">
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/Color.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
-                            </div>
-                          </figcaption>
-                        </article>
-                  </li>
-  
-                  <li class="shop-all_catalog-item">
-                      <article class="shop-all_catalog__card">
-                          <div class="shop-all_catalog__thumb">
-                            <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item4.png" alt="photo" />
-                          </div>
-                          <figcaption class="catalog__caption">
-                            <h6 class="shop-all_catalog__title">Rule Zip Jacket</h6>
-                            <div class="shop-all_catalog-desc d-flex">
-                              <p class="shop-all_catalog-desc__subtitle">Turn It Up Jacket</p>
-                              <p class="shop-all_catalog-desc__price">$199</p>
-                            </div>
-                            <div class="choose-colour">
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/product/shop-all/brown.png" alt="colour" />
-                            </div>
-                          </figcaption>
-                        </article>
-                  </li>
-  
-                  <li class="shop-all_catalog-item">
-                      <article class="shop-all_catalog__card">
-                          <div class="shop-all_catalog__thumb">
-                            <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item5.png" alt="photo" />
-                          </div>
-                          <figcaption class="catalog__caption">
-                            <h6 class="shop-all_catalog__title">New Age Linen</h6>
-                            <div class="shop-all_catalog-desc d-flex">
-                              <p class="shop-all_catalog-desc__subtitle">Turn It Up Pants</p>
-                              <p class="shop-all_catalog-desc__price">$180</p>
-                            </div>
-                            <div class="choose-colour">
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/nave.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
-                            </div>
-                          </figcaption>
-                        </article>
-                  </li>
-  
-                  <li class="shop-all_catalog-item">
-                      <article class="shop-all_catalog__card">
-                          <div class="shop-all_catalog__thumb">
-                            <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item6.png" alt="photo" />
-                          </div>
-                          <figcaption class="catalog__caption">
-                            <h6 class="shop-all_catalog__title">Тailored Stretch</h6>
-                            <div class="shop-all_catalog-desc d-flex">
-                              <p class="shop-all_catalog-desc__subtitle">Turn It Up Pants</p>
-                              <p class="shop-all_catalog-desc__price">180 $</p>
-                            </div>
-                            <div class="choose-colour">
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/Color.jpg" alt="colour" />
-                              <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
-                            </div>
-                          </figcaption>
-                        </article>
-                  </li>
-  
-              </ul>
-              
-          </div>
+            </div>
+
+            <!-- Фільтр Size -->
+            <div class="filter-item">
+              <button class="btn btn-primary w-100 toggle-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterSize" aria-expanded="false" aria-controls="filterSize">
+                Size
+              </button>
+              <div class="collapse" id="filterSize">
+                <div class="card card-body">
+                  <p class="sort-by-header shop-all-filter-header">Size</p>
+                  <!-- Кастомізовані чекбокси -->
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="sizeSmall">
+                    <label class="form-check-label" for="sizeSmall">XS / US (0-4)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="sizeSmall">
+                    <label class="form-check-label" for="sizeSmall">S / US (4-6)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="sizeSmall">
+                    <label class="form-check-label" for="sizeSmall">M / US (6-10)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="sizeSmall">
+                    <label class="form-check-label" for="sizeSmall">L / US (10-14)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="sizeSmall">
+                    <label class="form-check-label" for="sizeSmall">XL / US (12-16)</label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Фільтр Color -->
+            <div class="filter-item">
+              <button class="btn btn-primary w-100 toggle-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterColor" aria-expanded="false" aria-controls="filterColor">
+                Color
+              </button>
+              <div class="collapse" id="filterColor">
+                <div class="card card-body">
+                  <p class="sort-by-header shop-all-filter-header">Color</p>
+                  <!-- Кастомізовані чекбокси -->
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorRed">
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorRed">
+                      <img src="img/filters-color/black-1x.png" alt="black"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Black
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorBlue" checked>
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorBlue">
+                      <img src="img/filters-color/red-1x.png" alt="red"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Red
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorRed">
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorRed">
+                      <img src="img/filters-color/green-1x.png" alt="green"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Green
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorBlue" checked>
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorBlue">
+                      <img src="img/filters-color/yellow-1x.png" alt="yellow"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Yellow
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorRed">
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorRed">
+                      <img src="img/filters-color/dark-blue-1x.png" alt="dark blue"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Dark Blue
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorBlue" checked>
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorBlue">
+                      <img src="img/filters-color/purple-1x.png" alt="purple"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Purple
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorRed">
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorRed">
+                      <img src="img/filters-color/pink-1x.png" alt="pink"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Pink
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorBlue" checked>
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorBlue">
+                      <img src="img/filters-color/light-blue-1x.png" alt="light blue"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Light Blue
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorRed">
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorRed">
+                      <img src="img/filters-color/orange1x.png" alt="orange"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        Orange
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="colorBlue" checked>
+                    <label class="form-check-label d-flex align-items-center ms-2" for="colorBlue">
+                      <img src="../../img/filters-color/white-stroke-1x.png" alt="white"
+                        style="width: 16px; height: 16px; margin-right: 10px;">
+                        White
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Фільтр Collection -->
+            <div class="filter-item">
+              <button class="btn btn-primary w-100 toggle-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollection" aria-expanded="false" aria-controls="filterCollection">
+                Collection
+              </button>
+              <div class="collapse" id="filterCollection">
+                <div class="card card-body">
+                  <p class="sort-by-header shop-all-filter-header">Collection</p>
+                  <!-- Кастомізовані чекбокси -->
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="collectionSummer">
+                    <label class="form-check-label" for="collectionSummer">In stock </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="collectionWinter" checked>
+                    <label class="form-check-label" for="collectionWinter">Out of stock</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Фільтр Fabric -->
+            <div class="filter-item">
+              <button class="btn btn-primary w-100 toggle-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterFabric" aria-expanded="false" aria-controls="filterFabric">
+                Fabric
+              </button>
+              <div class="collapse" id="filterFabric">
+                <div class="card card-body">
+                  <p class="sort-by-header shop-all-filter-header">Fabric</p>
+                  <!-- Кастомізовані чекбокси -->
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="fabricCotton">
+                    <label class="form-check-label" for="fabricCotton">Cotton</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="fabricWool" checked>
+                    <label class="form-check-label" for="fabricWool">Linen</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="fabricCotton">
+                    <label class="form-check-label" for="fabricCotton">Wool</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="fabricWool" checked>
+                    <label class="form-check-label" for="fabricWool">Silk</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input custom-checkbox" type="checkbox" id="fabricWool" checked>
+                    <label class="form-check-label" for="fabricWool">Cashmere </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
-         
+        <div class="col-8">
+          <div class="shop-all_catalog-wrap">
+            <ul class="shop-all_catalog p-0 d-flex ">
 
-          <!-- Секція товарів -->
-          
-        
+              <li class="shop-all_catalog-item">
+                <a href="../../product-order.html" class="shop-all-article-link">
+                  <article class="shop-all_catalog__card">
+                    <div class="shop-all_catalog__thumb">
+                      <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item1.png" alt="photo" />
+                    </div>
+                    <figcaption class="catalog__caption">
+                      <h6 class="shop-all_catalog__title">Chill Wrap Top</h6>
+                      <div class="shop-all_catalog-desc d-flex">
+                        <p class="shop-all_catalog-desc__subtitle">Turn It Up Top</p>
+                        <p class="shop-all_catalog-desc__price">$160</p>
+                      </div>
+                      <div class="choose-colour">
+                        <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
+                      </div>
+                    </figcaption>
+                  </article>
+                </a>
+
+              </li>
+
+              <li class="shop-all_catalog-item">
+                <article class="shop-all_catalog__card">
+                  <div class="shop-all_catalog__thumb">
+                    <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item2.png" alt="photo" />
+                  </div>
+                  <figcaption class="catalog__caption">
+                    <h6 class="shop-all_catalog__title">Essential T-Shirt</h6>
+                    <div class="shop-all_catalog-desc d-flex">
+                      <p class="shop-all_catalog-desc__subtitle">Turn It Up T-Shirt</p>
+                      <p class="shop-all_catalog-desc__price">$95</p>
+                    </div>
+                    <div class="choose-colour">
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/Color.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
+                    </div>
+                  </figcaption>
+                </article>
+              </li>
+
+              <li class="shop-all_catalog-item">
+                <article class="shop-all_catalog__card">
+                  <div class="shop-all_catalog__thumb">
+                    <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item3.png" alt="photo" />
+                  </div>
+                  <figcaption class="catalog__caption">
+                    <h6 class="shop-all_catalog__title">Shirt Dress</h6>
+                    <div class="shop-all_catalog-desc d-flex">
+                      <p class="shop-all_catalog-desc__subtitle">Turn It Up Dress</p>
+                      <p class="shop-all_catalog-desc__price">$245</p>
+                    </div>
+                    <div class="choose-colour">
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/Color.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
+                    </div>
+                  </figcaption>
+                </article>
+              </li>
+
+              <li class="shop-all_catalog-item">
+                <article class="shop-all_catalog__card">
+                  <div class="shop-all_catalog__thumb">
+                    <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item4.png" alt="photo" />
+                  </div>
+                  <figcaption class="catalog__caption">
+                    <h6 class="shop-all_catalog__title">Rule Zip Jacket</h6>
+                    <div class="shop-all_catalog-desc d-flex">
+                      <p class="shop-all_catalog-desc__subtitle">Turn It Up Jacket</p>
+                      <p class="shop-all_catalog-desc__price">$199</p>
+                    </div>
+                    <div class="choose-colour">
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/product/shop-all/brown.png" alt="colour" />
+                    </div>
+                  </figcaption>
+                </article>
+              </li>
+
+              <li class="shop-all_catalog-item">
+                <article class="shop-all_catalog__card">
+                  <div class="shop-all_catalog__thumb">
+                    <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item5.png" alt="photo" />
+                  </div>
+                  <figcaption class="catalog__caption">
+                    <h6 class="shop-all_catalog__title">New Age Linen</h6>
+                    <div class="shop-all_catalog-desc d-flex">
+                      <p class="shop-all_catalog-desc__subtitle">Turn It Up Pants</p>
+                      <p class="shop-all_catalog-desc__price">$180</p>
+                    </div>
+                    <div class="choose-colour">
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/nave.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
+                    </div>
+                  </figcaption>
+                </article>
+              </li>
+
+              <li class="shop-all_catalog-item">
+                <article class="shop-all_catalog__card">
+                  <div class="shop-all_catalog__thumb">
+                    <img class="shop-all_catalog__img" src="img/product/shop-all/shop-all-item6.png" alt="photo" />
+                  </div>
+                  <figcaption class="catalog__caption">
+                    <h6 class="shop-all_catalog__title">Тailored Stretch</h6>
+                    <div class="shop-all_catalog-desc d-flex">
+                      <p class="shop-all_catalog-desc__subtitle">Turn It Up Pants</p>
+                      <p class="shop-all_catalog-desc__price">180 $</p>
+                    </div>
+                    <div class="choose-colour">
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/black.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/Color.jpg" alt="colour" />
+                      <img class="shop-all_catalog-color__img" src="img/best-sellers/green.jpg" alt="colour" />
+                    </div>
+                  </figcaption>
+                </article>
+              </li>
+
+            </ul>
+
           </div>
+        </div>
+        <div class="div-shop-all-btn">
           <button class="shop-all_btn" type="submit"> Load more </button>
+        </div>
       </div>
+      </div>
+  </div>
   </div>
 </section>
