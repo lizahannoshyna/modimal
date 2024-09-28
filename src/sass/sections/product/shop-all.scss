@@ -1,57 +1,68 @@
-.product-shop-all_photo-section{
+.product-shop-all_photo-section {
   max-width: 1920px;
-background-repeat: no-repeat;
-background-size: cover;
-padding: 200px 0;
-position: relative;
-width: 100%;
-background-image: url("../../../img/product/shop-all/shop-all-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  position: relative;
+  width: 100%;
+  background-image: url("img/product/shop-all/shop-all-bg.png");
 }
-.shop-all_main{
+
+.shop-all_main {
   padding: 48px 0 48px 0;
   display: flex;
 }
 
+/* КАРТКИ */
+
 /* Контейнер з картками */
 .shop-all_catalog-wrap {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /* Вирівнювання каталогу */
 .shop-all_catalog {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px; /* Відстань між картками */
+  gap: 24px;
+  /* Відстань між картками */
   padding: 0;
   list-style: none;
 }
 
-/* Картки у дві колонки */
 .shop-all_catalog-item {
-  flex-basis: calc(40% - 12px); /* 50% ширини контейнера мінус відступи */
+  flex-basis: calc(40% - 12px);
   box-sizing: border-box;
 }
 
-/* Відступ між картками в кожному рядку */
 .shop-all_catalog-item:not(:nth-child(2n)) {
-  margin-right: 24px; /* Відступ між колонками */
+  margin-right: 24px;
 }
 
-/* Стилі для зображень */
+
+.shop-all_catalog-item {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.shop-all_catalog-item:hover {
+  box-shadow: 0 4px 8px rgba(90, 109, 87, 0.42);
+  transform: scale(1.02);
+}
+
 .shop-all_catalog__img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
-/* Загальний стиль карток */
 .shop-all_catalog__card {
-  padding: 16px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background-color: $light;
   transition: transform 0.3s ease;
 }
 
@@ -60,16 +71,56 @@ background-image: url("../../../img/product/shop-all/shop-all-bg.png");
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.shop-all_catalog__img{
-background-repeat: no-repeat;
-background-size: cover;
-width: 100%;
+.shop-all_catalog__caption {
+  padding: 5px 8px;
 }
 
-.shop-all_btn{
-  margin-right: 312px;
+.shop-all_catalog__title {
+  @include H6;
+  color: $dark;
+  text-decoration: none;
+}
+
+.shop-all_catalog-desc {
+  @include bodyMD;
+  padding-top: 8px;
+  justify-content: space-between;
+  color: $dark;
+  text-decoration: none;
+}
+
+.shop-all_catalog-desc__price {
+  @include H6;
+  padding-right: 8px;
+  color: $dark;
+  text-decoration: none;
+}
+
+.shop-all-article-link {
+  text-decoration: none;
+  color: inherit;
+  /* Щоб зберегти колір тексту */
+}
+
+.shop-all_catalog-desc {
+  align-items: center;
+}
+
+.shop-all_choose-colour {
+  padding-top: 8px;
+}
+
+.shop-all_catalog-color__img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+/* LOAD MORE BTN  */
+.shop-all_btn {
+  margin-right: 230px;
   float: right;
   @include buttonSM;
   padding: 8px 54px;
@@ -77,49 +128,14 @@ width: 100%;
   color: $primary;
   border: 1px solid $primary;
   transition: transform 0.3s ease;
-}
 
+}
 .shop-all_btn:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05); /* Збільшення кнопки на 5% */
-
+  transform: scale(1.05);
 }
 
-.shop-all_catalog__caption {
-  padding: 5px 8px;
-}
-.shop-all_catalog__title {
-  @include H6;
-}
-.shop-all_catalog-desc {
-  @include bodyMD;
-  padding-top: 8px;
-  justify-content: space-between;
-}
-.shop-all_catalog-desc__price {
-  @include H6;
-  padding-right: 8px;
-}
-.shop-all_choose-colour {
-  padding-top: 8px;
-}
-.shop-all_catalog-color__img{
-  width: 24px;
-  height: 24px;
-}
-
-
-.shop-all_catalog-item{
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.shop-all_catalog-item:hover {
-  box-shadow: 0 4px 8px rgba(90, 109, 87, 0.42);
-  transform: scale(1.02); /* Збільшення кнопки на 5% */
-
-}
-
+/* ФІЛЬТРИ  */
 /* Оформлення заголовка секції фільтрів */
 .filters-header {
   font-size: 24px;
@@ -135,12 +151,14 @@ width: 100%;
 
 /* Кнопки фільтрів */
 .filter-item {
-  margin-bottom: 16px; /* Відступ між фільтрами */
+  margin-bottom: 16px;
+  /* Відступ між фільтрами */
   width: 100%;
 }
 
 .filter-item .btn {
-  width: 100%; /* Кнопка фільтра займає всю ширину */
+  width: 100%;
+  /* Кнопка фільтра займає всю ширину */
   padding: 12px;
   font-size: 16px;
   background-color: $primary;
@@ -149,16 +167,19 @@ width: 100%;
 }
 
 .filter-item .btn:hover {
-  background-color: $primary; /* Колір при наведенні */
+  background-color: $primary;
+  /* Колір при наведенні */
 }
 
 /* Вікно фільтра */
 .filter-item .collapse {
-  width: 100%; /* Вікно фільтра займає всю ширину */
+  width: 100%;
+  /* Вікно фільтра займає всю ширину */
 }
 
 .card.card-body {
-  width: 100%; /* Ширина блоку фільтра */
+  width: 100%;
+  /* Ширина блоку фільтра */
   box-sizing: border-box;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -179,22 +200,179 @@ width: 100%;
   position: relative;
   width: 20px;
   height: 20px;
-  appearance: none; /* Вимикаємо стандартну галочку */
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  appearance: none;
+  /* Вимикаємо стандартну галочку */
+  border: 1px solid $primary;
   cursor: pointer;
 }
 
 .custom-checkbox:checked {
-  background-color: $primary; /* Заливка синім кольором */
-  border-color: $primary; /* Зміна кольору рамки */
+  background-color: $primary;
+  /* Заливка синім кольором */
+  border-color: $primary;
+  /* Зміна кольору рамки */
 }
 
 .custom-checkbox:hover {
-  border-color: #999; /* Ефект при наведенні */
+  border-color: #999;
+  /* Ефект при наведенні */
 }
 
 /* Додаємо відступ між фільтрами та каталогом */
 .shop-all_catalog-wrap {
   margin-left: 24px;
+}
+
+
+
+.shop-all_catalog {
+  justify-content: flex-end;
+}
+
+.shop-all-filter-header {
+  @include H6;
+  color: $primary;
+}
+
+.color-wrap {
+  align-items: center;
+}
+
+.color-filter-img {
+  margin-right: 12px;
+}
+
+.color-filter-text {
+  @include bodyMD;
+}
+
+/* Зміна кольору тексту на зелений, коли чекбокс вибраний */
+.form-check-input:checked+.form-check-label {
+  color: $primary;
+}
+
+/* Ховаємо стандартний вигляд чекбокса */
+.custom-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Стилізація квадратика при натисканні */
+.custom-checkbox:checked {
+  background-color: $primary;
+  /* Заливка зеленим */
+  border-color: $primary;
+}
+
+/* Стилізація для галочки через псевдоелемент */
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  background-color: $primary;
+  border-radius: 4px;
+}
+
+/* Стиль для стандартного стану кнопки */
+.toggle-btn {
+  background-color: $primary;
+  /* Стандартний синій фон */
+  color: white;
+  /* Білий текст */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Забороняємо зміну стилю при наведенні */
+.toggle-btn:hover {
+  background-color: $primary;
+  /* Зберігаємо той самий колір */
+  color: white;
+  /* Зберігаємо той самий колір тексту */
+}
+
+/* Зміна стилю кнопки, коли фільтр відкрито (aria-expanded=true) */
+.toggle-btn[aria-expanded="true"] {
+  background-color: white;
+  /* Білий фон */
+  color: $primary;
+  /* Текст стає зеленим */
+  border: 2px solid $primary;
+  /* Додаємо зелену рамку */
+}
+
+/* Навіть при наведенні на відкриту кнопку її стиль не змінюється */
+.toggle-btn[aria-expanded="true"]:hover {
+  background-color: white;
+  /* Той самий білий фон */
+  color: $primary;
+  /* Той самий зелений текст */
+}
+
+
+/* Стиль для стандартного стану кнопки */
+.toggle-btn {
+  background-color: $primary;
+  /* Стандартний синій фон */
+  color: white;
+  /* Білий текст */
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Додаємо плюсик на правий край кнопки */
+.toggle-btn::after {
+  content: "+";
+  /* Стандартний плюсик */
+  position: absolute;
+  top: 6px;
+  right: 17px;
+  /* Відступ справа */
+  font-size: 24px;
+  color: white;
+  /* Колір плюса */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Забороняємо зміну стилю при наведенні */
+.toggle-btn:hover {
+  background-color: $primary;
+  /* Зберігаємо той самий колір */
+  color: white;
+  /* Зберігаємо той самий колір тексту */
+}
+
+/* Зміна стилю кнопки, коли фільтр відкрито (aria-expanded=true) */
+.toggle-btn[aria-expanded="true"] {
+  background-color: white;
+  /* Білий фон */
+  color: $primary;
+  /* Текст стає зеленим */
+  border: 2px solid $primary;
+  /* Додаємо зелену рамку */
+}
+
+/* Міняємо плюс на мінус, коли фільтр відкрито */
+.toggle-btn[aria-expanded="true"]::after {
+  content: "-";
+  /* Змінюємо плюсик на мінус */
+  color: $primary;
+  /* Колір мінуса зелений */
+  top: 6px;
+  font-size: 24px;
+}
+
+.form-check {
+  margin-left: 24px;
+}
+
+.form-check {
+  margin-left: 0;
 }
