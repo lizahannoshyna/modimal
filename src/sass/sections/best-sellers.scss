@@ -7,6 +7,7 @@
 }
 .catalog-list{
     gap: 24px;
+    justify-content: space-between;
 }
 .catalog__caption {
     padding: 5px 8px;
@@ -26,6 +27,91 @@
 .choose-colour {
     padding-top: 8px;
 }
-.catalog__img {
-    padding-right: 8px;
+
+.bs-title{
+    text-align: center;
+    justify-content: space-between;
 }
+.bs-view{
+    @include buttonSM;
+    padding: 14px 0;
+    float: right;
+}
+.bs-link-view{
+    text-decoration: none;
+    color: $dark;
+}
+.bs-link-view:hover{
+    color: $primary;
+}
+
+/* Вирівнювання каталогу */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* Відстань між картками */
+    padding: 0;
+    list-style: none;
+  }
+  
+  .catalog-item {
+    flex-basis: calc(40% - 12px);
+    box-sizing: border-box;
+  }
+  
+  .catalog-item:not(:nth-child(3n)) {
+    margin-right: 24px;
+  }
+  
+  
+  .catalog-item {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .catalog-item:hover {
+    box-shadow: 0 4px 8px rgba(90, 109, 87, 0.42);
+    transform: scale(1.02);
+  }
+
+  .catalog__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .catalog__card {
+    background-color: $light;
+    transition: transform 0.3s ease;
+  }
+  
+  .catalog__card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid $primary;
+  }
+
+  .catalog__card{
+    position: relative;
+  }
+
+  .heart {
+    position: absolute;
+    margin-top: 26px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/modiweek/heart-outline.svg");
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    
+      &.filled {
+          background-image: url("../../img/modiweek/heart-filled.svg");
+      }
+  }
