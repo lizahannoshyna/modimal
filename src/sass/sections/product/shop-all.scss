@@ -11,29 +11,61 @@ background-image: url("../../../img/product/shop-all/shop-all-bg.png");
   padding: 48px 0 48px 0;
   display: flex;
 }
-.shop-all_catalog-wrap{
+
+/* Контейнер з картками */
+.shop-all_catalog-wrap {
+  display: flex;
   justify-content: flex-end;
 }
 
+/* Вирівнювання каталогу */
 .shop-all_catalog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  gap: 24px; /* Відстань між картками */
+  padding: 0;
+  list-style: none;
 }
 
+/* Картки у дві колонки */
 .shop-all_catalog-item {
-  flex-basis: calc((100% - 350px) / 2);
+  flex-basis: calc(40% - 12px); /* 50% ширини контейнера мінус відступи */
   box-sizing: border-box;
-  margin-bottom: 24px;
 }
+
+/* Відступ між картками в кожному рядку */
+.shop-all_catalog-item:not(:nth-child(2n)) {
+  margin-right: 24px; /* Відступ між колонками */
+}
+
+/* Стилі для зображень */
+.shop-all_catalog__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Загальний стиль карток */
+.shop-all_catalog__card {
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.shop-all_catalog__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .shop-all_catalog__img{
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
-}
-.shop-all_catalog-item:not(:nth-child(2)):not(:nth-child(4)):not(:nth-child(6)){
-  margin-right: 24px;
 }
 
 .shop-all_btn{
@@ -104,19 +136,20 @@ width: 100%;
 /* Кнопки фільтрів */
 .filter-item {
   margin-bottom: 16px; /* Відступ між фільтрами */
+  width: 100%;
 }
 
 .filter-item .btn {
   width: 100%; /* Кнопка фільтра займає всю ширину */
   padding: 12px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: $primary;
   color: #fff;
   text-align: left;
 }
 
 .filter-item .btn:hover {
-  background-color: #0056b3; /* Колір при наведенні */
+  background-color: $primary; /* Колір при наведенні */
 }
 
 /* Вікно фільтра */
@@ -153,8 +186,8 @@ width: 100%;
 }
 
 .custom-checkbox:checked {
-  background-color: #007bff; /* Заливка синім кольором */
-  border-color: #007bff; /* Зміна кольору рамки */
+  background-color: $primary; /* Заливка синім кольором */
+  border-color: $primary; /* Зміна кольору рамки */
 }
 
 .custom-checkbox:hover {
