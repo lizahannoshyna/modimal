@@ -1,10 +1,13 @@
 .footer {
     background-color: #404040;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
+}
+
+.footer__wrapper--up {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 // 
@@ -73,33 +76,10 @@
     text-align: left;
 }
 
-.footer__socials {
-    display: flex;
-    width: 144px;
-    justify-content: space-between;
-    margin-top: 104px;
-}
-
-.footer__rights {
-    text-align: center;
-    margin-top: 44px;
-    display: flex;
-    width: 242px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 33px;
-}
-
-.footer__rights-text {
-    margin-bottom: 0;
-    @include bodyXS;
-    color: #CBCBCB;
-}
-
 // 
 
 .footer_right {
-    padding-top: 48px;
+    margin-top: 48px;
     display: flex;
     justify-content: space-between;
     width: 623px;
@@ -131,10 +111,38 @@
 }
 
 .footer-chat__btn {
-    margin-left: 100%;
-    margin-top: 101px;
     background-color: #5A6D57;
     border: 1px solid #FFFFFF;
     width: 56px;
     height: 48px;
+}
+
+//
+
+.footer__wrapper--down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__down--socials {
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    padding: 0;
+}
+
+.footer__rights {
+    text-align: center;
+    margin-top: 44px;
+    display: flex;
+    width: 242px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.footer__rights--text {
+    margin-bottom: 0;
+    @include bodyXS;
+    color: #CBCBCB;
 }
