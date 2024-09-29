@@ -43,9 +43,7 @@
     cursor: pointer;
     margin-bottom: 16px;
 }
-.product__desc {
-    margin-left: 24px;
-}
+
 .colors__img {
     margin-bottom: 64px;
 }
@@ -55,4 +53,24 @@
     background-color: $primary;
     height: 40px;
     border: 0;
+}
+.accordion-button {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    &:focus {
+        color: green;
+    }
+}
+.accordion__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: $dark;
+    padding-left: 24px;
+    line-height: 180%;
+    text-align: left;
+    white-space: pre-wrap;
+    margin-bottom: 0;
 }
