@@ -68,3 +68,11 @@
 @import "./sections/footer_adaptive.scss";
 @import "./sections/header_adaptive.scss";
 @import "./sections/contact-us/contact_adaptive.scss";
+
+//PAYMENT
+@import "./sections/payment/payment_cart.scss";
+@import "./sections/payment/payment_error.scss";
+@import "./sections/payment/payment_information.scss";
+@import "./sections/payment/payment_payment.scss";
+@import "./sections/payment/payment_shipping.scss";
+@import "./sections/payment/payment_success.scss";
