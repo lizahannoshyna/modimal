@@ -88,6 +88,36 @@ color: $dark;
     stroke: $primary; /* Змінюємо колір контурів на зелений для іконок з контурами */
 }
 
+a:hover + .blur-background {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blur-background {
+    display: none;
+}
+
+a:hover + .blur-background {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: #0000004d;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease-in-out;
+}
+
+a:hover + .blur-background.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 //MOBILE BURGER
 
