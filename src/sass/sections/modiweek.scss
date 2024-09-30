@@ -28,10 +28,6 @@ figure:last-child {
   z-index: 1;
 }
 
-.gallery_img {
-  max-width: 100%;
-}
-
 .gallery_day {
   @include H6;
   text-align: left;
@@ -45,15 +41,25 @@ figure:last-child {
   right: 24px;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/modiweek/heart-outline.svg");
+  background-image: url("../img/modiweek/heart-outline.svg");
   background-size: cover;
   cursor: pointer;
   transition: background-image 0.3s ease;
-  
-    &.filled {
-        background-image: url("../../img/modiweek/heart-filled.svg");
-    }
+
+  &.filled {
+    background-image: url("../img/modiweek/heart-filled.svg");
+  }
 }
-.swiper-button-next, .swiper-button-prev {
-  top: 40% ;
-  color: #fff;}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 40%;
+  color: #fff;
+}
+.swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.02);
+}

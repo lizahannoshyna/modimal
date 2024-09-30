@@ -71,7 +71,7 @@
   }
   
   .catalog-item:hover {
-    box-shadow: 0 4px 8px rgba(90, 109, 87, 0.42);
+
     transform: scale(1.02);
   }
 
@@ -91,9 +91,7 @@
   }
   
   .catalog__card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid $primary;
+    transform: scale(1.02);
   }
 
   .catalog__card{
@@ -106,12 +104,12 @@
     right: 24px;
     width: 24px;
     height: 24px;
-    background-image: url("../../img/modiweek/heart-outline.svg");
+    background-image: url("../img/modiweek/heart-outline.svg");
     background-size: cover;
     cursor: pointer;
     transition: background-image 0.3s ease;
     
       &.filled {
-          background-image: url("../../img/modiweek/heart-filled.svg");
+          background-image: url("../img/modiweek/heart-filled.svg");
       }
   }
