@@ -5,7 +5,7 @@
   padding: 200px 0;
   position: relative;
   width: 100%;
-  background-image: url("img/product/shop-all/shop-all-bg.png");
+  background-image: url("./shop-all-bg.png");
 }
 
 .shop-all_main {
@@ -375,4 +375,18 @@
 
 .form-check {
   margin-left: 0;
+}
+
+.bc-link{
+  @include bodyLG;
+  text-decoration: none;
+  color: $dark;
+}
+.bc-link:hover{
+  color: $primary;
+}
+
+.breadcrumb{
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
