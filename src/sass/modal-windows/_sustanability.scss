@@ -1,73 +1,72 @@
-.header__item:hover .sustainability__menu {
-   display: block;
+.sustanability-menu__container {
+   display: flex;
+   justify-content: space-between;
+   padding: 14px;
 }
 
-.sustainability__menu {
-   .container {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-   }
+.sustanability__list--items {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   gap: 8px;
 }
 
-.sustainability__title {
-   padding-top: 24px;
+.sustanability__list--title {
+   @include bodyLG;
    display: inline-block;
    position: relative;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    padding-bottom: 4px;
-   cursor: pointer;
-}
-
-.sustainability__list--link {
-   font-size: 18px;
-   text-decoration: none;
+   cursor: default;
    color: #0C0C0C;
-   padding-bottom: 9px;
-   line-height: 300%;
+}
+
+.sustanability__list--link {
+   @include bodyLG;
+   text-decoration: none;
+   color: $dark;
+   color: #404040;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-   &:hover {
-      color: $primary;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
 }
 
-/* Стилі для new_menu */
-.sustainability__menu {
+.sustanability-menu__featured-items {
+   display: flex;
+   gap: 24px;
+}
+
+.sustainability-items__img {
+   width: 392px;
+   height: 438px;
+}
+
+.featured-items__item {
+   margin-top: 0;
+}
+
+
+.sustanability-menu {
    display: none;
-   position: fixed;
-   /* Фіксована позиція для модального вікна */
-   top: 90px;
-   /* Відступ від верхнього краю */
-   left: 0px;
-   /* Початок від лівого краю */
-   width: 100vw;
-   /* Покриття всієї ширини екрану */
-   height: 550px;
-   /* Висота вікна */
-   background-color: white;
-   /* Задній фон для модального вікна */
-   z-index: 999;
-   /* Щоб вікно було поверх інших елементів */
-   padding: 20px;
-   /* Внутрішній відступ */
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   /* Легка тінь для модального вікна */
-   overflow: auto;
-   /* Прокрутка для довгого контенту */
+   position: fixed;  /* Фіксована позиція для модального вікна */
+   top: 110px;           /* Початок від верхнього краю */
+   left: 0px;          /* Початок від лівого краю */
+   width: 100vw;     /* Покриття всієї ширини екрану */
+   height: 550px;    /* Покриття всієї висоти екрану */
+   background-color: white; /* Задній фон для модального вікна */
+   z-index: 999;     /* Щоб вікно було поверх інших елементів */
+   padding: 20px;    /* Внутрішній відступ */
+   overflow: auto;   /* Прокрутка для довгого контенту */
+   padding: 14px;
 }
 
-/* Показуємо меню при наведенні на header__item */
-.header__item:hover .sustainability__menu {
+.header__item:hover .sustanability-menu {
    display: block;
 }
 
-.sustainability__title:hover {
+.category-list__header:hover{
    color: $primary;
 }
 
-.sustainability__title:hover::after {
+.category-list__header:hover::after {
    content: "";
    position: absolute;
    width: 100%;
@@ -78,4 +77,8 @@
    bottom: 0;
    left: 0;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
+
+ .category-list__link:hover{
+   color: $primary;
+ }

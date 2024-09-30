@@ -39,6 +39,12 @@
     height: 420px;
 }
 
+.featured-items__text {
+    @include bodyMD;
+    color: #0C0C0C;
+    text-align: left;
+}
+
 .featured-items__item {
     margin-top: 0;
 }
