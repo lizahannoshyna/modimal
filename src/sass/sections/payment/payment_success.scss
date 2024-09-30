@@ -1,0 +1,53 @@
+.payment {
+    text-align: center;
+}
+
+.status__svg {
+    margin-top: 160px;
+}
+
+.payment__status {
+    @include H2;
+    margin-top: 24px;
+}
+
+.payment__text {
+    @include bodyXL;
+    color: #0C0C0C;
+    margin-top: 32px;
+}
+
+.payment__receipt {
+    @include bodyXL;
+    color: #0C0C0C;
+    margin-top: 16px;
+}
+
+.payment__contact {
+    @include bodyLG;
+    color: #404040;
+    margin-top: 40px;
+}
+
+.payment__phone {
+    @include bodySM;
+    color: #404040;
+    margin-top: 16px;
+}
+
+.payment__or {
+    @include bodySM;
+    color: #0C0C0C;
+    margin-top: 8px;
+}
+
+.payment__email {
+    @include bodySM;
+    color: #404040;
+    margin-top: 8px;
+    margin-bottom: 313px;
+}
+
+.successful {
+    color: #00966D;
+}

@@ -1,0 +1,58 @@
+.error {
+    color: #C30000;
+}
+
+.payment__text--div {
+    margin-top: 32px;
+
+    p {
+        @include bodyXL;
+        color: #0C0C0C;
+        text-align: center;
+        margin: 0;
+
+    }
+}
+
+.payment__btn {
+    background-color: #5A6D57;
+    border: none;
+    cursor: pointer;
+    width: 392px;
+    height: 40px;
+    margin-top: 48px;
+
+    @include bodySM;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.payment__back {
+    cursor: pointer;
+    margin-top: 24px;
+    margin-bottom: 317px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+
+.payment__back--text {
+    @include bodySM;
+    color: #5A6D57;
+    text-decoration: none;
+
+    &:hover {
+        color: #5A6D57;
+    }
+}
