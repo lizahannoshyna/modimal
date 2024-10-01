@@ -1,0 +1,62 @@
+.shipping-input{
+    width: 600px;
+    margin-right: 104px;
+}
+.custom-line {
+    width: 624px;
+    border: 1px solid #DFDFDF; /* Товщина і колір лінії */
+    margin: 16px 0 auto 0; /* Щоб вирівняти по центру, якщо потрібно */
+}
+.shop_contact-title{
+    margin-top: 16px;
+}
+.delivery-options-title{
+    @include H5;
+    margin-top: 24px;
+}
+.shipping-log-link{
+    @include H6;
+    color: $dark;
+    text-decoration: none;
+}
+.shipping-desc{
+    @include captionLG;
+}
+.e-d-title{
+    @include H6;
+    color: #868686;
+ 
+}
+.e-d-items{
+    margin-left: 67px;
+    width: 405px;
+}
+.e-d-item-wrap{
+    align-items: top;
+}
+
+.radio-label{
+    margin-right: 11px;
+    @include bodyMD;
+}
+
+.e-d-item-wrap {
+    display: flex;
+    margin-top: 32px;
+    align-items: top;
+}
+.custom-line-one{
+    margin-top: 40px;
+}
+.guarantee-wrap{
+justify-content: space-between;
+margin-top: 32px;
+}
+.nav-payment-sipping{
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.r-to-card-info{
+    margin-right: 100px;
+}
