@@ -21,8 +21,8 @@
   
   <title>Modimal</title>
   <script type="module" crossorigin src="./assets/vendor-c4916ffe.js"></script>
-  <script type="module" crossorigin src="./assets/index-ee568647.js"></script>
-  <link rel="stylesheet" href="./assets/index-34810518.css">
+  <script type="module" crossorigin src="./assets/index-2df425e5.js"></script>
+  <link rel="stylesheet" href="./assets/index-4654ce3b.css">
   <link rel="stylesheet" href="./assets/index-c9f5a0ca.css">
 </head>
 
@@ -255,45 +255,78 @@
                         fill="#202020"/>
                 </svg>
                 <div class="modal-window">
-                    <section class="plus-size-menu">
-    <div class="container plus-size-menu__container">
+                    <section class="shopping_bag_four">
+    <div class="container">
+        <div class="shopping_bag_four_wrap">
+            <h4 class="shopping_bag_four_title">Your Cart</h4>
 
-        <div class="plus-size-menu__category-list">
-            <p class="plus-size__list--title">Category</p>
-            <ul class="plus-size__list--items">
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Shop All</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Tops & Blouses</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Tees</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Pants</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Jackets & Outerwear</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Pullovers</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Dresses & Jumpsuits</a></li>
-                <li class="plus-size__list--item"><a href="#" class="plus-size__list--link">Shorts & Skirts</a></li>
-            </ul>
-        </div>
-
-        <div class="plus-size-menu__featured-items">
-            <figure class="featured-items__item">
-                <img class="featured-items__img" src="./assets/Pants-90c86066.png" alt="Pants">
-                <figcaption>
-                    <p class="featured-items__text">Pants</p>
-                </figcaption>
-            </figure>
-            <figure class="featured-items__item">
-                <img class="featured-items__img" src="./assets/Dresses-41ee1ec6.png" alt="Dresses">
-                <figcaption>
-                    <p class="featured-items__text">Dresses</p>
-                </figcaption>
-            </figure>
-            <figure class="featured-items__item">
-                <img class="featured-items__img" src="./assets/Blouses-4f602a62.png" alt="Blouses">
-                <figcaption>
-                    <p class="featured-items__text">Blouses</p>
-                </figcaption>
-            </figure>
+            <div class="shopping_bag_four_shopping_card">
+                <img
+                    src="../img/shopping/bag_four_one.png"
+                    alt=""
+                    class="shopping_bag_four_card_img"
+                />
+                <button class="shopping_bag_four_card_btn" type="button">1</button>
+                <h6>Wrap top</h6>
+                <p>Size: S</p>
+                <p>Color: White</p>
+                <p class="shopping_bag_four_dollar">$ 160</p>
+                <img
+                    class="shopping_bag_four_card_quantity"
+                    src="../img/shopping/Quantity.png"
+                    alt="#"
+                />
+            </div>
+            <div class="shopping_bag_four_shopping_card">
+                <h6>Casual Wild leg</h6>
+                <img
+                    src="../img/shopping/bag_four_two.png"
+                    alt=""
+                    class="shopping_bag_four_card_img"
+                />
+                <button class="shopping_bag_four_card_btn" type="button">1</button>
+                <p>Size: S</p>
+                <p>Color: Dark Blue</p>
+                <p class="shopping_bag_four_dollar">$ 130</p>
+                <img
+                    class="shopping_bag_four_card_quantity"
+                    src="../img/shopping/Quantity.png"
+                    alt="#"
+                />
+            </div>
+            <div class="shopping_bag_four_shopping_card">
+                <h6>Essential dress</h6>
+                <img
+                    src="../img/shopping/bag_four_three.png"
+                    alt=""
+                    class="shopping_bag_four_card_img"
+                />
+                <button class="shopping_bag_four_card_btn" type="button">1</button>
+                <p>Size: 2X</p>
+                <p>Color: Black</p>
+                <p class="shopping_bag_four_dollar">$ 195</p> <!-- Виправлено клас для ціни -->
+                <img
+                    class="shopping_bag_four_card_quantity"
+                    src="../img/shopping/Quantity.png"
+                    alt="#"
+                />
+            </div>
         </div>
     </div>
+    <script>
+        const headerItem = document.querySelector('.header__item');
+        const modal = document.querySelector('.shopping_bag_four');
+
+        headerItem.addEventListener('mouseenter', () => {
+            modal.style.display = 'block'; // Показати модальне вікно
+        });
+
+        headerItem.addEventListener('mouseleave', () => {
+            modal.style.display = 'none'; // Сховати модальне вікно
+        });
+    </script>
 </section>
+
                 </div>
               </a>
         </div>
