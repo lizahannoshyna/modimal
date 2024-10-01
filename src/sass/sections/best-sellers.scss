@@ -1,115 +1,152 @@
 .best-sellers {
-    padding-top: 88px;
-}
-.best-sellers_header{
-    @include H3;
-    padding-bottom: 24px;
-}
-.catalog-list{
-    gap: 24px;
-    justify-content: space-between;
-}
-.catalog__caption {
-    padding: 5px 8px;
-}
-.catalog__title {
-    @include H6;
-}
-.catalog-desc {
-    @include bodyMD;
-    padding-top: 8px;
-    justify-content: space-between;
-}
-.catalog-desc__price {
-    @include H6;
-    padding-right: 8px;
-}
-.choose-colour {
-    padding-top: 8px;
+  padding-top: 88px;
 }
 
-.bs-title{
-    text-align: center;
-    justify-content: space-between;
+.best-sellers_header {
+  @include H3;
+  padding-bottom: 24px;
 }
-.bs-view{
+
+.catalog-list {
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.catalog__caption {
+  padding: 5px 8px;
+}
+
+.catalog__title {
+  @include H6;
+}
+
+.catalog-desc {
+  @include bodyMD;
+  padding-top: 8px;
+  justify-content: space-between;
+}
+
+.catalog-desc__price {
+  @include H6;
+  padding-right: 8px;
+}
+
+.choose-colour {
+  padding-top: 8px;
+}
+
+.bs-title {
+  text-align: center;
+  justify-content: space-between;
+}
+
+.bs-link-view {
+  position: relative;
+  text-decoration: none;
+  color: $dark;
+  display: inline-block;
+
+  .bs-view {
     @include buttonSM;
     padding: 14px 0;
     float: right;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -20px; // Стартовая позиция стрелочки
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      background: url('../img/footer/arrow.svg') no-repeat center;
+      background-size: cover;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &:hover .bs-view {
+    transform: translateX(-10px);
+
+    &:after {
+      width: 15px; // Ширина стрелочки
+      height: 15px; // Высота стрелочки
+      right: -25px; // Позиция стрелочки при наведении
+    }
+  }
 }
-.bs-link-view{
-    text-decoration: none;
-    color: $dark;
-}
-.bs-link-view:hover{
-    color: $primary;
+
+.bs-link-view:hover {
+  color: $primary;
 }
 
 /* Вирівнювання каталогу */
 .catalog {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    /* Відстань між картками */
-    padding: 0;
-    list-style: none;
-  }
-  
-  .catalog-item {
-    flex-basis: calc(40% - 12px);
-    box-sizing: border-box;
-  }
-  
-  .catalog-item:not(:nth-child(3n)) {
-    margin-right: 24px;
-  }
-  
-  
-  .catalog-item {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .catalog-item:hover {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  /* Відстань між картками */
+  padding: 0;
+  list-style: none;
+}
 
-    transform: scale(1.02);
-  }
+.catalog-item {
+  flex-basis: calc(40% - 12px);
+  box-sizing: border-box;
+}
 
-  .catalog__img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-  
-  .catalog__card {
-    background-color: $light;
-    transition: transform 0.3s ease;
-  }
-  
-  .catalog__card:hover {
-    transform: scale(1.02);
-  }
+.catalog-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
 
-  .catalog__card{
-    position: relative;
-  }
 
-  .heart {
-    position: absolute;
-    margin-top: 26px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/modiweek/heart-outline.svg");
-    background-size: cover;
-    cursor: pointer;
-    transition: background-image 0.3s ease;
-    
-      &.filled {
-          background-image: url("../img/modiweek/heart-filled.svg");
-      }
+.catalog-item {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.catalog-item:hover {
+
+  transform: scale(1.02);
+}
+
+.catalog__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.catalog__card {
+  background-color: $light;
+  transition: transform 0.3s ease;
+}
+
+.catalog__card:hover {
+  transform: scale(1.02);
+}
+
+.catalog__card {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  margin-top: 26px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/modiweek/heart-outline.svg");
+  background-size: cover;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+
+  &.filled {
+    background-image: url("../img/modiweek/heart-filled.svg");
   }
+}
