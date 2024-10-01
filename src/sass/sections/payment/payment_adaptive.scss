@@ -1,0 +1,94 @@
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    //PAYMENT ERROR 
+
+    .status__svg {
+        margin-top: 42px;
+    }
+
+    .payment__text--div {
+        margin-top: 0;
+
+        p {
+            color: #0C0C0C;
+            @include mobileBodyMD;
+        }
+    }
+
+    .payment__status.error {
+        @include mobileH1;
+    }
+
+    .payment__btn {
+        width: 100%;
+    }
+
+    .payment__back {
+        margin-bottom: 125px;
+    }
+
+    //PAYMENT SUCCESS
+    .status__svg.success__svg {
+        margin-top: 24px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .payment__status.successful {
+        @include mobileH1;
+    }
+
+    .payment__text,
+    .payment__receipt {
+        color: #0C0C0C;
+        @include mobileBodyMD;
+        font-size: 15px;
+    }
+
+    .payment__contact {
+        font-family: "Montserrat";
+        font-size: 12px;
+        line-height: auto;
+        font-weight: bolder;
+        text-transform: capitalize;
+        color: #404040;
+    }
+    
+    .payment__phone,
+    .payment__or,
+    .payment__email {
+        @include mobileBodyXS;
+    }
+
+    .payment__email {
+        margin-bottom: 156px;
+    }
+
+    //
+}

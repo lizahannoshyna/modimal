@@ -217,3 +217,11 @@
     font-weight: 400;
     text-transform: capitalize;
 }
+
+@mixin mobileBodyXS {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 140%;
+    font-weight: 400;
+    text-transform: capitalize;
+}
