@@ -1,4 +1,8 @@
 .cart {
+    margin-bottom: 139px;
+}
+
+.cart {
     margin-top: 32px;
 }
 
@@ -132,10 +136,31 @@
 }
 
 .summary__quantity--div {
+    justify-content: space-between;
+    display: flex;
+    width: 80px;
     height: 36px;
     background-color: #D1D9CF;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart__right {
     width: 496px;
+}
+
+.cart__guarantee {
+    @include overlineSM;
+    font-weight: bolder;
+    color: #202020;
+}
+
+.cart__next--btn {
+    float: inline-end;
+    background-color: #5A6D57;
+    width: 184px;
+    height: 40px;
+    border: none;
+    @include buttonSM;
+    color: white;
 }
