@@ -1,0 +1,276 @@
+.information-input{
+    width: 600px;
+    margin-right: 104px;
+}
+
+.info_contact-title{
+    text-align: center;
+    justify-content: space-between;
+
+    .info_contact-header{
+        @include bodyLG;
+        margin-bottom: 0;
+    }
+
+    .info-question{
+        @include bodySM;
+    }
+    
+    .info-log-link{
+        @include bodySM;
+        text-decoration: none;
+        color: $dark;
+        transition: color 0.3s ease;
+    }
+}
+
+.info-log-link:hover{
+    color: $primary;
+    transition: color 0.3s ease;
+}
+
+// CONTACT input email
+.ps-info-form__input-container {
+    position: relative; /* Для позиціонування іконки всередині контейнера */
+}
+.ps-info-form__input {
+    padding-left: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ps-info-form__input-container {
+    width: 600px;
+    position: relative;
+}
+.ps-info-form__input {
+    padding-left: 40px; /* Для іконки */
+    padding: 9px 16px; /* Падінг для поля введення */
+    width: 100%;
+    box-sizing: border-box;
+}
+//при кліку на форму бордер стає зеленим
+.ps-info-form__input {
+    border: 1px solid $dark; /* Початковий колір бордеру */
+    padding-left: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Плавний перехід для бордеру */
+}
+.ps-info-form__input:focus {
+    border-color: $primary; /* Колір бордеру при фокусі */
+    outline: none; /* Видалити стандартне виділення outline */
+}
+//checkbox Contact
+.sh-p-contact__label{
+    margin-top: 8px;
+    display: flex;
+}
+.sh-p-email-text{
+    @include bodySM;
+    margin: 0 0 0 4px;
+    color: $dark;
+}
+/* При виборі чекбоксу текст стає зеленим */
+.shopping-payment__checkbox:checked + .sh-p-email-text {
+    color: $primary;
+}
+
+//SHOPPING ADDRESS
+.info-shop-adress{
+    padding-top: 24px;
+}
+.info-card-title{
+    @include bodyLG;
+    margin-bottom: 0;
+}
+// input
+/* Стилі для контейнера з позиціонуванням іконки */
+.info-form-input-container {
+    position: relative; /* Для позиціонування іконки всередині контейнера */
+    width: 600px; /* Ширина контейнера */
+}
+/* Стилі для поля введення */
+.info-input {
+    padding-left: 40px; /* Місце для іконки */
+    padding: 9px 16px; /* Падінг для поля введення */
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $dark; /* Початковий колір бордера */
+    transition: border-color 0.3s ease; /* Плавний перехід для бордеру */
+}
+/* Зміна бордеру при фокусі */
+.info-input:focus {
+    border-color: $primary; /* Колір бордеру при фокусі */
+    outline: none; /* Видалити стандартне виділення outline */
+}
+// info-shop-adress-name-wrap
+.info-shop-adress-name-wrap{
+    margin-top: 8px;
+    width: 600px;
+    
+}
+.info-first-name, .info-last-name{
+    padding: 9px 16px;
+    width: 287px;
+    box-sizing: border-box;
+    border: 1px solid #0C0C0C;
+    transition: border-color 0.3s ease;
+}
+.info-first-name{
+    margin-right: 24px;
+}
+
+/* Стилі для поля введення */
+.info-first-name, .info-last-name {
+    padding-left: 40px; /* Місце для іконки */
+    padding: 9px 16px; /* Падінг для поля введення */
+   
+    box-sizing: border-box;
+    border: 1px solid $dark; /* Початковий колір бордера */
+    transition: border-color 0.3s ease; /* Плавний перехід для бордеру */
+}
+/* Зміна бордеру при фокусі */
+.info-first-name, .info-last-name:focus {
+    border-color: $primary; /* Колір бордеру при фокусі */
+    outline: none; /* Видалити стандартне виділення outline */
+}
+.info-label{
+    margin-top: 8px;
+}
+
+//BTN
+.nav-payment-info{
+    margin-top: 96px;
+    width: 600px;
+    justify-content: space-between;
+}
+.r-to-card{
+    @include buttonSM;
+    background-color: $light;
+    color: $primary;
+    border: none;
+    padding: 8px 38px;
+    transition: transform 0.3s ease;
+    margin-right: 150px;
+}
+.c-to-shopping{
+    @include buttonSM;
+    background-color: $primary;
+    color: $light;
+    border: none;
+    padding: 8px 38px;
+    transition: transform 0.3s ease;
+}
+.r-to-card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Збільшення кнопки на 5% */
+}
+.c-to-shopping:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Збільшення кнопки на 5% */
+}
+
+//YOUR CART
+.info-card-title{
+    @include H5;
+    text-align: center;
+}
+.info-card-item-wrap{
+    margin-top: 60px;
+}
+.info-card-totals-item{
+    justify-content: space-between;
+}
+.info-card-totals-desc-title{
+    @include bodyLG;
+}
+.info-card-totals-desc{
+    @include bodyLG;
+}
+.info-desc{
+    @include overlineSM;
+}
+.info-card-totals{
+    margin-top: 43px;
+}
+.info-cart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F0F2EF; /* Виберіть потрібний колір */
+    z-index: -1; /* Поставити його позаду контенту */
+    width: 100vw; /* Розтягнути на всю ширину вікна перегляду */
+    margin-left: 54vw; /* Вирівняти по центру */
+}
+
+//QUALITY
+.quantity-selector {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    width: 32px;
+    height: 32px;
+    background-color: #D1D9CF;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 50px;
+    height: 32px;
+    text-align: center;
+    border: none; /* Прибирає бордер */
+    color: $primary; /* Колір тексту зеленим */
+    margin: 0 5px;
+    font-size: 16px;
+    outline: none; /* Прибирає обведення при фокусі */
+}
+
+/* Прибираємо стрілочки в Chrome, Safari, Edge, Opera */
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Прибираємо стрілочки в Firefox */
+.quantity-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Загальний фон для всіх секцій */
+.quantity-selector,
+.quantity-input,
+.quantity-btn {
+    background-color: #D1D9CF; /* Однаковий фон для всіх елементів */
+    border: none; /* Прибираємо бордери */
+    box-shadow: none; /* Якщо є тіні - теж прибираємо */
+}
+
+.info-cart-price-item{
+    @include H6;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 200px;
+}
+
+.q-and-p{
+    margin-top: 20px;
+}
+
+
+
+
