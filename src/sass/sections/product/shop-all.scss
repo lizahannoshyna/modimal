@@ -5,7 +5,7 @@
   padding: 200px 0;
   position: relative;
   width: 100%;
-  background-image: url("./shop-all-bg.png");
+  background-image: url("../../img/product/shop-all/shop-all-bg.png");
 }
 
 .shop-all_main {
@@ -67,7 +67,7 @@
 }
 
 .shop-all_catalog__card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -132,7 +132,7 @@
 }
 .shop-all_btn:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* ФІЛЬТРИ  */

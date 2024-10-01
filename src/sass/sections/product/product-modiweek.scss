@@ -11,7 +11,6 @@
 
 .saturday-title {
     @include H3;
-    margin-top: 40px;
 }
 
 .saturday-img {
@@ -29,7 +28,7 @@
     @include H5;
     color: #0C0C0C;
 
-    margin-top: 174px;
+    margin-top: 134px;
 }
 
 .saturday-right__text {
@@ -54,16 +53,28 @@
 
 .saturday-list__item {
     position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 }
 
 .saturday-item__new {
+    cursor: default;
     position: absolute;
     margin: 23.4px 0 0 23.4px;
     padding-bottom: 0;
     background-color: white;
     border: none;
     width: 83.88px; 
-    height: 31.21px; 
+    height: 31.21px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .saturday-new__text {
@@ -111,4 +122,8 @@
 .figcaption-right__cost {
     @include H6;
     margin-top: 100%;
+}
+
+.breadcrumb-item.active {
+    cursor: default;
 }
