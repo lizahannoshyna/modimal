@@ -1,0 +1,27 @@
+.shopping_bag_four {
+    display: none;
+    position: fixed;  /* Фіксована позиція для модального вікна */
+    top: 90px;           /* Початок від верхнього краю */
+    left: 0px;          /* Початок від лівого краю */
+    width: 100vw;     /* Покриття всієї ширини екрану */
+    height: auto;     /* Динамічна висота */
+    max-height: 90vh; /* Максимальна висота */
+    background-color: white; /* Задній фон для модального вікна */
+    z-index: 999;     /* Щоб вікно було поверх інших елементів */
+    padding: 20px;    /* Внутрішній відступ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
+    overflow: auto;   /* Прокрутка для довгого контенту */
+
+    /* Вилучено повторне визначення padding і width */
+}
+
+.header__item:hover .shopping_bag_four {
+    display: block;   /* Показати модальне вікно при наведенні */
+}
+
+.shopping_bag_four_title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+}
