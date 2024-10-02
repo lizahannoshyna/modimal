@@ -21,8 +21,8 @@
   
   <title>Modimal</title>
   <script type="module" crossorigin src="./assets/vendor-c4916ffe.js"></script>
-  <script type="module" crossorigin src="./assets/index-8af52e36.js"></script>
-  <link rel="stylesheet" href="./assets/index-29ee3837.css">
+  <script type="module" crossorigin src="./assets/index-fa63afff.js"></script>
+  <link rel="stylesheet" href="./assets/index-e4bd7cd5.css">
   <link rel="stylesheet" href="./assets/index-c9f5a0ca.css">
 </head>
 
@@ -256,75 +256,84 @@
                 </svg>
                 <div class="modal-window">
                     <section class="shopping_bag_four">
-    <div class="container">
-        <div class="shopping_bag_four_wrap">
-            <h4 class="shopping_bag_four_title">Your Cart</h4>
+  <div class="container">
+    <div class="shopping_bag_four_wrap">
+      <h4 class="shopping_bag_four_title">Your Cart</h4>
 
-            <div class="shopping_bag_four_shopping_card">
-                <img
-                    src="../img/shopping/bag_four_one.png"
-                    alt=""
-                    class="shopping_bag_four_card_img"
-                />
-                <button class="shopping_bag_four_card_btn" type="button">1</button>
-                <h6>Wrap top</h6>
-                <p>Size: S</p>
-                <p>Color: White</p>
-                <p class="shopping_bag_four_dollar">$ 160</p>
-                <img
-                    class="shopping_bag_four_card_quantity"
-                    src="../img/shopping/Quantity.png"
-                    alt="#"
-                />
-            </div>
-            <div class="shopping_bag_four_shopping_card">
-                <h6>Casual Wild leg</h6>
-                <img
-                    src="../img/shopping/bag_four_two.png"
-                    alt=""
-                    class="shopping_bag_four_card_img"
-                />
-                <button class="shopping_bag_four_card_btn" type="button">1</button>
-                <p>Size: S</p>
-                <p>Color: Dark Blue</p>
-                <p class="shopping_bag_four_dollar">$ 130</p>
-                <img
-                    class="shopping_bag_four_card_quantity"
-                    src="../img/shopping/Quantity.png"
-                    alt="#"
-                />
-            </div>
-            <div class="shopping_bag_four_shopping_card">
-                <h6>Essential dress</h6>
-                <img
-                    src="../img/shopping/bag_four_three.png"
-                    alt=""
-                    class="shopping_bag_four_card_img"
-                />
-                <button class="shopping_bag_four_card_btn" type="button">1</button>
-                <p>Size: 2X</p>
-                <p>Color: Black</p>
-                <p class="shopping_bag_four_dollar">$ 195</p> <!-- Виправлено клас для ціни -->
-                <img
-                    class="shopping_bag_four_card_quantity"
-                    src="../img/shopping/Quantity.png"
-                    alt="#"
-                />
-            </div>
+      <div class="shopping_bag_four_shopping_card">
+        <img
+          src="../img/shopping/bag_four_one.png"
+          alt=""
+          class="shopping_bag_four_card_img"
+        />
+        <button class="shopping_bag_four_card_btn" type="button">1</button>
+        <div class="shopping_bag_four_card_item_wrap">
+          <h6>Wrap top</h6>
+          <p>Size: S</p>
+          <p>Color: White</p>
+          <p class="shopping_bag_four_dollar">$ 160</p>
+          <img
+            class="shopping_bag_four_card_quantity"
+            src="../img/shopping/Quantity.png"
+            alt="#"
+          />
         </div>
+      </div>
+      <div class="shopping_bag_four_shopping_card">
+        <h6>Casual Wild leg</h6>
+        <img
+          src="../img/shopping/bag_four_two.png"
+          alt=""
+          class="shopping_bag_four_card_img"
+        />
+        <button class="shopping_bag_four_card_btn" type="button">1</button>
+        <div class="shopping_bag_four_card_item_wrap">
+          <p>Size: S</p>
+          <p>Color: Dark Blue</p>
+          <p class="shopping_bag_four_dollar">$ 130</p>
+          <img
+            class="shopping_bag_four_card_quantity"
+            src="../img/shopping/Quantity.png"
+            alt="#"
+          />
+        </div>
+      </div>
+      <div class="shopping_bag_four_shopping_card">
+        <h6>Essential dress</h6>
+        <img
+          src="../img/shopping/bag_four_three.png"
+          alt=""
+          class="shopping_bag_four_card_img"
+        />
+        <button class="shopping_bag_four_card_btn" type="button">1</button>
+        <div class="shopping_bag_four_card_item_wrap">
+          <p>Size: 2X</p>
+          <p>Color: Black</p>
+          <p class="shopping_bag_four_dollar">$ 195</p>
+          <img
+            class="shopping_bag_four_card_quantity"
+            src="../img/shopping/Quantity.png"
+            alt="#"
+          />
+        </div>
+      </div>
+      <button type="button" class="shopping_bag_four_check_btn">
+        <span>Check Out</span>
+      </button>
     </div>
-    <script>
-        const headerItem = document.querySelector('.header__item');
-        const modal = document.querySelector('.shopping_bag_four');
+  </div>
+  <script>
+    const headerItem = document.querySelector(".header__item");
+    const modal = document.querySelector(".shopping_bag_four");
 
-        headerItem.addEventListener('mouseenter', () => {
-            modal.style.display = 'block'; // Показати модальне вікно
-        });
+    headerItem.addEventListener("mouseenter", () => {
+      modal.style.display = "block"; // Показати модальне вікно
+    });
 
-        headerItem.addEventListener('mouseleave', () => {
-            modal.style.display = 'none'; // Сховати модальне вікно
-        });
-    </script>
+    headerItem.addEventListener("mouseleave", () => {
+      modal.style.display = "none"; // Сховати модальне вікно
+    });
+  </script>
 </section>
 
                 </div>
