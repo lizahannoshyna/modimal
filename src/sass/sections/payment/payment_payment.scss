@@ -1,0 +1,38 @@
+.payment-nav-wrap{
+    flex-direction: column;
+}
+.payment-left{
+    width: 392px;
+    margin-right: 128px;
+   
+}
+
+.billing-title{
+    @include H6;
+}
+.billing-wrap{
+    width: 392px;
+}
+.p-choose{
+    @include bodyMD;
+    margin-top: 16px;
+}
+.payment-card-wrap{
+    margin-left: 140px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.card-number-wrap{
+    align-items: center;
+}
+
+.payment-card-wrap{
+    margin-left: 140px;
+}
+.payment-card-btn{
+    background-color: $primary;
+    color: $light;
+    padding: 9px 213px;
+    border: none;
+    margin-top: 64px;
+}

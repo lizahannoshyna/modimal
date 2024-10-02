@@ -1,7 +1,7 @@
-.payment-info {
-    margin-top: 32px;
+.payment-info-wrap{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-
 .information-input{
     width: 600px;
     margin-right: 104px;
@@ -25,6 +25,7 @@
         text-decoration: none;
         color: $dark;
         transition: color 0.3s ease;
+        margin-left: 8px;
     }
 }
 
@@ -204,10 +205,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #F0F2EF; /* Виберіть потрібний колір */
-    z-index: -1; /* Поставити його позаду контенту */
-    width: 100vw; /* Розтягнути на всю ширину вікна перегляду */
-    margin-left: 54vw; /* Вирівняти по центру */
+    background-color: #F0F2EF;
+    z-index: -1; 
+    width: 100%;
+    margin-left: 54vw; 
+    padding-bottom: 124px;
 }
 
 //QUALITY
@@ -268,11 +270,20 @@
     @include H6;
     margin-top: auto;
     margin-bottom: 0;
-    margin-left: 200px;
+    margin-left: 280px;
 }
 
 .q-and-p{
     margin-top: 20px;
+}
+.info-desc{
+    font-weight: bold;
+}
+.info-sub-title{
+    margin-bottom: 0;
+}
+.cart-info__item--left--wrapper{
+    width: 496px;
 }
 
 

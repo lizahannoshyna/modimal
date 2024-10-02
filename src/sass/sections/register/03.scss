@@ -3,6 +3,7 @@
     padding-bottom: 48px;
 
     .container {
+        flex-wrap: wrap;
         display: flex;
     }
 }
@@ -102,4 +103,8 @@
     &:hover {
         color: #40563d;
     }
+}
+
+.login-left__img--mobile {
+    display: none;
 }
