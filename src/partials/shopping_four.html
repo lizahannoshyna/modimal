@@ -1,0 +1,80 @@
+<section class="shopping_bag_four">
+  <div class="container">
+    <div class="shopping_bag_four_wrap">
+      <h4 class="shopping_bag_four_title">Your Cart</h4>
+
+      <div class="shopping_bag_four_shopping_card">
+        <img
+          src="img/shopping/bag_four_one.png"
+          alt=""
+          class="shopping_bag_four_card_img"
+        />
+        <button class="shopping_bag_four_card_btn" type="button">1</button>
+        <div class="shopping_bag_four_card_item_wrap">
+          <h6>Wrap top</h6>
+          <p>Size: S</p>
+          <p>Color: White</p>
+          <p class="shopping_bag_four_dollar">$ 160</p>
+          <img
+            class="shopping_bag_four_card_quantity"
+            src="img/shopping/Quantity.png"
+            alt="#"
+          />
+        </div>
+      </div>
+      <div class="shopping_bag_four_shopping_card">
+        <h6>Casual Wild leg</h6>
+        <img
+          src="img/shopping/bag_four_two.png"
+          alt=""
+          class="shopping_bag_four_card_img"
+        />
+        <button class="shopping_bag_four_card_btn" type="button">1</button>
+        <div class="shopping_bag_four_card_item_wrap">
+          <p>Size: S</p>
+          <p>Color: Dark Blue</p>
+          <p class="shopping_bag_four_dollar">$ 130</p>
+          <img
+            class="shopping_bag_four_card_quantity"
+            src="img/shopping/Quantity.png"
+            alt="#"
+          />
+        </div>
+      </div>
+      <div class="shopping_bag_four_shopping_card">
+        <h6>Essential dress</h6>
+        <img
+          src="img/shopping/bag_four_three.png"
+          alt=""
+          class="shopping_bag_four_card_img"
+        />
+        <button class="shopping_bag_four_card_btn" type="button">1</button>
+        <div class="shopping_bag_four_card_item_wrap">
+          <p>Size: 2X</p>
+          <p>Color: Black</p>
+          <p class="shopping_bag_four_dollar">$ 195</p>
+          <img
+            class="shopping_bag_four_card_quantity"
+            src="img/shopping/Quantity.png"
+            alt="#"
+          />
+        </div>
+      </div>
+      <button type="button" class="shopping_bag_four_check_btn">
+        <span>Check Out</span>
+      </button>
+    </div>
+  </div>
+  <script>
+    const headerItem = document.querySelector(".header__item");
+    const modal = document.querySelector(".shopping_bag_four");
+
+    headerItem.addEventListener("mouseenter", () => {
+      modal.style.display = "block"; // Показати модальне вікно
+    });
+
+    headerItem.addEventListener("mouseleave", () => {
+      modal.style.display = "none"; // Сховати модальне вікно
+    });
+  </script>
+</section>

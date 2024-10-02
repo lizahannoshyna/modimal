@@ -1,25 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Montserrat';
-    margin: 0;
-    overflow-x: hidden;
-  }
-  
-  .container {
-    width: 1224px;
-    margin: 0px auto;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  @import "../../node_modules/swiper/swiper-bundle.min.css";
-  .swiper {
-    width:100%;
-    height: 500px;
-    overflow: visible
-  }
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1224px;
+  margin: 0px auto;
+}
+
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  overflow: visible
+}
+
 //UNTILLS
 @import "./untills/color-styles";
 @import "./untills/text-styles";
@@ -61,13 +63,7 @@
 @import "./modal-windows/plus-size";
 @import "./modal-windows/sustanability";
 @import "./modal-windows/new-in-menu";
-
-//ADAPTIVE
-@import "./sections/landing_adaptive.scss";
-@import "./sections/FAQs/faqs_adaptive.scss";
-@import "./sections/footer_adaptive.scss";
-@import "./sections/header_adaptive.scss";
-@import "./sections/contact-us/contact_adaptive.scss";
+@import "./modal-windows/shopping_four.scss";
 
 //PAYMENT
 @import "./sections/payment/payment_cart.scss";
@@ -76,3 +72,11 @@
 @import "./sections/payment/payment_payment.scss";
 @import "./sections/payment/payment_shipping.scss";
 @import "./sections/payment/payment_success.scss";
+
+//ADAPTIVE
+@import "./sections/landing_adaptive.scss";
+@import "./sections/FAQs/faqs_adaptive.scss";
+@import "./sections/footer_adaptive.scss";
+@import "./sections/header_adaptive.scss";
+@import "./sections/contact-us/contact_adaptive.scss";
+@import "./sections/payment/payment_adaptive.scss";
