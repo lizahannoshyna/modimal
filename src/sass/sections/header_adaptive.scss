@@ -10,6 +10,21 @@
     .container {
         width: 720px;
     }
+
+    .header {
+        display: none;
+    }
+    .header__mobile {
+        display: flex;
+    }
+    .icon__wrap {
+        gap: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__icon:not(:last-child) {
+        margin-right: 0;
+    }
 }
 
 /* Small: 576px - 767px */
