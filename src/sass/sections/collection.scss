@@ -1,59 +1,108 @@
 .collection {
-    padding-top: 88px;
+  padding-top: 88px;
 }
 .collection-gallery-wrap {
-    margin-top: 71px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
-    height: 1400px;
+  margin-top: 71px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  height: 1400px;
 }
 
 .collection-gallery-item {
-    position: relative; 
-    transition: transform 0.3s ease;
+  position: relative;
+  transition: transform 0.3s ease;
 
-    &:hover {
-        transform: scale(1.02);
-    }
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .collection-galley_img {
-    display: block; 
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.collection-btn{
-    padding: 8px 65px;
-    background-color:$light;
-    color: $dark;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.collection-btn {
+  padding: 8px 65px;
+  background-color: $light;
+  color: $dark;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .collection-btn:not(:nth-child(3)) {
-    position: absolute;
-    bottom: 16px; 
-    right: 16px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
 }
 
 .collection-btn:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Збільшення кнопки на 5% */
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Збільшення кнопки на 5% */
 }
 
-#btn-pants{
+#btn-pants {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 399px;
+}
+// media points adaptive
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+
+  .collection-gallery-wrap {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+  }
+  .collection-gallery_img {
+
+    width: 45%;
+    height: auto;
+    position: relative;
+    flex-basis: 45%;
+  }
+
+ 
+  .collection-btn {
+    width: 30%;
     position: absolute;
-    bottom: 16px; 
-    left: 16px;
-    right: 399px;
+    bottom: 50px;
+    left: 200px;
+  }
 }
 
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
 
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
 
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+}
