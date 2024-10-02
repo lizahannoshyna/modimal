@@ -1,29 +1,34 @@
-.register-01_wrap{
+.register-01_wrap {
     display: flex;
     align-items: center;
     padding: 32px 0 48px 0;
 }
 
-.register-01_img{
+.register-01_img {
     margin-right: 128px;
 }
-.register-01-header{
+
+.register-01-header {
     @include H3;
     text-align: center;
 }
 
-.register-01-form-wrap{
+.register-01-form-wrap {
     display: flex;
     flex-direction: column;
 }
-.register-01-form__input{
+
+.register-01-form__input {
     width: 392px;
     height: 40px;
     padding: 9px 16px;
 }
-.register-01-btn{
-    padding: 8px 148px;
+
+.register-01-btn {
+    width: 100%;
     margin-top: 16px;
+    text-align: center;
+    height: 40px;
     @include buttonSM;
     color: $light;
     background-color: $primary;
@@ -31,60 +36,80 @@
     transition: transform 0.3s ease;
 }
 
-.register-01-btn:hover{
+.register-01-btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Збільшення кнопки на 5% */
+    transform: scale(1.02);
+    /* Збільшення кнопки на 5% */
 }
 
-.register-01_log-in{
+.register-01_log-in {
+    margin: 16px auto;
     display: flex;
     justify-content: space-between;
-    padding: 8px 54px 0 54px;
 }
-.register-question{
+
+.register-question {
     @include bodySM;
 }
-.register-01-log-in_link{
+
+.register-01-log-in_link {
     @include buttonSM;
     text-decoration: none;
     color: $primary;
 }
 
-.or{
+.or {
     @include buttonSM;
     padding: 16px 0 24px 0;
     text-align: center;
 }
 
+.register-01-btn2 {
+    display: none;
+}
+
 .regiter-01-icon-wrap {
     display: flex;
-    justify-content: center; /* Центрування по горизонталі */
-    gap: 10px; /* Відступи між іконками */
+    justify-content: center;
+    /* Центрування по горизонталі */
+    gap: 10px;
+    /* Відступи між іконками */
 }
 
 .register-01-icon-link img {
-    width: 40px; /* Задай необхідний розмір для іконок */
+    width: 40px;
+    /* Задай необхідний розмір для іконок */
     height: auto;
 }
 
-.register-01-icon-link:not(:last-child){
+.register-01-icon-link:not(:last-child) {
     margin-right: 17px;
 }
-.register-01-privacy{
+
+.register-01-privacy {
     @include bodyXS;
     padding-top: 24px;
 }
 
-.register-01-terms{
-color: $primary;
-text-align: center;
+.register-01-terms {
+    color: $primary;
+    text-align: center;
 }
+
 .register-01-privacy {
-    text-align: center; /* Вирівнює весь текст по центру */
+    text-align: center;
+    /* Вирівнює весь текст по центру */
 }
 
 .privacy-policy {
-    display: block; /* Переносимо на новий рядок */
-    margin-top: 10px; /* Додаємо відступ зверху, якщо потрібно */
+    display: block;
+    /* Переносимо на новий рядок */
+    margin-top: 10px;
+    /* Додаємо відступ зверху, якщо потрібно */
 }
 
+.register-01_log-in {
+    margin-bottom: 0;
+    width: 285px;
+    justify-content: space-between;
+}
