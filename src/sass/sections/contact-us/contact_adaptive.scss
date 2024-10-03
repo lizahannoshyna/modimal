@@ -23,6 +23,22 @@
     .login__right {
         padding-top: 0px;
     }
+
+    .contacts__cards--mobile {
+        display: block;
+    }
+
+    .contacts__cards {
+        display: none;
+    }
+
+    .write-us {
+        display: none;
+    }
+
+    .write-us__mobile {
+        display: block;
+    }
 }
 
 /* Medium: 768px - 991px */
