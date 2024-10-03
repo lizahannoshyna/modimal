@@ -1,5 +1,5 @@
-document.querySelectorAll('.heart').forEach(function(heart) {
-    heart.addEventListener('click', function() {
+document.querySelectorAll('.heart').forEach(function (heart) {
+    heart.addEventListener('click', function () {
         heart.classList.toggle('filled'); // Добавляем или убираем класс 'filled' при клике
     });
 });
@@ -10,20 +10,20 @@ document.querySelectorAll('.heart').forEach(function(heart) {
 import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 const swiper = new Swiper('.mySwiper', {
     slidesPerView: 4,
-  spaceBetween: 30,
+    spaceBetween: 30,
 
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  
-  });
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-  //FAQS
+});
 
-  document.querySelectorAll('.faq-item__header').forEach(header => {
+//FAQS
+
+document.querySelectorAll('.faq-item__header').forEach(header => {
     header.addEventListener('click', function () {
         const content = this.nextElementSibling;
         const toggle = this.querySelector('.faq-item__toggle');
