@@ -60,35 +60,58 @@
     width: 960px;
   }
 
+  // .collection-gallery-wrap {
+  //   padding: 0;
+  //   margin: 0;
+  //   gap: 0;
+  //   flex-wrap: wrap;
+  //    display: flex;
+  //    justify-content: space-between;
+  // }
   .collection-gallery-wrap {
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    flex-wrap: wrap;
-     display: flex;
-     justify-content: space-between;
-  }
-  .collection-gallery_img {
-
-    width: 45%;
-    height: auto;
+    height: 1000px;
     position: relative;
-    flex-basis: 45%;
   }
 
- 
-  .collection-btn {
-    width: 30%;
-    position: absolute;
-    bottom: 50px;
-    left: 200px;
+  .collection-gallery_img {
+    width: 100%;
+    height: auto;
   }
+  // .collection-galley_img {
+  //   width: 100%;
+  //   height: auto;
+  // }
+  .collection-gallery-item {
+    width: 46%;
+  }
+
+  //  .collection {
+  //   height: 700px;
+  // }
 }
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
   .container {
     width: 720px;
+  }
+  .collection-gallery-wrap {
+    height: 748px;
+  }
+
+  .collection-gallery_img {
+    width: 100%;
+    height: auto;
+  }
+  // .collection-galley_img {
+  //   width: 100%;
+  //   height: auto;
+  // }
+  .collection-gallery-item {
+    width: 46%;
+  }
+  #btn-pants {
+    width: 50%;
   }
 }
 
@@ -97,6 +120,27 @@
   .container {
     width: 540px;
   }
+  .collection-gallery-wrap {
+    height: 561px;
+    position: relative;
+  }
+
+  .collection-gallery_img {
+    width: 100%;
+    height: auto;
+  }
+  // .collection-galley_img {
+  //   width: 100%;
+  //   height: auto;
+  // }
+  .collection-gallery-item {
+    width: 46%;
+  }
+  .collection-btn {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 /* Extra small: 0px (320px) - 575px */
@@ -104,5 +148,29 @@
   .container {
     padding: 0 15px;
     width: 100%;
+  }
+  .collection-gallery-wrap {
+    height: 546px;
+  }
+
+  .collection-gallery_img {
+    width: 100%;
+    height: auto;
+  }
+  // .collection-galley_img {
+  //   width: 100%;
+  //   height: auto;
+  // }
+  .collection-gallery-item {
+    width: 46%;
+    position: relative;
+  }
+  .collection-btn {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    bottom: -30px !important;
+    right: 16px;
   }
 }
