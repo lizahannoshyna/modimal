@@ -3,6 +3,26 @@
     .container {
         width: 960px;
     }
+
+    .login-left__img {
+        display: none;
+    }
+
+    .register-01_img {
+        display: none;
+    }
+
+    .register-01-form {
+        margin: 0 auto;
+    }
+
+    .or {
+        padding: 0;
+    }
+
+    .login__right {
+        padding-top: 0px;
+    }
 }
 
 /* Medium: 768px - 991px */
@@ -10,6 +30,8 @@
     .container {
         width: 720px;
     }
+
+
 }
 
 /* Small: 576px - 767px */
@@ -24,7 +46,113 @@
     .container {
         padding: 0 15px;
         width: 100%;
+        position: relative;
     }
+
+    //REGISTER 
+
+    .register-01_wrap {
+        padding: 0;
+        padding-top: 32px;
+    }
+
+    .register-01-header {
+        @include H6;
+        color: #0C0C0C;
+        font-weight: 700;
+    }
+
+    .register-01-form {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .or {
+        padding: 0;
+        margin-top: -8px;
+        padding-bottom: 0;
+    }
+
+    .register-01-form__input.register-01-form__input--name,
+    .register-01-form__input {
+        width: 100%;
+    }
+
+    .register-01-btn {
+        width: 100%;
+        display: none;
+    }
+
+    .register-01-btn2 {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .register-01-privacy {
+        @include mobileBodyXS;
+    }
+
+    .register-01_log-in {
+        width: 225px;
+    }
+
+    .register-01-log-in_link,
+    .register-question {
+        @include mobileBodySM;
+    }
+
+    //LOGIN
+
+    .login {
+        padding-bottom: 0;
+    }
+
+    .login__title {
+        @include H6;
+        color: #0C0C0C;
+        font-weight: 700;
+        padding-bottom: 22px;
+    }
+
+    .login__right {
+        width: 100%;
+    }
+
+    .login__forgot {
+        display: none;
+    }
+
+    .login__btn {
+        width: 100%;
+    }
+
+    .login-right__new {
+        @include mobileBodySM;
+        margin-bottom: 24px;
+    }
+
+    @media (max-width: 360px) {
+        .login-left__img--mobile {
+            top: -10px;
+            display: block;
+            position: absolute;
+            width: 360px;
+            left: 0;
+        }
+
+        .login__right {
+            padding-top: 234px;
+            width: 100%;
+        }
+
+        .register-01-form {
+            margin-top: 210px;
+            width: 100%;
+        }
+    }
+
+
+    //CONTACT-US
 
     .contact-us__title {
         @include mobileH1;
@@ -35,4 +163,6 @@
         @include mobileBodyLG;
         padding-bottom: 0;
     }
+
+    //
 }
