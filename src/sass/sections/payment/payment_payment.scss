@@ -1,3 +1,7 @@
+.payment-p{
+    padding: 24px 0 32px 0;
+}
+
 .payment-nav-wrap{
     flex-direction: column;
 }
@@ -22,17 +26,184 @@
     margin-top: 24px;
     margin-bottom: 32px;
 }
-.card-number-wrap{
-    align-items: center;
+
+.card-number-wrap {
+       
+        align-items: center; /* Вирівнюємо по центру по горизонталі */
+      
+      }
+
+.payment-p-card-wrap{
+    margin-top: 24px;
+    margin-bottom: 32px;
 }
 
-.payment-card-wrap{
-    margin-left: 140px;
-}
 .payment-card-btn{
     background-color: $primary;
     color: $light;
     padding: 9px 213px;
     border: none;
     margin-top: 64px;
+    transition: transform 0.3s ease;
 }
+.payment-card-btn:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Збільшення кнопки на 5% */
+}
+
+.expiry-day-title, .card-number-titel {
+    white-space: nowrap;
+}
+
+//input
+.payment-input{
+    width: 392px;
+    padding: 9px 16px;
+}
+.card-number-wrap {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
+  
+  .card-number-title {
+    margin-bottom: 10px; /* Відступ між заголовком та полем вводу */
+  }
+  
+  .card-number-label {
+    width: 100%; /* Займає всю доступну ширину */
+    display: flex;
+   
+  }
+  
+  .card-number-form-input-container {
+    width: 100%; /* Займає всю ширину батьківського контейнера */
+    text-align: center; /* Центруємо текст всередині форми */
+  }
+  
+  .card-input {
+    max-width: 347px;
+  }
+.card-number-wrap {
+    width: 100%;
+    max-width: 593px;
+    margin: 0;
+    display: flex;
+}
+
+.card-number-wrap {
+    align-items: center;
+ //   justify-content: center;
+}
+
+.card-number-form-input-container{
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+}
+
+.info-shop-address-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 299px; 
+}
+.info-pay-form-input{
+    width: 137px;
+}
+.card-input,
+.info-input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.info-label-header {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.info-form-input {
+    flex: 1;
+    width: 100%;
+    max-width: 593px;
+    margin-bottom: 10px;
+}
+.card-number-titel{
+    margin-right: 32px;
+}
+.expiry-day-title-date{
+    margin-right: 50px;
+}
+.expiry-day-title-code{
+    margin-right: 33px;
+}
+.card-number-label{
+    margin-top: 8px;
+}
+
+//wit
+.what-is-wrap, .security-wrap {
+    display: flex;
+    align-items: center;
+}
+.what-is-wrap{
+    margin-left: 22px;
+}
+.what-is-link{
+    @include budyXs-with-underline;
+    color: $primary;
+    margin-left: 4px;
+    text-decoration: none;
+}
+.what-is-link:hover{
+    color: $primary;
+    text-decoration: underline;
+}
+
+.payment-pay-desc{
+    @include bodyXS;
+    width: 600px;
+    margin-top: 16px;
+}
+
+  .info-input {
+    border-color: $dark;
+    border-radius: 0;
+
+}
+.info-input:focus {
+    border-color: $primary;
+    outline: none; 
+}
+.card-input{
+    border-color: $dark;
+    border-radius: 0;
+
+}
+.card-input:focus {
+    border-color: $primary; 
+    outline: none; 
+}
+
+.payment-input {
+    border: 1px solid $dark; 
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+.payment-input:focus {
+    outline: none; 
+    border: 1px solid $primary; 
+    border-radius: 0;
+}
+
+.billing-check-box-wrap{
+    margin-top: 16px;
+}
+
