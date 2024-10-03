@@ -125,7 +125,18 @@ a:hover + .blur-background.active {
   
   
   
-  .shop-icon:hover .modal-window {
+  .modal-window {
+    display: none; /* Приховуємо модальне вікно за замовчуванням */
+    position: absolute;
+    top: 40px; /* Розміщення під іконкою */
+    left: 0;
+    width: 300px; /* Ширина модального вікна */
+    z-index: 1000;
+    padding: 10px;
+  }
+
+  /* Показуємо вікно при наведенні на іконку */
+  #shopIcon:hover + .modal-window,
+  .modal-window:hover {
     display: block;
   }
-  
