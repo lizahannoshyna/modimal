@@ -1,10 +1,7 @@
-.payment-info-wrap{
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 .information-input{
     width: 600px;
     margin-right: 104px;
+    padding: 24px 0 32px 0;
 }
 
 .info_contact-title{
@@ -87,6 +84,14 @@
 .info-card-title{
     @include bodyLG;
     margin-bottom: 0;
+    width: 500px;
+    text-align: center;
+}
+.info-card-title-shipping{
+    @include bodyLG;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
 }
 // input
 /* Стилі для контейнера з позиціонуванням іконки */
@@ -178,13 +183,14 @@
 //YOUR CART
 .info-card-title{
     @include H5;
-    text-align: center;
 }
 .info-card-item-wrap{
     margin-top: 60px;
+    width: 496px;
 }
 .info-card-totals-item{
     justify-content: space-between;
+
 }
 .info-card-totals-desc-title{
     @include bodyLG;
@@ -198,19 +204,13 @@
 .info-card-totals{
     margin-top: 43px;
 }
-.info-cart::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.info-cart {
     background-color: #F0F2EF;
-    z-index: -1; 
-    width: 100%;
-    margin-left: 54vw; 
-    padding-bottom: 124px;
-}
+    margin-right: -100vw;
+    width: 100vw;
+    min-height: 100vh; /* Мінімальна висота екрану */
+    padding: 24px 0 32px 24px;
+  }
 
 //QUALITY
 .quantity-selector {
@@ -270,7 +270,7 @@
     @include H6;
     margin-top: auto;
     margin-bottom: 0;
-    margin-left: 280px;
+    margin-left: 200px;
 }
 
 .q-and-p{
@@ -284,6 +284,15 @@
 }
 .cart-info__item--left--wrapper{
     width: 496px;
+}
+.cart__item--left{
+    width: 496px;
+}
+.cart-info__item--close{
+    margin-left: 0;
+}
+.info-card-totals{
+    width: 510px;
 }
 
 
