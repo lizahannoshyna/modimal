@@ -1,23 +1,27 @@
-.information-input{
+.payment-info-wrap {
+    display: flex;
+}
+
+.information-input {
     width: 600px;
     margin-right: 104px;
     padding: 24px 0 32px 0;
 }
 
-.info_contact-title{
+.info_contact-title {
     text-align: center;
     justify-content: space-between;
 
-    .info_contact-header{
+    .info_contact-header {
         @include bodyLG;
         margin-bottom: 0;
     }
 
-    .info-question{
+    .info-question {
         @include bodySM;
     }
-    
-    .info-log-link{
+
+    .info-log-link {
         @include bodySM;
         text-decoration: none;
         color: $dark;
@@ -26,135 +30,176 @@
     }
 }
 
-.info-log-link:hover{
+.info-log-link:hover {
     color: $primary;
     transition: color 0.3s ease;
 }
 
 // CONTACT input email
 .ps-info-form__input-container {
-    position: relative; /* Для позиціонування іконки всередині контейнера */
+    position: relative;
+    /* Для позиціонування іконки всередині контейнера */
 }
+
 .ps-info-form__input {
     padding-left: 40px;
     width: 100%;
     box-sizing: border-box;
 }
+
 .ps-info-form__input-container {
     width: 600px;
     position: relative;
 }
+
 .ps-info-form__input {
-    padding-left: 40px; /* Для іконки */
-    padding: 9px 16px; /* Падінг для поля введення */
+    padding-left: 40px;
+    /* Для іконки */
+    padding: 9px 16px;
+    /* Падінг для поля введення */
     width: 100%;
     box-sizing: border-box;
 }
+
 //при кліку на форму бордер стає зеленим
 .ps-info-form__input {
-    border: 1px solid $dark; /* Початковий колір бордеру */
+    border: 1px solid $dark;
+    /* Початковий колір бордеру */
     padding-left: 40px;
     width: 100%;
     box-sizing: border-box;
-    transition: border-color 0.3s ease; /* Плавний перехід для бордеру */
+    transition: border-color 0.3s ease;
+    /* Плавний перехід для бордеру */
 }
+
 .ps-info-form__input:focus {
-    border-color: $primary; /* Колір бордеру при фокусі */
-    outline: none; /* Видалити стандартне виділення outline */
+    border-color: $primary;
+    /* Колір бордеру при фокусі */
+    outline: none;
+    /* Видалити стандартне виділення outline */
 }
+
 //checkbox Contact
-.sh-p-contact__label{
+.sh-p-contact__label {
     margin-top: 8px;
     display: flex;
 }
-.sh-p-email-text{
+
+.sh-p-email-text {
     @include bodySM;
     margin: 0 0 0 4px;
     color: $dark;
 }
+
 /* При виборі чекбоксу текст стає зеленим */
-.shopping-payment__checkbox:checked + .sh-p-email-text {
+.shopping-payment__checkbox:checked+.sh-p-email-text {
     color: $primary;
 }
 
 //SHOPPING ADDRESS
-.info-shop-adress{
+.info-shop-adress {
     padding-top: 24px;
 }
-.info-card-title{
+
+.info-card-title {
     @include bodyLG;
     margin-bottom: 0;
     width: 500px;
     text-align: center;
 }
-.info-card-title-shipping{
+
+.info-card-title-shipping {
     @include bodyLG;
     margin-bottom: 0;
     text-align: center;
     font-weight: bold;
 }
+
 // input
 /* Стилі для контейнера з позиціонуванням іконки */
 .info-form-input-container {
-    position: relative; /* Для позиціонування іконки всередині контейнера */
-    width: 600px; /* Ширина контейнера */
+    position: relative;
+    /* Для позиціонування іконки всередині контейнера */
+    width: 600px;
+    /* Ширина контейнера */
 }
+
 /* Стилі для поля введення */
 .info-input {
-    padding-left: 40px; /* Місце для іконки */
-    padding: 9px 16px; /* Падінг для поля введення */
-    width: 100%;
+    padding-left: 40px;
+    /* Місце для іконки */
+    padding: 9px 16px;
+    /* Падінг для поля введення */
     box-sizing: border-box;
-    border: 1px solid $dark; /* Початковий колір бордера */
-    transition: border-color 0.3s ease; /* Плавний перехід для бордеру */
+    border: 1px solid $dark;
+    /* Початковий колір бордера */
+    transition: border-color 0.3s ease;
+    /* Плавний перехід для бордеру */
 }
+
 /* Зміна бордеру при фокусі */
 .info-input:focus {
-    border-color: $primary; /* Колір бордеру при фокусі */
-    outline: none; /* Видалити стандартне виділення outline */
+    border-color: $primary;
+    /* Колір бордеру при фокусі */
+    outline: none;
+    /* Видалити стандартне виділення outline */
 }
+
 // info-shop-adress-name-wrap
-.info-shop-adress-name-wrap{
+.info-shop-adress-name-wrap {
     margin-top: 8px;
     width: 600px;
-    
 }
-.info-first-name, .info-last-name{
+
+.info-first-name,
+.info-last-name {
     padding: 9px 16px;
-    width: 287px;
+    width: 289px;
     box-sizing: border-box;
     border: 1px solid #0C0C0C;
     transition: border-color 0.3s ease;
 }
-.info-first-name{
-    margin-right: 24px;
+
+.info-first-name {
+    margin-right: 22px;
 }
 
 /* Стилі для поля введення */
-.info-first-name, .info-last-name {
-    padding-left: 40px; /* Місце для іконки */
-    padding: 9px 16px; /* Падінг для поля введення */
-   
+.info-first-name,
+.info-last-name {
+    padding-left: 40px;
+    /* Місце для іконки */
+    padding: 9px 16px;
+    /* Падінг для поля введення */
+
     box-sizing: border-box;
-    border: 1px solid $dark; /* Початковий колір бордера */
-    transition: border-color 0.3s ease; /* Плавний перехід для бордеру */
+    border: 1px solid $dark;
+    /* Початковий колір бордера */
+    transition: border-color 0.3s ease;
+    /* Плавний перехід для бордеру */
 }
+
 /* Зміна бордеру при фокусі */
-.info-first-name, .info-last-name:focus {
-    border-color: $primary; /* Колір бордеру при фокусі */
-    outline: none; /* Видалити стандартне виділення outline */
+.info-first-name,
+.info-last-name:focus {
+    border-color: $primary;
+    /* Колір бордеру при фокусі */
+    outline: none;
+    /* Видалити стандартне виділення outline */
 }
-.info-label{
+
+.info-label {
     margin-top: 8px;
 }
 
 //BTN
-.nav-payment-info{
+.nav-payment-info {
     margin-top: 96px;
     width: 600px;
     justify-content: space-between;
 }
-.r-to-card{
+
+.r-to-card {
     @include buttonSM;
     background-color: $light;
     color: $primary;
@@ -163,7 +208,8 @@
     transition: transform 0.3s ease;
     margin-right: 150px;
 }
-.c-to-shopping{
+
+.c-to-shopping {
     @include buttonSM;
     background-color: $primary;
     color: $light;
@@ -171,46 +217,58 @@
     padding: 8px 38px;
     transition: transform 0.3s ease;
 }
-.r-to-card:hover{
+
+.r-to-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Збільшення кнопки на 5% */
+    transform: scale(1.05);
+    /* Збільшення кнопки на 5% */
 }
-.c-to-shopping:hover{
+
+.c-to-shopping:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Збільшення кнопки на 5% */
+    transform: scale(1.05);
+    /* Збільшення кнопки на 5% */
 }
 
 //YOUR CART
-.info-card-title{
+.info-card-title {
     @include H5;
 }
-.info-card-item-wrap{
+
+.info-card-item-wrap {
     margin-top: 60px;
     width: 496px;
 }
-.info-card-totals-item{
+
+.info-card-totals-item {
     justify-content: space-between;
 
 }
-.info-card-totals-desc-title{
+
+.info-card-totals-desc-title {
     @include bodyLG;
 }
-.info-card-totals-desc{
+
+.info-card-totals-desc {
     @include bodyLG;
 }
-.info-desc{
+
+.info-desc {
     @include overlineSM;
 }
-.info-card-totals{
+
+.info-card-totals {
     margin-top: 43px;
 }
+
 .info-cart {
     background-color: #F0F2EF;
     margin-right: -100vw;
     width: 100vw;
-    min-height: 100vh; /* Мінімальна висота екрану */
+    min-height: 100vh;
+    /* Мінімальна висота екрану */
     padding: 24px 0 32px 24px;
-  }
+}
 
 //QUALITY
 .quantity-selector {
@@ -234,11 +292,14 @@
     width: 50px;
     height: 32px;
     text-align: center;
-    border: none; /* Прибирає бордер */
-    color: $primary; /* Колір тексту зеленим */
+    border: none;
+    /* Прибирає бордер */
+    color: $primary;
+    /* Колір тексту зеленим */
     margin: 0 5px;
     font-size: 16px;
-    outline: none; /* Прибирає обведення при фокусі */
+    outline: none;
+    /* Прибирає обведення при фокусі */
 }
 
 /* Прибираємо стрілочки в Chrome, Safari, Edge, Opera */
@@ -261,40 +322,272 @@
 .quantity-selector,
 .quantity-input,
 .quantity-btn {
-    background-color: #D1D9CF; /* Однаковий фон для всіх елементів */
-    border: none; /* Прибираємо бордери */
-    box-shadow: none; /* Якщо є тіні - теж прибираємо */
+    background-color: #D1D9CF;
+    /* Однаковий фон для всіх елементів */
+    border: none;
+    /* Прибираємо бордери */
+    box-shadow: none;
+    /* Якщо є тіні - теж прибираємо */
 }
 
-.info-cart-price-item{
+.info-cart-price-item {
     @include H6;
     margin-top: auto;
     margin-bottom: 0;
     margin-left: 200px;
 }
 
-.q-and-p{
+.q-and-p {
     margin-top: 20px;
 }
-.info-desc{
+
+.info-desc {
     font-weight: bold;
 }
-.info-sub-title{
+
+.info-sub-title {
     margin-bottom: 0;
 }
-.cart-info__item--left--wrapper{
+
+.cart-info__item--left--wrapper {
     width: 496px;
 }
-.cart__item--left{
+
+.cart__item--left {
     width: 496px;
 }
-.cart-info__item--close{
+
+.cart-info__item--close {
     margin-left: 0;
 }
-.info-card-totals{
+
+.info-card-totals {
     width: 510px;
 }
 
+.logo-bread-adapt {
+    display: none;
+}
 
 
+// breakpoints
 
+/* Extra Large: 1200px - 1300px */
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .information-input {
+        width: 500px;
+        margin-right: 80px;
+        padding: 24px 0 32px 0;
+    }
+
+    .info-form-input-container {
+        position: relative;
+        width: 500px;
+    }
+
+    .r-to-card {
+        margin-right: 57px;
+    }
+
+    .info-first-name,
+    .info-last-name {
+        padding: 9px 16px;
+        width: 200px;
+        box-sizing: border-box;
+        border: 1px solid #0C0C0C;
+        transition: border-color 0.3s ease;
+    }
+
+    .info-first-name {
+        margin-right: 0;
+    }
+
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .information-input {
+        width: 450px;
+        margin-right: 80px;
+        padding: 24px 0 32px 0;
+    }
+
+    .info-cart-price-item {
+        margin-left: 50px;
+    }
+
+    .cart-info__item--close {
+        margin-right: 290px;
+    }
+    
+
+    .info-card-totals {
+        width: 380px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .payment-info-wrap {
+        flex-direction: column;
+    }
+    .info-cart {
+        order: 1;
+    }
+    .information-input {
+        order: 2;
+    }
+    .logo-bread-adapt {
+        display: block;
+    }
+    .logo-bread {
+        display: none;
+    }
+    .info-cart {
+        background-color: $light;
+        padding: 24px 0 32px 24px;
+    }
+    .information-input {
+        width: 600px;
+        margin-right: 80px;
+        padding: 24px 0 32px 0;
+    }
+    .info-form-input-container {
+        position: relative;
+        width: 695px;
+    }
+    .info-cart-price-item {
+        margin-left: 380px;
+    }
+    .cart-info__item--close {
+        margin-left: 175px;
+    }
+    .info-card-totals {
+        width: 693px;
+    }
+    .info-first-name,
+    .info-last-name {
+        padding: 9px 16px;
+        width: 337px;
+        box-sizing: border-box;
+        border: 1px solid #0C0C0C;
+        transition: border-color 0.3s ease;
+        margin-right: 22px;
+    }
+    .info-cart {
+        padding-left: 0;
+    }
+    .r-to-card {
+        margin-right: 155px;
+    }
+    .info-card-title-shipping {
+        text-align: center;
+    }
+    .information-input {
+        width: 695px;
+    }
+
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .info_contact-title, .info-card-title-shipping{
+        width: 500px;
+    }
+
+    .info-form-input-container {
+        position: relative;
+        width: 515px;
+    }
+    .info-cart-price-item {
+        margin-left: 200px;
+    }
+    .cart-info__item--close {
+        margin-left: 0;
+    }
+    .info-card-totals {
+        width: 515px;
+    }
+    .info-first-name,
+    .info-last-name {
+        padding: 9px 16px;
+        width: 215px;
+        box-sizing: border-box;
+        border: 1px solid #0C0C0C;
+        transition: border-color 0.3s ease;
+        margin-right: 22px;
+    }
+    .info-cart {
+        padding-left: 0;
+    }
+    .r-to-card {
+        margin-right: 50px;
+    }
+    .info-card-title-shipping {
+        text-align: center;
+    }
+    .information-input {
+        width: 695px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    .info_contact-title, .info-card-title-shipping{
+        width: 470px;
+    }
+
+    .info-form-input-container {
+        position: relative;
+        width:  470px;
+    }
+    .info-cart-price-item {
+        margin-left: 145px;
+    }
+    .cart-info__item--close {
+        margin-left: 0;
+    }
+    .info-card-totals {
+        width: 470px;
+    }
+    .info-first-name,
+    .info-last-name {
+        padding: 9px 16px;
+        width: 170px;
+        box-sizing: border-box;
+        border: 1px solid #0C0C0C;
+        transition: border-color 0.3s ease;
+        margin-right: 22px;
+    }
+    .info-cart {
+        padding-left: 0;
+    }
+    .r-to-card {
+        margin-right: 25px;
+    }
+    .info-card-title-shipping {
+        text-align: center;
+    }
+    .information-input {
+        width: 599px;
+    }
+}
