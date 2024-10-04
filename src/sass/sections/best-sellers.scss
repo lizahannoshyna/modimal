@@ -150,6 +150,14 @@
     background-image: url("../img/modiweek/heart-filled.svg");
   }
 }
+@media (max-width: 2000px) { 
+  .container {
+    width: 1160px;
+  }
+  .swiper__img {
+    opacity: 0;
+  }
+}
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
   .container {
@@ -197,10 +205,9 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 140%;
-    margin-left: 10%;
     padding-bottom: 0;
     height: 28px;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
   .catalog-item:not(:nth-child(3n)) {
     margin-right: 0;
@@ -212,9 +219,12 @@
     display: flex;
     justify-content: center;
   }
+  .catalog__img-color:not(:first-child) {
+    margin-left: 8px;
+  }
   .swiper__img {
     opacity: 1;
-   margin-top: 32px;
+   margin-top: 62px;
   }
   .catalog__card {
     width: 152px;
@@ -223,5 +233,21 @@
   .catalog__img {
     width: 152px;
     height: 213px;
+  }
+  .catalog-desc__subtitle {
+    color: $dark;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .bs-link-view {
+    display: none;
+  }
+  .heart {
+    position: absolute;
+    top: 8px;
+    left: 75%;
+    margin-top: 0 !important;
   }
 }
