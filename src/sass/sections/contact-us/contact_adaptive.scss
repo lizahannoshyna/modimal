@@ -1,8 +1,5 @@
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
-    .container {
-        width: 960px;
-    }
 
     .login-left__img {
         display: none;
@@ -23,31 +20,32 @@
     .login__right {
         padding-top: 0px;
     }
+
+    .contacts__cards--mobile {
+        display: block;
+    }
+
+    .contacts__cards {
+        display: none;
+    }
+
+    .write-us {
+        display: none;
+    }
+
+    .write-us__mobile {
+        display: block;
+    }
 }
 
 /* Medium: 768px - 991px */
-@media (max-width: 991px) {
-    .container {
-        width: 720px;
-    }
-
-
-}
+@media (max-width: 991px) {}
 
 /* Small: 576px - 767px */
-@media (max-width: 767px) {
-    .container {
-        width: 540px;
-    }
-}
+@media (max-width: 767px) {}
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
-    .container {
-        padding: 0 15px;
-        width: 100%;
-        position: relative;
-    }
 
     //REGISTER 
 
