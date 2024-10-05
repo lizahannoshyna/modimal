@@ -1,44 +1,49 @@
-.payment-p{
+.payment-p {
     padding: 24px 0 32px 0;
 }
 
-.payment-nav-wrap{
+.payment-nav-wrap {
     flex-direction: column;
 }
-.payment-left{
+
+.payment-left {
     width: 392px;
     margin-right: 128px;
-   
+
 }
 
-.billing-title{
+.billing-title {
     @include H6;
 }
-.billing-wrap{
+
+.billing-wrap {
     width: 392px;
 }
-.p-choose{
+
+.p-choose {
     @include bodyMD;
     margin-top: 16px;
 }
-.payment-card-wrap{
+
+.payment-card-wrap {
     margin-left: 140px;
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
 .card-number-wrap {
-       
-        align-items: center; /* Вирівнюємо по центру по горизонталі */
-      
-      }
 
-.payment-p-card-wrap{
+    align-items: center;
+    /* Вирівнюємо по центру по горизонталі */
+
+}
+
+.payment-p-card-wrap {
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
-.payment-card-btn{
+.payment-card-btn {
     background-color: $primary;
     color: $light;
     padding: 9px 213px;
@@ -46,44 +51,53 @@
     margin-top: 64px;
     transition: transform 0.3s ease;
 }
-.payment-card-btn:hover{
+
+.payment-card-btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Збільшення кнопки на 5% */
+    transform: scale(1.05);
+    /* Збільшення кнопки на 5% */
 }
 
-.expiry-day-title, .card-number-titel {
+.expiry-day-title,
+.card-number-titel {
     white-space: nowrap;
 }
 
 //input
-.payment-input{
+.payment-input {
     width: 392px;
     padding: 9px 16px;
 }
+
 .card-number-wrap {
     display: flex;
-    flex-direction: row; 
-    align-items: center; 
-  }
-  
-  .card-number-title {
-    margin-bottom: 10px; /* Відступ між заголовком та полем вводу */
-  }
-  
-  .card-number-label {
-    width: 100%; /* Займає всю доступну ширину */
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-number-title {
+    margin-bottom: 10px;
+    /* Відступ між заголовком та полем вводу */
+}
+
+.card-number-label {
+    width: 100%;
+    /* Займає всю доступну ширину */
     display: flex;
-   
-  }
-  
-  .card-number-form-input-container {
-    width: 100%; /* Займає всю ширину батьківського контейнера */
-    text-align: center; /* Центруємо текст всередині форми */
-  }
-  
-  .card-input {
+
+}
+
+.card-number-form-input-container {
+    width: 100%;
+    /* Займає всю ширину батьківського контейнера */
+    text-align: center;
+    /* Центруємо текст всередині форми */
+}
+
+.card-input {
     max-width: 347px;
-  }
+}
+
 .card-number-wrap {
     width: 100%;
     max-width: 593px;
@@ -93,10 +107,10 @@
 
 .card-number-wrap {
     align-items: center;
- //   justify-content: center;
+    //   justify-content: center;
 }
 
-.card-number-form-input-container{
+.card-number-form-input-container {
     display: flex;
     flex-direction: column;
     width: 347px;
@@ -105,11 +119,13 @@
 .info-shop-address-wrap {
     display: flex;
     justify-content: space-between;
-    width: 299px; 
+    width: 299px;
 }
-.info-pay-form-input{
+
+.info-pay-form-input {
     width: 137px;
 }
+
 .card-input,
 .info-input {
     width: 100%;
@@ -134,76 +150,262 @@
     max-width: 593px;
     margin-bottom: 10px;
 }
-.card-number-titel{
+
+.card-number-titel {
     margin-right: 32px;
 }
-.expiry-day-title-date{
+
+.expiry-day-title-date {
     margin-right: 50px;
 }
-.expiry-day-title-code{
+
+.expiry-day-title-code {
     margin-right: 33px;
 }
-.card-number-label{
+
+.card-number-label {
     margin-top: 8px;
 }
 
 //wit
-.what-is-wrap, .security-wrap {
+.what-is-wrap,
+.security-wrap {
     display: flex;
     align-items: center;
 }
-.what-is-wrap{
+
+.what-is-wrap {
     margin-left: 22px;
 }
-.what-is-link{
+
+.what-is-link {
     @include budyXs-with-underline;
     color: $primary;
     margin-left: 4px;
     text-decoration: none;
 }
-.what-is-link:hover{
+
+.what-is-link:hover {
     color: $primary;
     text-decoration: underline;
 }
 
-.payment-pay-desc{
+.payment-pay-desc {
     @include bodyXS;
     width: 600px;
     margin-top: 16px;
 }
 
-  .info-input {
+.info-input {
     border-color: $dark;
     border-radius: 0;
 
 }
+
 .info-input:focus {
     border-color: $primary;
-    outline: none; 
+    outline: none;
 }
-.card-input{
+
+.card-input {
     border-color: $dark;
     border-radius: 0;
 
 }
+
 .card-input:focus {
-    border-color: $primary; 
-    outline: none; 
+    border-color: $primary;
+    outline: none;
 }
 
 .payment-input {
-    border: 1px solid $dark; 
+    border: 1px solid $dark;
     border-radius: 0px;
     font-size: 14px;
 }
 
 .payment-input:focus {
-    outline: none; 
-    border: 1px solid $primary; 
+    outline: none;
+    border: 1px solid $primary;
     border-radius: 0;
 }
 
-.billing-check-box-wrap{
+.billing-check-box-wrap {
     margin-top: 16px;
 }
 
+// breakpoints
+
+/* Extra Large: 1200px - 1300px */
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .payment-left {
+        margin-right: 48px;
+    }
+
+    .payment-card-btn {
+        padding: 9px 165px;
+    }
+
+    .payment-pay-desc {
+        width: 500px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .paymant-main {
+        flex-direction: column;
+    }
+
+    .payment-left {
+        margin-right: 0;
+        width: 720px;
+    }
+
+    .payment-input {
+        width: 695px;
+    }
+
+    .payment-right {
+        margin-top: 34px;
+        width: 720px;
+    }
+
+    .card-number-wrap {
+        width: 720px;
+    }
+
+    .card-number-form-input-container {
+        width: 548px;
+    }
+
+    .info-pay-form-input {
+        width: 400px;
+    }
+
+    .info-shop-address-wrap {
+        width: 509px;
+    }
+
+    .info-pay-form-input_secirity {
+        width: 210px;
+    }
+
+    .payment-card-btn {
+        padding: 9px 265px;
+    }
+
+    .payment-pay-desc {
+        width: 700px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .payment-left {
+        margin-right: 0;
+        width: 540px;
+    }
+
+    .payment-input {
+        width: 516px;
+    }
+
+    .payment-right {
+        margin-top: 34px;
+        width: 540px;
+    }
+
+    .card-number-wrap {
+        width: 540px;
+    }
+
+    .card-number-form-input-container {
+        width: 367px;
+    }
+
+    .info-pay-form-input {
+        width: 138px;
+    }
+
+    .info-shop-address-wrap {
+        width: 367px;
+    }
+
+    .info-pay-form-input_secirity {
+        width: 210px;
+    }
+
+    .info-pay-form-input_secirity {
+        width: 137px;
+    }
+
+    .payment-card-btn {
+        padding: 9px 175px;
+    }
+
+    .payment-pay-desc {
+        width: 520px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    .payment-left,
+    .card-number-wrap,
+    .info-shop-address-wrap,
+    .info-pay-form-input_secirity,
+    .billing-input-wrap,
+    .payment-pay-desc,
+    .payment-form-input-container,
+    .card-number-form-input-container,
+    .billing-wrap,
+    .payment-input {
+        width: 100%;
+    }
+    .payment-right {
+        margin-top: 34px;
+        width: 100%;
+    }
+    .info-pay-form-input {
+        width: 85px;
+    }
+    .payment-card-btn {
+        width: 100%;
+        font-size: 12px;
+    }
+    .security-wrap {
+        flex-wrap: wrap;
+    }
+    .what-is-wrap {
+        margin-left: 0;
+    }
+    .billing-input-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
