@@ -74,6 +74,7 @@ body.no-scroll {
     @include overlineSM;
     text-align: center;
     color: $light;
+    margin-bottom: 0;
 }
 
 .icon__wrap {
@@ -163,6 +164,6 @@ a:hover+.blur-background.active {
   display: none;
 }
 
-.accordion{
+.header-list-accordeon{
     display: none;
 }
