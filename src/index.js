@@ -47,6 +47,10 @@ const swiper = new Swiper(".mySwiper", {
     },
   });
 
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
 //FAQS
 
 document.querySelectorAll('.faq-item__header').forEach(header => {
