@@ -1,11 +1,13 @@
-.product-shop-all_photo-section {
+.hero-photo {
   max-width: 1920px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
   position: relative;
   width: 100%;
-  background-image: url("../../img/product/shop-all/shop-all-bg.png");
+  margin-right: 100vw;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
 }
 
 .shop-all_main {
@@ -389,4 +391,116 @@
 .breadcrumb{
   margin-top: 32px;
   margin-bottom: 48px;
+}
+.filter-adapt-wrap{
+  display: none;
+}
+
+//breakpoints
+/* Extra Large: 1200px - 1300px */
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1140px;
+  }
+  .shop-all_btn {
+    margin-right: 200px;}
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .shop-all_btn {
+    margin-right: 160px;}
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .shop-all_catalog-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: 720px;
+  }
+  .shop-all_filters{
+    display: none;
+  }
+  .filter-adapt-wrap{
+    display: block; 
+  }
+  .filter-adapt-link{
+    @include buttonSM;
+    text-decoration: none;
+    color: $dark;
+  }
+  .filter-adapt-link:hover{
+    color: $dark;
+  }
+  .col-4{
+    display: none;
+  }
+  .shop-all_catalog-wrap {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .shop-all_catalog {
+    width: 100%;
+    justify-content: center;
+  }
+  .filter-adapt-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; 
+  }
+  .filter-adapt-link {
+    text-align: center;
+  }
+  .shop-all_btn {
+    margin-right: 250px;}
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .shop-all_catalog {
+    justify-content: space-between;
+}
+.shop-all_catalog-item {
+  flex-basis: calc(47% - 12px);
+}
+.shop-all_btn{
+  margin-right: 170px;
+}
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+.shop-all_catalog-item:not(:nth-child(2n)) {
+  margin-right: 0px;
+}
+.shop-all_catalog-desc{
+  flex-direction: column;
+}
+.shop-all_catalog-desc__price{
+  padding-right: 0;
+  margin-left: 60px;
+}
+.shop-all_btn{
+
+   float: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 }
