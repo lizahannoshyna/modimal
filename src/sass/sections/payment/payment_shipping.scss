@@ -1,4 +1,3 @@
-
 .shipping-input{
     width: 600px;
     margin-right: 104px;
@@ -65,5 +64,153 @@ margin-top: 32px;
 .guarantee-price{
     font-weight: bold;
 }
+.info_contact-header{
+    color:  #868686;
+    font-weight: 700;
+}
+.shipping-desc{
+    color: #606060;
+    font-weight: 700;
+}
+.info_contact-title{
+    align-items: center;
+}
+
+// breakpoints
+
+/* Extra Large: 1200px - 1300px */
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1140px;
+    }
+    .shipping-input{
+        width: 500px;
+    margin-right: 70px;
+    }
+    .custom-line {
+        width: 500px;
+        border: 1px solid #DFDFDF;
+        margin: 16px 0 auto 0;
+    }
+    .radio-label{
+        font-size: 12px;
+    }
+    .r-to-card{
+        margin-right: 50px;
+    }
+    .r-to-card, .c-to-shopping{
+        font-size: 12px;
+    }
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .shipping-input{
+        width: 450px;
+    margin-right: 70px;
+    }
+    .custom-line {
+        width: 450px;
+        border: 1px solid #DFDFDF;
+        margin: 16px 0 auto 0;
+    }
+    .radio-label{
+        font-size: 12px;
+    }
+    .r-to-card{
+        margin-right: 20px;
+    }
+    .r-to-card, .c-to-shopping{
+        font-size: 11px;
+    }
+    .info-cart-price-item {
+        margin-left: 60px;
+    }
+
+    .cart-info__item--close {
+        margin-right: 690px;
+    }
+
+    .info-card-totals {
+        width: 380px;
+    }
+
+    .e-d-items {
+        
+        margin-left: 125px;
+        width: 180px;
+    }
+    .e-d-title{
+        width: 180px;
+    }
+    .radio-label {
+        font-size: 11px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .info-cart{
+        display: none;
+    }
+    .payment-shopping-wrap{
+        display: none;
+    }
+    .shipping-input {
+        width: 700px;
+        margin-right: 0px;
+    }
+    .radio-label{
+        font-size: 12px;
+    }
+    .r-to-card{
+        margin-right: 250px;
+    }
+    .r-to-card, .c-to-shopping{
+        font-size: 12px;
+    }
+    .e-d-items {
+        margin-left: 215px;
+        width: 310px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .e-d-items{
+        margin-left: 25px;
+    }
+    .r-to-card{
+        margin-right: 60px;
+    }
+    .guarantee-price{
+        margin-right: 15px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    .info_contact-title{
+        width: 400px;
+    }
+    .info_contact-title{
+        width: 510px;
+    }
+}
+  
 
 
