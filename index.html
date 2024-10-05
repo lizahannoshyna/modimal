@@ -21,8 +21,7 @@
   
   <title>Modimal</title>
   <script type="module" crossorigin src="./commonHelpers3.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/vendor-c4916ffe.js">
-  <link rel="modulepreload" crossorigin href="./assets/index-80236180.js">
+  <link rel="modulepreload" crossorigin href="./assets/index-adcd1f6b.js">
   <link rel="stylesheet" href="./assets/index-b6541c3c.css">
   <link rel="stylesheet" href="./assets/index-c9f5a0ca.css">
 </head>
@@ -423,14 +422,27 @@
                     <img class="gallery_img Thursday" src="./assets/Outfit_Thursday-a712fd84.jpg" alt="Outfit for Sunday">
                     <figcaption class="gallery_day">Thursday</figcaption>
                 </div>
+                
+        
             </div>
-
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     pagination: {
+       el: ".swiper-pagination",
+     },
+   });
+ </script>
   <section class="cotton">
     <div class="container">
         <h2 class="cotton_text">Stylish sustainability in clothing promotes eco-friendly choices for a greater future
