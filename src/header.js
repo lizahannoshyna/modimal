@@ -8,3 +8,5 @@ navInput.addEventListener('change', () => {
         body.classList.remove('no-scroll');
     }
 });
+
+
