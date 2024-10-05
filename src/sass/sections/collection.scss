@@ -1,6 +1,7 @@
 .collection {
   padding-top: 88px;
 }
+
 .collection-gallery-wrap {
   margin-top: 71px;
   display: flex;
@@ -44,7 +45,8 @@
 
 .collection-btn:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05); /* Збільшення кнопки на 5% */
+  transform: scale(1.05);
+  /* Збільшення кнопки на 5% */
 }
 
 #btn-pants {
@@ -53,6 +55,7 @@
   left: 16px;
   right: 399px;
 }
+
 // media points adaptive
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
@@ -77,6 +80,7 @@
     width: 100%;
     height: auto;
   }
+
   // .collection-galley_img {
   //   width: 100%;
   //   height: auto;
@@ -95,6 +99,7 @@
   .container {
     width: 720px;
   }
+
   .collection-gallery-wrap {
     height: 748px;
   }
@@ -103,6 +108,7 @@
     width: 100%;
     height: auto;
   }
+
   // .collection-galley_img {
   //   width: 100%;
   //   height: auto;
@@ -110,6 +116,7 @@
   .collection-gallery-item {
     width: 46%;
   }
+
   #btn-pants {
     width: 50%;
   }
@@ -120,22 +127,22 @@
   .container {
     width: 540px;
   }
+
   .collection-gallery-wrap {
     height: 561px;
     position: relative;
+    margin-top: 20px;
   }
 
   .collection-gallery_img {
     width: 100%;
     height: auto;
   }
-  // .collection-galley_img {
-  //   width: 100%;
-  //   height: auto;
-  // }
+
   .collection-gallery-item {
     width: 46%;
   }
+
   .collection-btn {
     width: 50%;
     text-align: center;
@@ -149,23 +156,31 @@
     padding: 0 15px;
     width: 100%;
   }
+
   .collection-gallery-wrap {
-    height: 480px;
-  
+    height: calc(100vw + 30px);
+    margin-top: 0;
+  }
+
+  .collection-title {
+    @include mobileH2;
+    font-weight: 800;
+  }
+
+  .collection-btn {
+    @include mobileBodyLG;
   }
 
   .collection-gallery_img {
     width: 100%;
     height: auto;
   }
-  // .collection-galley_img {
-  //   width: 100%;
-  //   height: auto;
-  // }
+
   .collection-gallery-item {
     width: 46%;
     position: relative;
   }
+
   .collection-btn {
     width: 50%;
     text-align: center;
