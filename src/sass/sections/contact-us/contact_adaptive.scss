@@ -36,17 +36,129 @@
     .write-us__mobile {
         display: block;
     }
+
+    // PAYMENT_CART 
+
+    .cart__wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cart__summary {
+        display: none;
+    }
+
+    .cart__item--left {
+        width: 700px;
+    }
+
+    .cart__right {
+        width: 700px;
+    }
+
+    .cart__summary--list {
+        width: auto;
+    }
 }
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {}
 
 /* Small: 576px - 767px */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+    // PAYMENT_CART
+
+    .cart__item--left {
+        width: 516px;
+    }
+
+    .cart__right {
+        width: 516px;
+    }
+
+    .cart__summary--list {
+        width: auto;
+    }
+
+}
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
 
+    //PAYMENT_CART 
+
+    .cart {
+        display: none;
+    }
+
+    .cart--mobile {
+        display: block;
+    }
+
+    .cart__header {
+        margin-top: 19px;
+        justify-content: initial;
+    }
+
+    .cart__header--title {
+        @include mobileH1;
+        font-weight: 800;
+        padding-top: 7px;
+        padding-left: 30px;
+    }
+
+    .cart__header--back {
+        margin-left: 22px;
+    }
+
+    .cart__summary--title {
+        @include mobileBodyLG;
+        margin-top: 29px;
+    }
+
+    .cart__list--mobile {
+        padding-left: 0;
+    }
+
+    .cart__flex--name {
+        @include mobileH5;
+        margin-top: 0;
+    }
+    .cart__flex--size {
+        @include mobileBodySM;
+        margin-top: 8px;
+    }
+    .cart__flex--color {
+        @include mobileBodySM;
+        margin-top: 16px;
+    }
+
+    .cart__flex--price {
+        @include mobileH5;
+    }
+
+    .cart__item--img {
+        width: 110px;
+        height: 115px;
+    }
+
+    .summary__price {
+        @include mobileBodyLG;
+    }
+
+    .summary__total {
+        @include mobileBodyLG;
+    }
+
+    .cart__guarantee {
+        @include mobileOverline;
+    }
+
+    .cart__next--btn {
+        width: 152px;
+        margin-bottom: 40px;
+    }
     //REGISTER 
 
     .register-01_wrap {
