@@ -143,3 +143,67 @@
 .mission__text--last {
     margin-bottom: 48px;
 }
+
+.mission__list--mobile {
+    display: block;
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .mission__six--list {
+        display: none;
+    }
+
+    .mission__list--mobile {
+        display: block;
+    }
+
+    .mission__gallery--list {
+        width: 100px;
+    }
+
+    .processing__img {
+        width: calc((100vw / 2) - 100px);
+    }
+    .materials__img {
+        width: calc((100vw / 2) - 100px);
+    }
+
+    
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .mission__beyond {
+        display: none;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .processing__img {
+        width: calc((100vw / 2) - 50px);
+    }
+    .materials__img {
+        width: calc((100vw / 2) - 50px);
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .mission__six--title {
+        @include mobileH4;
+    }
+
+    .mission__sustainability--title {
+        @include mobileH4;
+    }
+
+    .mission__sustainability--text {
+        @include mobileBodyMD;
+    }
+
+    .mission__text {
+        @include mobileBodyMD;
+    }
+}
