@@ -68,7 +68,7 @@
     padding-bottom: 0;
     background-color: white;
     border: none;
-    width: 83.88px; 
+    width: 83.88px;
     height: 31.21px;
     transition: transform 0.3s ease;
 
@@ -79,7 +79,7 @@
 
 .saturday-new__text {
     @include bodySM;
-    
+
     margin: 2.7px 0;
     display: flex;
     align-items: center;
@@ -126,4 +126,61 @@
 
 .breadcrumb-item.active {
     cursor: default;
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .modiweek-saturday .container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .saturday-right {
+        width: 100%;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+
+    .saturday-left,
+    .saturday-right {
+        width: 100%;
+    }
+
+    .saturday-right {
+        margin-top: 650px;
+    }
+
+    .saturday-title {
+        @include mobileH1;
+    }
+
+    .saturday-img {
+        position: absolute;
+        left: -50px;
+    }
+
+    .saturday-item__img {
+        width: 152px;
+    }
+
+    .figcaption-left__title {
+        @include mobileH4;
+    }
+
+    .figcaption-left__text {
+        @include mobileBodyMD;
+    }
+
+    .saturday-figcaption__right {
+        display: none;
+    }
 }
