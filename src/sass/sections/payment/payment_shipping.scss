@@ -135,9 +135,6 @@ margin-top: 32px;
         margin-right: 690px;
     }
 
-    .info-card-totals {
-        width: 380px;
-    }
 
     .e-d-items {
         
@@ -204,11 +201,49 @@ margin-top: 32px;
         padding: 0 15px;
         max-width: 100%;
     }
-    .info_contact-title{
-        width: 400px;
+    .info_contact-title .info_contact-header {
+        font-size: 16px;
+    }
+    .e-d-title {
+        font-size: 14px;
+    }
+    .delivery-options-title {
+        font-size: 18px;
     }
     .info_contact-title{
-        width: 510px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .info_contact-title{
+        width: 100%;
+    }
+    .info_contact-title{
+        width: 100%;
+       }
+       .e-d-item-wrap{
+        flex-direction: column;
+       }
+       .e-d-items{
+        margin-left: 0;
+       }
+       .custom-line{
+        width: 100%;
+       }
+       .r-to-card-info{
+        margin: 0;
+       }
+
+       .c-to-shopping, .r-to-card{
+        width: 100%;
+       }
+       .c-to-shopping{
+        margin-top: 14px;
+       }
+       .nav-payment-sipping {
+        padding-top: 50px;
+    }
+    .e-d-items{
+        margin-top: 20px;
     }
 }
   

@@ -1,5 +1,10 @@
 .payment-info-wrap {
-    display: flex;
+    width: 600px;
+    margin-right: 104px;
+}
+
+.info-cart {
+    width: 496px;
 }
 
 .information-input {
@@ -368,6 +373,21 @@
     display: none;
 }
 
+.information-cart {
+    background-color: #F0F2EF;
+    margin-right: -100vw;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 24px 0 32px 24px;
+}
+
+.information-cart-price-item {
+    @include H6;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
 
 // breakpoints
 
@@ -377,10 +397,9 @@
         max-width: 1140px;
     }
 
-    .information-input {
+    .payment-info-wrap {
         width: 500px;
         margin-right: 80px;
-        padding: 24px 0 32px 0;
     }
 
     .info-form-input-container {
@@ -388,7 +407,11 @@
         width: 500px;
     }
 
-    .r-to-card {
+    .info_contact-title {
+        width: 500px;
+    }
+
+    .r-information-to-card {
         margin-right: 57px;
     }
 
@@ -419,17 +442,13 @@
         padding: 24px 0 32px 0;
     }
 
-    .info-cart-price-item {
-        margin-left: 50px;
-    }
 
     .cart-info__item--close {
         margin-right: 290px;
     }
-    
 
-    .info-card-totals {
-        width: 380px;
+    .c-to-shopping_information {
+        margin-left: 95px;
     }
 }
 
@@ -438,43 +457,64 @@
     .container {
         max-width: 720px;
     }
-    .payment-info-wrap {
+    .payment-information-whole-wrap {
         flex-direction: column;
     }
-    .info-cart {
+
+    .information-input {
+        display: none;
+    }
+
+    .information-cart {
+        background-color: $light;
+        padding-left: 0;
+    }
+
+    .information-cart {
         order: 1;
     }
-    .information-input {
+
+    .payment-info-wrap {
         order: 2;
     }
+
     .logo-bread-adapt {
         display: block;
     }
+
     .logo-bread {
         display: none;
     }
+
     .info-cart {
         background-color: $light;
         padding: 24px 0 32px 24px;
     }
+
     .information-input {
         width: 600px;
         margin-right: 80px;
         padding: 24px 0 32px 0;
     }
+
+    .payment-info-wrap {
+        margin-right: 0;
+    }
+
     .info-form-input-container {
         position: relative;
         width: 695px;
     }
-    .info-cart-price-item {
-        margin-left: 380px;
-    }
+
     .cart-info__item--close {
         margin-left: 175px;
     }
-    .info-card-totals {
+
+    .info-card-totals-item,
+    .info-desc {
         width: 693px;
     }
+
     .info-first-name,
     .info-last-name {
         padding: 9px 16px;
@@ -484,19 +524,29 @@
         transition: border-color 0.3s ease;
         margin-right: 22px;
     }
-    .info-cart {
-        padding-left: 0;
-    }
+
     .r-to-card {
         margin-right: 155px;
     }
+
     .info-card-title-shipping {
         text-align: center;
     }
-    .information-input {
+
+    .information-input,
+    .info_contact-title,
+    .info-shop-adress,
+    .nav-payment-info {
         width: 695px;
     }
 
+    .c-to-shopping_information {
+        margin-left: 35px;
+    }
+
+    .information-cart-price-item {
+        margin-left: 380px;
+    }
 }
 
 /* Small: 576px - 767px */
@@ -505,7 +555,17 @@
         max-width: 540px;
     }
 
-    .info_contact-title, .info-card-title-shipping{
+    .information-cart-price-item {
+        margin-left: 200px;
+    }
+
+    .info-card-totals-item,
+    .info-desc {
+        width: 515px;
+    }
+
+    .info_contact-title,
+    .info-card-title-shipping {
         width: 500px;
     }
 
@@ -513,15 +573,15 @@
         position: relative;
         width: 515px;
     }
-    .info-cart-price-item {
-        margin-left: 200px;
-    }
+
     .cart-info__item--close {
         margin-left: 0;
     }
+
     .info-card-totals {
         width: 515px;
     }
+
     .info-first-name,
     .info-last-name {
         padding: 9px 16px;
@@ -531,15 +591,19 @@
         transition: border-color 0.3s ease;
         margin-right: 22px;
     }
+
     .info-cart {
         padding-left: 0;
     }
+
     .r-to-card {
         margin-right: 50px;
     }
+
     .info-card-title-shipping {
         text-align: center;
     }
+
     .information-input {
         width: 695px;
     }
@@ -551,42 +615,54 @@
         padding: 0 15px;
         max-width: 100%;
     }
-    .info_contact-title, .info-card-title-shipping{
-        width: 470px;
+
+    .payment-info {
+        width: 100%;
     }
 
-    .info-form-input-container {
-        position: relative;
-        width:  470px;
+    .payment-info-wrap,
+    .info-shop-adress-input-wrap,
+    .info-label,
+    .info-card-totals-item,
+    .info-desc,
+    .info_contact-title_information,
+    .info-form-input-container,
+    .info-shop-adress, .info-shop-adress-name-wrap, .info-card-title-shipping, .info-card-totals-item, .info-card-totals {
+        width: 100%;
     }
-    .info-cart-price-item {
-        margin-left: 145px;
+   .info-first-name, .info-last-name {
+    max-width:  170px;
+    margin-right: 0;
     }
-    .cart-info__item--close {
-        margin-left: 0;
+    .info-card-item-wrap {
+        margin-top: 10px;
+        width: 100%;
     }
-    .info-card-totals {
-        width: 470px;
+    .info-card-totals, .info-card-totals-item, .info-desc {
+        width: 100%;
     }
-    .info-first-name,
-    .info-last-name {
-        padding: 9px 16px;
-        width: 170px;
-        box-sizing: border-box;
-        border: 1px solid #0C0C0C;
-        transition: border-color 0.3s ease;
-        margin-right: 22px;
+    .cart__item--mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        margin-bottom: 24px;
     }
-    .info-cart {
-        padding-left: 0;
+    .quantity-selector{
+        display: none;
     }
-    .r-to-card {
-        margin-right: 25px;
+    .information-cart-price-item{
+        margin: 0;
     }
-    .info-card-title-shipping {
-        text-align: center;
+    .cart__item--flex{
+        width: 300px;
     }
-    .information-input {
-        width: 599px;
+    .c-to-shopping, .r-information-to-card {
+        width: 100%;
+    }
+    .r-to-card-info, .c-to-shopping_information {
+        margin: 0;
+    }
+    .information-input, .info_contact-title, .info-shop-adress, .nav-payment-info {
+        width: 100%;
     }
 }
