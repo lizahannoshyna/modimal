@@ -148,14 +148,19 @@
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 2000px) { 
+  .container {
+    width: 1160px;
+  }
   .swiper__img {
     opacity: 0;
   }
 }
-
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
   .swiper__img {
     opacity: 0;
   }
@@ -163,6 +168,9 @@
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
   .swiper__img {
     opacity: 0;
   }
@@ -170,20 +178,60 @@
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
+  .container {
+   width: 540px;
+  }
   .swiper__img {
     opacity: 0;
   }
-
-}
-
-/* Extra small: 0px (320px) - 575px */
-@media (max-width: 575px) {
   .catalog-item {
     &:last-child {
       display: none;
     }
   }
+  .bs-link-view {
+    display: none;
+  }
+  .best-sellers_header {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    padding-bottom: 0;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+  .catalog-desc__subtitle {
+    color: $dark;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .catalog__img-color:not(:first-child) {
+    margin-left: 8px;
+  }
+  .catalog__card {
+    width: 200px;
+    height: 333px;
+  }
+  .catalog__img {
+    width: 200px;
+    height: 333px;
+  }
+}
 
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .catalog-item {
+    &:last-child {
+      display: none;
+    }
+  }
   .best-sellers_header {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -193,40 +241,31 @@
     height: 28px;
     margin-bottom: 8px;
   }
-
   .catalog-item:not(:nth-child(3n)) {
     margin-right: 0;
-  }
-
+}
   .catalog-list {
-    gap: 24px;
     justify-content: center;
   }
-
   .swiper__wrap {
     display: flex;
     justify-content: center;
   }
-
   .catalog__img-color:not(:first-child) {
     margin-left: 8px;
   }
-
   .swiper__img {
     opacity: 1;
-    margin-top: 62px;
+   margin-top: 62px;
   }
-
   .catalog__card {
     width: 152px;
     height: 333px;
   }
-
   .catalog__img {
     width: 152px;
     height: 213px;
   }
-
   .catalog-desc__subtitle {
     color: $dark;
     font-family: 'Montserrat';
@@ -234,11 +273,9 @@
     font-size: 14px;
     line-height: 140%;
   }
-
   .bs-link-view {
     display: none;
   }
-
   .heart {
     position: absolute;
     top: 8px;
