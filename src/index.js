@@ -55,3 +55,6 @@ document.getElementById('changeColor2').addEventListener('click', function () {
   }
   isGreen2 = !isGreen2; // Переключаем состояние
 });
+
+
+
