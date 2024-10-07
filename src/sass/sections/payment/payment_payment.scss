@@ -237,17 +237,10 @@
 // breakpoints
 
 /* Extra Large: 1200px - 1300px */
-@media (max-width: 1300px) {
-    .container {
-        max-width: 1140px;
-    }
-}
+@media (max-width: 1300px) {}
 
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
-    .container {
-        max-width: 960px;
-    }
 
     .payment-left {
         margin-right: 48px;
@@ -264,9 +257,6 @@
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
-    .container {
-        max-width: 720px;
-    }
 
     .paymant-main {
         flex-direction: column;
@@ -317,9 +307,6 @@
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
-    .container {
-        max-width: 540px;
-    }
 
     .payment-left {
         margin-right: 0;
@@ -370,10 +357,7 @@
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
-    .container {
-        padding: 0 15px;
-        max-width: 100%;
-    }
+
     .payment-left,
     .card-number-wrap,
     .info-shop-address-wrap,
@@ -386,23 +370,29 @@
     .payment-input {
         width: 100%;
     }
+
     .payment-right {
         margin-top: 34px;
         width: 100%;
     }
+
     .info-pay-form-input {
         width: 85px;
     }
+
     .payment-card-btn {
         width: 100%;
         font-size: 12px;
     }
+
     .security-wrap {
         flex-wrap: wrap;
     }
+
     .what-is-wrap {
         margin-left: 0;
     }
+
     .billing-input-wrap {
         width: 100%;
         display: flex;

@@ -164,17 +164,29 @@
     .processing__img {
         width: calc((100vw / 2) - 100px);
     }
+
     .materials__img {
         width: calc((100vw / 2) - 100px);
     }
 
-    
+
 }
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
     .mission__beyond {
         display: none;
+    }
+    .mission__gallery {
+        display: none;
+    }
+
+    .mission__text {
+        display: none;
+    }
+    .dfe {
+        display: block;
+        margin-bottom: 50px;
     }
 }
 
@@ -183,8 +195,13 @@
     .processing__img {
         width: calc((100vw / 2) - 50px);
     }
+
     .materials__img {
         width: calc((100vw / 2) - 50px);
+    }
+
+    .mission__elegance {
+        display: none;
     }
 }
 
