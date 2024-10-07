@@ -125,10 +125,12 @@
         @include mobileH5;
         margin-top: 0;
     }
+
     .cart__flex--size {
         @include mobileBodySM;
         margin-top: 8px;
     }
+
     .cart__flex--color {
         @include mobileBodySM;
         margin-top: 16px;
@@ -159,6 +161,7 @@
         width: 152px;
         margin-bottom: 40px;
     }
+
     //REGISTER 
 
     .register-01_wrap {

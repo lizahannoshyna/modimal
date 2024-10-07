@@ -2,20 +2,24 @@
     width: 427px;
     height: 512px;
 }
+
 .img__wrapper {
     width: 125px;
     height: 512px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
 .product-swiper__img {
     width: 125px;
     margin-top: 16px;
     height: 160px;
 }
+
 .product__desc {
     margin-left: 24px;
 }
+
 .icon__text {
     color: #868686;
     text-decoration: none;
@@ -23,23 +27,28 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+
     &:not(:last-child) {
         margin-right: 276px;
     }
 }
+
 .iconn__wrap {
     margin-top: 44px;
     margin-bottom: 86px;
 }
+
 .product-item__img {
     width: 427px;
     height: 512px;
 }
+
 .product-item {
     .container {
         display: flex;
     }
 }
+
 .product__title {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -47,6 +56,7 @@
     line-height: 140%;
     margin-bottom: 32px;
 }
+
 .product__text {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -54,6 +64,7 @@
     line-height: 180%;
     margin-bottom: 23px;
 }
+
 .product__input {
     width: 100%;
     color: #0C0C0C;
@@ -75,9 +86,11 @@
     margin-top: 10px;
     margin-bottom: 33px;
 }
+
 .colors__img {
     margin-bottom: 64px;
 }
+
 .product__button {
     width: 100%;
     color: $light;
@@ -85,18 +98,22 @@
     height: 40px;
     border: 0;
 }
+
 .accordion-item {
     background-color: #F0F2EF;
 }
+
 .accordion-button {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
+
     &:focus {
         color: green;
     }
 }
+
 .accordion__text {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -108,6 +125,7 @@
     white-space: pre-wrap;
     margin-bottom: 0;
 }
+
 .product-title__block {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -116,6 +134,7 @@
     margin: 24px;
     margin-bottom: 8px;
 }
+
 .product-text__block {
     font-family: 'Montserrat';
     font-size: 18px;
@@ -123,12 +142,14 @@
     font-weight: 400;
     margin: 16px;
 }
+
 .product-item__block {
     height: 332px;
     margin-left: 24px;
     border: 1px #DFDFDF solid;
     background-color: #F0F2EF;
 }
+
 .product-item__button {
     color: $dark;
     font-size: 14px;
@@ -141,13 +162,29 @@
     margin-left: 16px;
     margin-bottom: 32px;
     margin-top: 24px;
+
     &:nth-child(1) {
         width: 94px;
     }
+
     &:nth-child(2) {
         width: 189px;
     }
+
     &:nth-child(3) {
         width: 183px;
     }
 }
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+      padding: 0 15px;
+      width: 100%;
+    }
+    .product-item__block {
+        display: none;
+    }
+    .accordion {
+        width: 100%;
+    }
+  }
