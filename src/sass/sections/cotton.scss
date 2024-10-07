@@ -11,8 +11,8 @@
         @include bodyXL;
         color: #272F25;
         width: 495px;
-        padding-top: 359px;
-        margin-left: 729px;
+        float: right;
+        text-align: right
     }
 
     &_btn {
@@ -20,16 +20,20 @@
         text-align: center;
         background-color: #FFFFFF;
         border: none;
-
-        margin-left: 1041px;
         width: 183px;
         height: 40px;
         transition: transform 0.3s ease;
+        margin-left: auto;
 
         &:hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transform: scale(1.05);
         }
+    }
+    .cotton-wrap{
+      padding-top: 359px;
+      flex-direction: column;
+      float: right;
     }
 }
 
@@ -38,13 +42,8 @@
     .container {
       max-width: 1140px;
     }
-    .cotton_text{
-        padding-top: 359px;
-        margin-left: 629px;
-    }
-    .cotton_btn{
-        margin-left: 920px;
-        margin-top: 32px;
+    .cotton-wrap{
+      padding-top: 259px;
     }
   }
   
@@ -53,14 +52,6 @@
     .container {
       max-width: 960px;
     }
-    .cotton_text{
-        padding-top: 359px;
-        margin-left: 429px;
-    }
-    .cotton_btn{
-        margin-left: 720px;
-        margin-top: 32px;
-    }
   }
   
   /* Medium: 768px - 991px */
@@ -68,29 +59,12 @@
     .container {
       max-width: 720px;
     }
-    .cotton_text{
-        padding-top: 359px;
-        margin-left: 229px;
-    }
-    .cotton_btn{
-        margin-left: 520px;
-        margin-top: 32px;
-    }
   }
   
   /* Small: 576px - 767px */
   @media (max-width: 767px) {
     .container {
       max-width: 540px;
-    }
-    .cotton_text{
-        padding-top: 350px;
-        margin-left: 40px;
-    }
-    .cotton_btn{
-        margin-left: 340px;
-        margin-bottom: 16px;
-        margin-top: 32px;
     }
   }
   
@@ -102,21 +76,15 @@
     }
     .cotton{
         background: url("../img/Cotton/cotton_bg_mobile-2x.png");
-        background-position-y: 60%;
-        
-        
+        background-position-y: 60%;  
     }
     .cotton_text{
-        width: 450px;
-        padding-top: 340px;
-        margin-left: 22px;
-        text-align: right;
+      width: 100%;
+      font-size: 14px;
     }
     .cotton_btn{
-       margin-left: 320px;
-        margin-bottom: 16px;
-        margin-top: 32px;
-        width: 152px;
-        height: 40px;
+      width: 80%;
+      font-size: 14px;
+      margin-top: 10px;
     }
   }

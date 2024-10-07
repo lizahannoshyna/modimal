@@ -8,9 +8,10 @@
     .header__icon {
         margin-right: 19px;
     }
-    .nav{
+
+    .nav {
         margin: 0;
-     }
+    }
 }
 
 /* Medium: 768px - 991px */
@@ -83,48 +84,151 @@
         padding: 20px;
         background: #fff;
         box-shadow: 0 12px 8px #ececec;
-        height: 100vh;
+       padding-bottom: 1000px;
         z-index: 999;
     }
+
     .nav {
         order: 1;
         margin-top: 18px;
-      }
-      .logo-link {
+    }
+
+    .logo-link {
         order: 3;
-      }
-      .search-icon {
-        order: 2; 
+    }
+
+    .search-icon {
+        order: 2;
         margin-right: 100px;
-      }  
-      .heart-icon {
+    }
+
+    .heart-icon {
         order: 4;
         margin-left: 100px;
-      }
-      .shop-icon {
-        order: 5; 
-      }
-      .pearson-icon {
+    }
+
+    .shop-icon {
+        order: 5;
+    }
+
+    .pearson-icon {
         display: none;
-      }
-      .header-wrap{
+    }
+
+    .header-wrap {
         padding-bottom: 18px;
     }
+
     .header-icon-svg {
         width: 20px;
         height: 20px;
     }
-    .shop-icon{
+
+    .shop-icon {
         margin-right: 0;
     }
+
     .search-icon {
         margin-right: 150px;
         margin-left: 19px;
     }
+
     .heart-icon {
-        
+
         margin-left: 150px;
     }
+
+    .header-line {
+        border: none;
+        height: 2px;
+        background-color: #333;
+        width: 80%;
+        display: block;
+    }
+
+    .header__link {
+        @include bodyLG;
+        line-height: 117% !important;
+        font-weight: 500 !important;
+
+
+    }
+
+    .header__item {
+        float: left;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .header__list {
+        padding: 0 150px;
+    }
+
+    .header__link {
+        position: relative;
+        /* Для позиціонування псевдоелемента */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        cursor: pointer;
+        z-index: 1;
+        margin-right: 0;
+    }
+
+    .header__link::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $primary;
+        width: 0;
+        transition: width 0.3s ease;
+        margin-top: 12px;
+    }
+
+    .header__item .header__link::after {
+        width: 100%;
+        /* Лінія розтягується на весь контейнер */
+    }
+
+    .collection-menu-img,
+    .figcaption-text,
+    .collection-header,
+    .collection-menu_wrap-img,
+    .new-in-menu__featured-items,
+    .new-in__list--title,
+    .featured-items__img,
+    .featured-items__text,
+    .plus-size__list--title, .sustainability-items__img, .sustanability__list--title {
+        display: none;
+    }
+
+    .collection-menu,
+    .new-in-menu,
+    .plus-size-menu,
+    .sustanability-menu {
+        width: 100%;
+        position: relative;
+        top: 34px;
+        padding: 0;
+    }
+
+    .collection-link,
+    .new-in__list--link,
+    .plus-size__list--link, .sustanability__list--link {
+        font-size: 16px;
+    }
+
+    .container-collection-menu,
+    .new-in-menu__container,
+    .plus-size-menu__container, .sustanability-menu__container {
+        width: 490px;
+        padding: 0;
+    }
+
 }
 
 /* Small: 576px - 767px */
@@ -133,19 +237,39 @@
         margin-right: 100px;
         margin-left: 19px;
     }
+    .container-collection-menu,
+    .new-in-menu__container,
+    .plus-size-menu__container, .sustanability-menu__container {
+        width: 390px;
+        padding: 0;
+    }
+    .collection-link,
+    .new-in__list--link,
+    .plus-size__list--link, .sustanability__list--link {
+        font-size: 13px;
+    }
+
     .heart-icon {
-        
+
         margin-left: 100px;
     }
 }
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
-    .search-icon, .heart-icon {
+    .header__list {
+        position: absolute;
+        top: 110px;}
+    .search-icon,
+    .heart-icon {
         margin-right: 4px;
         margin-left: 4px;
     }
-    .enjoy-text{
+
+    .enjoy-text {
         font-size: 10px;
+    }
+    .featured-list,{
+        display: none;
     }
 }
