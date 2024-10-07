@@ -1,6 +1,7 @@
 body.no-scroll {
     overflow: hidden;
 }
+
 .container_header {
     padding: 0;
 }
@@ -12,7 +13,9 @@ body.no-scroll {
     align-items: center;
     justify-content: space-between;
 }
-.logo-link, .header__icon{
+
+.logo-link,
+.header__icon {
     margin-top: 18px;
 }
 
@@ -145,11 +148,13 @@ a:hover+.blur-background.active {
 
 
 .toggle-header {
-    margin-left: 20px; /* Додає простір між бургер-меню і логотипом */
+    margin-left: 20px;
+    /* Додає простір між бургер-меню і логотипом */
 }
 
 .logo-modimal {
-    max-height: 50px; /* Налаштовує висоту логотипу */
+    max-height: 50px;
+    /* Налаштовує висоту логотипу */
 }
 
 
@@ -158,15 +163,17 @@ a:hover+.blur-background.active {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .nav-input[type="checkbox"],
-.toggle {
-  display: none;
 }
 
-.header-list-accordeon{
+.nav-input[type="checkbox"],
+.toggle {
     display: none;
 }
-.nav{
-   margin: 0 60px;
+
+.header-list-accordeon {
+    display: none;
+}
+
+.nav {
+    margin: 0 60px;
 }

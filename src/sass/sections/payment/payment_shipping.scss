@@ -86,9 +86,6 @@
 
 /* Extra Large: 1200px - 1300px */
 @media (max-width: 1300px) {
-    .container {
-        max-width: 1140px;
-    }
 
     .shipping-input {
         width: 500px;
@@ -117,9 +114,6 @@
 
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
-    .container {
-        max-width: 960px;
-    }
 
     .shipping-input {
         width: 450px;
@@ -171,10 +165,6 @@
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
-    .container {
-        max-width: 720px;
-    }
-
     .info-cart {
         display: none;
     }
@@ -209,9 +199,6 @@
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
-    .container {
-        max-width: 540px;
-    }
 
     .e-d-items {
         margin-left: 25px;
@@ -228,10 +215,6 @@
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
-    .container {
-        padding: 0 15px;
-        max-width: 100%;
-    }
 
     .info_contact-title .info_contact-header {
         font-size: 16px;

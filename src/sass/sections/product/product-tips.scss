@@ -1,29 +1,36 @@
 .product_tips {
   padding-top: 88px;
 }
+
 .product_tips_header {
   @include H3;
   padding-bottom: 24px;
 }
+
 .product_tips_catalog_list {
   gap: 24px;
   justify-content: space-between;
 }
+
 .product-tips_caption {
   padding: 5px 8px;
 }
+
 .product-tips_title {
   @include H6;
 }
+
 .product-tips_desc {
   @include bodyMD;
   padding-top: 8px;
   justify-content: space-between;
 }
+
 .product-tips_desc_price {
   @include H6;
   padding-right: 8px;
 }
+
 .product-tips_choose-colour {
   padding-top: 8px;
 }
@@ -41,6 +48,59 @@
   /* Відстань між картками */
   padding: 0;
   list-style: none;
+}
+
+.product-tips_catalog-item {
+  flex-basis: calc(40% - 12px);
+  box-sizing: border-box;
+}
+
+.product-tips_catalog-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+
+.product-tips_catalog-item {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-tips_catalog-item:hover {
+  box-shadow: 0 4px 8px rgba(90, 109, 87, 0.42);
+  transform: scale(1.02);
+}
+
+
+
+.product-tips_catalog-card {
+  background-color: $light;
+  transition: transform 0.3s ease;
+}
+
+.product-tips_catalog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid $primary;
+}
+
+.product-tips_catalog-card {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  margin-top: 26px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/modiweek/heart-outline.svg");
+  background-size: cover;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+
+  &.filled {
+    background-image: url("../../img/modiweek/heart-filled.svg");
+  }
 }
 
 .product-tips_catalog-item {

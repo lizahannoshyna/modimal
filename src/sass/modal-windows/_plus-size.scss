@@ -52,15 +52,24 @@
 
 .plus-size-menu {
     display: none;
-    position: fixed;  /* Фіксована позиція для модального вікна */
-    top: 110px;           /* Початок від верхнього краю */
-    left: 0px;          /* Початок від лівого краю */
-    width: 100vw;     /* Покриття всієї ширини екрану */
-    height: 550px;    /* Покриття всієї висоти екрану */
-    background-color: white; /* Задній фон для модального вікна */
-    z-index: 999;     /* Щоб вікно було поверх інших елементів */
-    padding: 20px;    /* Внутрішній відступ */
-    overflow: auto;   /* Прокрутка для довгого контенту */
+    position: fixed;
+    /* Фіксована позиція для модального вікна */
+    top: 110px;
+    /* Початок від верхнього краю */
+    left: 0px;
+    /* Початок від лівого краю */
+    width: 100vw;
+    /* Покриття всієї ширини екрану */
+    height: 550px;
+    /* Покриття всієї висоти екрану */
+    background-color: white;
+    /* Задній фон для модального вікна */
+    z-index: 999;
+    /* Щоб вікно було поверх інших елементів */
+    padding: 20px;
+    /* Внутрішній відступ */
+    overflow: auto;
+    /* Прокрутка для довгого контенту */
     padding: 14px;
 }
 
@@ -68,11 +77,11 @@
     display: block;
 }
 
-.category-list__header:hover{
+.category-list__header:hover {
     color: $primary;
- }
- 
- .category-list__header:hover::after {
+}
+
+.category-list__header:hover::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -83,8 +92,8 @@
     bottom: 0;
     left: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
-  .category-list__link:hover{
+.category-list__link:hover {
     color: $primary;
-  }
+}

@@ -225,6 +225,13 @@
     }
   }
 
+  .best-selllers__catalog {
+    display: flex;
+  }
+  .catalog-list {
+    width: calc(100vw);
+  }
+
   .best-sellers_header {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -235,9 +242,6 @@
     margin-bottom: 8px;
   }
 
-  .catalog-item:not(:nth-child(3n)) {
-    margin-right: 0;
-  }
 
   .catalog-list {
     justify-content: center;

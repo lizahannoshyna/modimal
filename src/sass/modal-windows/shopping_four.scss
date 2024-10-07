@@ -1,23 +1,36 @@
 .shopping_bag_four {
     display: block;
-    position: fixed;  /* Фіксована позиція для модального вікна */
-    top: 80px;           /* Початок від верхнього краю */
-    right: 94px;          /* Початок від лівого краю */
-    width: 600px;     /* Покриття всієї ширини екрану */
-    height: 900px;     /* Динамічна висота */
-    max-height: 90vh; /* Максимальна висота */
-    background-color: white; /* Задній фон для модального вікна */
-    z-index: 999;     /* Щоб вікно було поверх інших елементів */
-    padding: 20px;    /* Внутрішній відступ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для модального вікна */
-    overflow: hidden;   /* Прокрутка для довгого контенту */
+    position: fixed;
+    /* Фіксована позиція для модального вікна */
+    top: 80px;
+    /* Початок від верхнього краю */
+    right: 94px;
+    /* Початок від лівого краю */
+    width: 600px;
+    /* Покриття всієї ширини екрану */
+    height: 900px;
+    /* Динамічна висота */
+    max-height: 90vh;
+    /* Максимальна висота */
+    background-color: white;
+    /* Задній фон для модального вікна */
+    z-index: 999;
+    /* Щоб вікно було поверх інших елементів */
+    padding: 20px;
+    /* Внутрішній відступ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Легка тінь для модального вікна */
+    overflow: hidden;
+    /* Прокрутка для довгого контенту */
 
     /* Вилучено повторне визначення padding і width */
 }
 
 .header__item:hover .shopping_bag_four {
-    display: block;   /* Показати модальне вікно при наведенні */
+    display: block;
+    /* Показати модальне вікно при наведенні */
 }
+
 .shopping_bag_four_card {
     position: relative;
 }
@@ -27,27 +40,32 @@
     font-weight: 700;
     line-height: 28px;
     padding-left: 200px;
-    
+
 }
+
 .shopping_bag_four {
     font-family: Arial, sans-serif;
 }
+
 .shopping_bag_four_title {
     margin-bottom: 20px;
     color: rgba(39, 47, 37, 1);
     font-size: 24px;
 }
+
 .shopping_bag_four_shopping_card {
     display: flex;
     border-bottom: 1px solid #eee;
     padding: 20px 0;
     position: relative;
 }
+
 .shopping_bag_four_card_img {
     width: 150px;
     height: auto;
     margin-right: 20px;
 }
+
 .shopping_bag_four_card_btn {
     position: absolute;
     top: 25px;
@@ -56,49 +74,58 @@
     border: 1px solid #ddd;
     width: 35px;
     height: 35px;
-   
+
 }
+
 .shopping_bag_four_shopping_card h6 {
     font-size: 24px;
     position: absolute;
     top: 20px;
     left: 170px;
     text-decoration: none;
-    color: black ;
+    color: black;
     font-weight: 700;
 }
+
 .shopping_bag_four_shopping_card p {
     margin: 5px 0;
 }
+
 .shopping_bag_four_dollar {
     font-weight: bold;
     margin-left: auto;
     padding-right: 20px;
 }
-.shopping_bag_four_card_quantity{
+
+.shopping_bag_four_card_quantity {
     width: 80px;
-height: 36px;
+    height: 36px;
 
 
 }
+
 .shopping_bag_four_card_item_wrap {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
-.shopping_bag_four_card_item_wrap h6, 
+
+.shopping_bag_four_card_item_wrap h6,
 .shopping_bag_four_card_item_wrap p {
     text-decoration: none;
     color: rgba(64, 64, 64, 1);
 }
+
 .shopping_bag_four_dollar {
     position: absolute;
     left: 500px;
     bottom: 50px;
 }
+
 .shopping_bag_four_card {
     position: relative;
 }
+
 .shopping_bag_four_check_btn {
     background-color: rgba(90, 109, 87, 1);
     width: 350px;
@@ -114,8 +141,9 @@ height: 36px;
 
     position: relative;
 }
+
 .shopping_bag_four_check_btn span {
-    color: white ;
+    color: white;
     text-align: center;
     position: absolute;
     top: 25%;
