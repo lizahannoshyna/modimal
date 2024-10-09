@@ -136,83 +136,67 @@
                     <div class="info-shop-adress-input-wrap">
                         <label class="shopping-address__label info-label">
                             <p class="shopping-address__label-header info-label-header"></p>
-                            <div class=" info-form-input-container">
-                                <input class="shopping-address__input info-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            <div class="info-form-input-container">
+                                <input class="shopping-address__input info-input" type="text" name="country" required
                                     placeholder="Country/Region">
                             </div>
                         </label>
 
 
                         <div class="info-shop-adress-name-wrap d-flex">
-
-                            <div
-                                class="shopping-address__input-container shop-input-container info-form-input-container">
-                                <input class="shopping-address__input info-first-name" type="email" name="email"
-                                    required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                    placeholder="First Name">
+                            <div class="shopping-address__input-container shop-input-container info-form-input-container">
+                                <label>
+                                    <input class="shopping-address__input info-first-name" type="text" name="first_name"
+                                        required placeholder="First Name">
+                                </label>
                             </div>
-                            </label>
-                            <label class="shopping-address__label info-label"></label>
+                            
                             <div class="shopping-address__input-container info-form-input-container">
-                                <input class="shopping-address__input info-last-name" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Last Name ">
+                                <label>
+                                    <input class="shopping-address__input info-last-name" type="text" name="last_name"
+                                        required placeholder="Last Name">
+                                </label>
                             </div>
-                            </label>
                         </div>
 
-                        <label class=" info-label">
+                        <label class="info-label">
                             <div class="info-form-input-container">
-                                <input class="shopping-address__input info-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                    placeholder="Company(Optional)">
+                                <input class="shopping-address__input info-input" type="text" name="company" placeholder="Company (Optional)">
                             </div>
                         </label>
                         <br>
                         <label class="shopping-address__label info-label">
-                            <div class=" info-form-input-container">
-                                <input class="shopping-address__input info-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Address">
+                            <div class="info-form-input-container">
+                                <input class="shopping-address__input info-input" type="text" name="address" required placeholder="Address">
                             </div>
                         </label>
                         <br>
                         <label class="shopping-address__label info-label">
-                            <div class=" info-form-input-container">
-                                <input class="shopping-address__input info-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                    placeholder="Apartment,Suite,Etc.(Optional)">
+                            <div class="info-form-input-container">
+                                <input class="shopping-address__input info-input" type="text" name="apartment" placeholder="Apartment, Suite, Etc. (Optional)">
                             </div>
                         </label>
-
+                        
                         <div class="info-shop-adress-name-wrap d-flex">
-
                             <div class="shopping-address__input-container info-form-input-container">
-                                <input class="shopping-address__input info-first-name" type="email" name="email"
-                                    required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                    placeholder="Postal Code">
+                                <input class="shopping-address__input info-first-name" type="text" name="postal_code" required placeholder="Postal Code">
                             </div>
-                            </label>
-                            <label class="shopping-address__label info-label"></label>
                             <div class="shopping-address__input-container info-form-input-container">
-                                <input class="shopping-address__input info-last-name" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="City">
+                                <input class="shopping-address__input info-last-name" type="text" name="city" required placeholder="City">
                             </div>
-                            </label>
                         </div>
-
+                        
                         <label class="shopping-address__label info-label">
-                            <div class=" info-form-input-container">
-                                <input class="shopping-address__input info-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Phone">
+                            <div class="info-form-input-container">
+                                <input class="shopping-address__input info-input" type="text" name="phone" required placeholder="Phone">
                             </div>
                         </label>
-                    </div>
-
-                    <label for="agree" class="shopping-payment__label sh-p-contact__label">
-                        <input type="checkbox" id="agree" name="agree" value="yes"
-                            class="shopping-payment__checkbox sh-p-contact__checkbox">
-                        <p class="sh-p-email-text">Save This Information For Next Time</p>
-                    </label>
+                        
+                        <label for="agree" class="shopping-payment__label sh-p-contact__label">
+                            <input type="checkbox" id="agree" name="agree" value="yes" class="shopping-payment__checkbox sh-p-contact__checkbox">
+                            <p class="sh-p-email-text">Save This Information For Next Time</p>
+                        </label>
+                        
 
                     <div class="nav-payment-info">
                         <a href="./payment_cart.html" class="r-to-card-link">
@@ -226,7 +210,7 @@
                         </a>
 
                     </div>
-
+                </div>
 
                 </div>
             </div>

@@ -171,23 +171,9 @@ a:hover+.blur-background.active {
    margin: 0 60px;
 }
 
-.header-line {
-    border: none; /* Прибирає стандартну рамку */
-    height: 2px;  /* Товщина лінії */
-    background-color: #333; /* Колір лінії */
-    width: 100%; /* Ширина лінії */
-    display: none;
+.burger-line{
+    margin-top: 70px;
 }
-
-hr {
-    margin: 0.5rem 0;
-    color: inherit;
-    background-color: currentColor;
-    border: 0;
-    opacity: .25;
-}
-
-
 
 .dropdown, .btn-burger-wrap, .burger-header-item {
    
