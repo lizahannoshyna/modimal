@@ -76,30 +76,21 @@
 .collection-menu {
     display: none;
     position: fixed;
-    /* Фіксована позиція для модального вікна */
-    top: 110px;
-    /* Початок від верхнього краю */
+    top: 90px;
     left: 0px;
-    /* Початок від лівого краю */
     width: 100vw;
-    /* Покриття всієї ширини екрану */
     height: 550px;
-    /* Покриття всієї висоти екрану */
     background-color: white;
-    /* Задній фон для модального вікна */
     z-index: 999;
-    /* Щоб вікно було поверх інших елементів */
     padding: 20px;
-    /* Внутрішній відступ */
     overflow: auto;
-    /* Прокрутка для довгого контенту */
     padding: 14px;
+    padding-top: 50px;
 
 }
 
 .header__item:hover .collection-menu {
     display: block;
-    /* Показати модальне вікно при наведенні */
 }
 
 
@@ -141,3 +132,38 @@
     text-align: center;
     font-size: 14px;
 }
+.collection-link {
+    font-size: 18px;
+}
+
+/* Extra Large: 1200px - 1300px */
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1140px;
+  }
+  .collection-link {
+    font-size: 18px;
+}
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+      }
+    
+      .collection-menu {
+        top: 89px;
+    
+    }
+    .collection-header {
+        font-size: 16px;}
+    
+    .collection-link{
+        font-size: 14px;
+    }
+    .collection-menu-img{
+        width: 200px;
+    }
+}
+  

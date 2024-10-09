@@ -10,6 +10,23 @@ navInput.addEventListener('change', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownButton = document.getElementById('dropdownMenuButton2');
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownButton.addEventListener('click', function() {
+        setTimeout(function() { 
+            if (dropdownMenu.classList.contains('show')) {
+                dropdownButton.classList.add('dropdown-open');
+            } else {
+                dropdownButton.classList.remove('dropdown-open');
+            }
+        }, 0);
+    });
+});
+
+
+
 
 
 
