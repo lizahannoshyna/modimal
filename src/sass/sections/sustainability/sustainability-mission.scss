@@ -13,6 +13,9 @@
     }
 }
 
+.mission__list--mobile {
+    display: none;
+}
 //
 
 .mission__sustainability--title {
@@ -141,10 +144,6 @@
 
 .mission__text--last {
     margin-bottom: 48px;
-}
-
-.mission__list--mobile {
-    display: block;
 }
 
 /* Large: 992px - 1199px */
