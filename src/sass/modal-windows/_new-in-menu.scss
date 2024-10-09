@@ -60,7 +60,6 @@
   display: none;
   position: fixed;
   top: 90px;
-  padding-top: 50px;
   left: 0;
   width: 100vw;
   height: 550px;
@@ -68,7 +67,7 @@
   z-index: 999;
   padding: 20px;
   overflow: auto;
- 
+  padding-top: 50px;
 }
 
 .header__item:hover .new-in-menu {
@@ -78,4 +77,49 @@
 /* Отключаем скролл страницы, когда открыто меню */
 body.menu-open {
   overflow: hidden;
+}
+
+.new-in__list--title{
+  cursor: pointer;
+}
+.new-in__list--title:hover{
+  color: $primary;
+}
+
+.new-in__list--link:hover{
+  color: $primary;
+}
+
+.new-in__list--title:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: $primary;
+  bottom: 0;
+  left: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+      max-width: 960px;
+    }
+  
+    .new-in-menu__container {
+      top:  85px;
+  
+  }
+  .new-in__list--title {
+      font-size: 16px;}
+  
+  .new-in__list--link{
+      font-size: 14px;
+  }
+  .new-in-items__img{
+      width: 200px;
+  }
 }
