@@ -20,8 +20,8 @@
     crossorigin="anonymous"></script>
   
   <title>Payment</title>
-  <script type="module" crossorigin src="./assets/index-7e08e3d3.js"></script>
-  <link rel="stylesheet" href="./assets/index-3643fa5f.css">
+  <script type="module" crossorigin src="./assets/index-041a8540.js"></script>
+  <link rel="stylesheet" href="./assets/index-db6972d4.css">
 </head>
 
 <body>
@@ -61,65 +61,56 @@
                         </div>
                     </div>
                     <div class="billing-input-wrap">
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Name">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="name" required placeholder="Name">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Email">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="email" name="email" required placeholder="Email">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Country">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="country" required placeholder="Country">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Address Line1">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="address_line1" required placeholder="Address Line1">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Address Line2">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="address_line2" placeholder="Address Line2 (Optional)">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="City / Suburb">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="city" required placeholder="City / Suburb">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Zip / Postcode">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="zip" required placeholder="Zip / Postcode">
                             </div>
                         </label>
-                        <label class=" payment-label">
+                        <label class="payment-label">
                             <p class="payment-label-header"></p>
-                            <div class=" payment-form-input-container">
-                                <input class="shopping-address__input payment-input" type="email" name="email" required
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Phone">
+                            <div class="payment-form-input-container">
+                                <input class="shopping-address__input payment-input" type="text" name="phone" required placeholder="Phone">
                             </div>
                         </label>
-
-
                     </div>
+                    
                 </div>
             </div>
 
@@ -186,34 +177,33 @@
                     <label class="card-number-label">
                         <p class="card-number-label-header"></p>
                         <div class="card-number-form-input-container">
-                            <input class="card-input" type="email" name="email" required
-                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="">
+                            <input class="card-input" type="text" name="card-number" required pattern="[0-9]{13,19}" placeholder="1234 5678 9012 3456">
                         </div>
                     </label>
                 </div>
-
+                
                 <div class="card-number-wrap d-flex">
                     <p class="expiry-day-title expiry-day-title-date">Expiry Date*</p>
                     <div class="info-shop-address-wrap d-flex">
                         <div class="info-pay-form-input d-flex">
                             <label class="info-label">
-                                <input class="info-input" type="text" name="first-name" required placeholder="Month">
+                                <input class="info-input" type="text" name="expiry-month" required placeholder="MM" pattern="^(0[1-9]|1[0-2])$">
                             </label>
                         </div>
                         <div class="info-pay-form-input">
                             <label class="info-label">
-                                <input class="info-input" type="text" name="last-name" required placeholder="Year">
+                                <input class="info-input" type="text" name="expiry-year" required placeholder="YYYY" pattern="^[0-9]{4}$">
                             </label>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="card-number-wrap d-flex">
                     <p class="expiry-day-title expiry-day-title-code">Security Code*</p>
                     <div class="security-wrap d-flex">
-                        <div class="info-pay-form-input info-pay-form-input_secirity d-flex">
+                        <div class="info-pay-form-input info-pay-form-input_security d-flex">
                             <label class="info-label">
-                                <input class="info-input" type="text" name="first-name" required placeholder="">
+                                <input class="info-input" type="text" name="security-code" required placeholder="CVV" pattern="[0-9]{3,4}">
                             </label>
                         </div>
                         <div class="what-is-wrap d-flex">
