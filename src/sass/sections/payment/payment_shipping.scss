@@ -258,15 +258,25 @@
         width: 100%;
     }
 
-    .c-to-shopping {
-        margin-top: 14px;
-    }
-
     .nav-payment-sipping {
         padding-top: 50px;
     }
 
     .e-d-items {
         margin-top: 20px;
+    }
+    .e-d-title{
+        width: 100%;
+    }
+    .e-d-items {
+        width: 100%;
+        float: right;
+    }
+    .nav-payment-sipping{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .r-to-card-info {
+        margin-top: 14px;
     }
 }

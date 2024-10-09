@@ -683,4 +683,12 @@
     .nav-payment-info {
         width: 100%;
     }
+
+    .nav-payment-info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .r-to-card{
+        margin-top: 14px;
+    }
 }

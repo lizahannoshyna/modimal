@@ -59,10 +59,17 @@
   .hero__title {
     width: 319px;
   }
+  .section__hero {
+    background-position: 15% center;
+  }
 }
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
+  .section__hero {
+    background-position: 25% center;
+  }
+
   .hero {
     height: 551px;
     padding-bottom: 16px;

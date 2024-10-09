@@ -20,6 +20,11 @@
 body.no-scroll {
     overflow: hidden;
 }
+
+.dropdown, .btn-burger-wrap, .burger-header-item {
+   
+    display: block;
+}
 .btn-burger-wrap{
     display: block;
     width: 100%;
