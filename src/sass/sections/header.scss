@@ -183,13 +183,13 @@ hr {
     margin: 0.5rem 0;
     color: inherit;
     background-color: currentColor;
-    border: none;
-    opacity: 1;
+    border: 0;
+    opacity: .25;
 }
 
 
 
-.dropdown, .btn-burger-wrap {
+.dropdown, .btn-burger-wrap, .burger-header-item {
     display: block;
     display: none;
 }
