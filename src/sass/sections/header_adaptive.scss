@@ -16,12 +16,108 @@
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
+    /* Забороняємо прокручування сторінки при активному меню */
+body.no-scroll {
+    overflow: hidden;
+}
+.btn-burger-wrap{
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.burger-create-account{
+    float: right;
+}
+.btn-burger{
+    padding: 8px 21px;
+    background-color: $light;
+    color: $primary;
+    border: 1px solid $primary;
+    @include buttonSM;
+}
+.btn-burger:hover{
+    color: $light;
+    background-color: $primary;
+}
+
+.burger-line{
+    width: 100%;
+    border: 1px solod $primary;
+    margin-top: 160px;
+}
+
+
     .toggle-header {
         display: block;
         height: 30px;
         width: 30px;
         margin-left: auto;
         position: relative;
+    }
+    .btn-burger{
+        position: relative;
+        transition: transform 0.3s ease;
+      
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    
+    /* Змінюємо колір обводки при наведенні */
+    .btn-burger:hover .pearson-burger path {
+        fill: white; /* Змінюємо колір обводки на білий */
+    }
+    
+    /* Стилі для кнопки у закритому стані */
+.btn-header {
+    background-color: $light;
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+/* Стилі для кнопки у відкритому стані */
+.btn-header.dropdown-open {
+    background-color: $primary;
+    color: $light;
+}
+
+
+    .dropdown{
+        display: block;
+    }
+
+    .btn-header:hover{
+        color: $light;
+        background-color: $primary;
+    }
+    .dropdown-toggle{
+        width: 100%;
+        height: 100%;
+    }
+
+    .dropdown-toggle{
+        background-color: $light;
+        color: $primary;
+    }
+    .dropdown-item{
+        @include bodyLG;
+    }
+
+    .dropdown-menu{
+        width: 100%;
+    }
+
+    .dropdown-item.active, .dropdown-item:active {
+        color: #000;
+        text-decoration: none;
+       background-color: #ffffff;
+    }
+    .dropdown-item:hover{
+        color: #ffffff;
+        text-decoration: none;
+       background-color: $primary;
     }
 
     .toggle-header:hover {
@@ -88,6 +184,7 @@
         z-index: 999;
     }
 
+ 
     .nav {
         order: 1;
         margin-top: 18px;
@@ -138,21 +235,7 @@
         margin-left: 150px;
     }
 
-    .header-line {
-        border: none;
-        height: 2px;
-        background-color: #333;
-        width: 80%;
-        display: block;
-    }
 
-    .header__link {
-        @include bodyLG;
-        line-height: 117% !important;
-        font-weight: 500 !important;
-
-
-    }
 
     .header__item {
         float: left;
@@ -161,37 +244,13 @@
     }
 
     .header__list {
-        padding: 0 150px;
+        padding: 0 60px;
     }
+
+
 
     .header__link {
-        position: relative;
-        /* Для позиціонування псевдоелемента */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 0;
-        cursor: pointer;
-        z-index: 1;
-        margin-right: 0;
-    }
-
-    .header__link::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background-color: $primary;
-        width: 0;
-        transition: width 0.3s ease;
-        margin-top: 12px;
-    }
-
-    .header__item .header__link::after {
-        width: 100%;
-        /* Лінія розтягується на весь контейнер */
+       display: none;
     }
 
     .collection-menu-img,
@@ -233,6 +292,14 @@
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
+
+    .btn-burger-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger-create-account{
+        margin-top: 12px;
+    }
     .search-icon {
         margin-right: 100px;
         margin-left: 19px;
@@ -272,4 +339,8 @@
     .featured-list{
         display: none;
     }
-}
+
+     .dropdown-item {
+        
+        font-size: 16px;
+}}
